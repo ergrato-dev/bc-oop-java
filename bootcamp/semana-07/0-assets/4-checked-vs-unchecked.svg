@@ -1,0 +1,139 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 700">
+  <defs>
+    <style>
+      .bg { fill: #1e1e1e; }
+      .title { fill: #ffffff; font-family: 'Segoe UI', Arial, sans-serif; font-size: 24px; font-weight: bold; }
+      .subtitle { fill: #e0e0e0; font-family: 'Segoe UI', Arial, sans-serif; font-size: 18px; font-weight: bold; }
+      .text { fill: #e0e0e0; font-family: Arial, sans-serif; font-size: 14px; }
+      .text-small { fill: #b0b0b0; font-family: Arial, sans-serif; font-size: 12px; }
+      .box-checked { fill: #3d2a1e; stroke: #ce9178; stroke-width: 3; }
+      .box-unchecked { fill: #3d2a1e; stroke: #d7ba7d; stroke-width: 3; }
+      .header-checked { fill: #5a3a2a; stroke: #ce9178; stroke-width: 2; }
+      .header-unchecked { fill: #5a4a2a; stroke: #d7ba7d; stroke-width: 2; }
+      .code { fill: #dcdcaa; font-family: 'Courier New', monospace; font-size: 12px; }
+      .check { fill: #4ec9b0; font-size: 18px; }
+      .cross { fill: #f48771; font-size: 18px; }
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect class="bg" width="1100" height="700"/>
+  
+  <!-- Title -->
+  <text class="title" x="550" y="35" text-anchor="middle">Checked vs Unchecked Exceptions</text>
+  
+  <!-- Left Column: Checked Exceptions -->
+  <rect class="header-checked" x="50" y="70" width="480" height="50" rx="5"/>
+  <text class="subtitle" x="290" y="100" text-anchor="middle" fill="#ce9178">Checked Exceptions</text>
+  
+  <rect class="box-checked" x="50" y="130" width="480" height="520" rx="5"/>
+  
+  <!-- Definición -->
+  <text class="text" x="70" y="160" font-weight="bold" fill="#ce9178">Definición:</text>
+  <text class="text-small" x="70" y="180">Excepciones verificadas en TIEMPO DE COMPILACIÓN.</text>
+  <text class="text-small" x="70" y="197">El compilador te OBLIGA a manejarlas.</text>
+  
+  <!-- Herencia -->
+  <text class="text" x="70" y="230" font-weight="bold" fill="#ce9178">Herencia:</text>
+  <rect class="box-checked" x="70" y="240" width="440" height="30" rx="3" fill="#2d2d2d"/>
+  <text class="code" x="80" y="260" fill="#ce9178">extends Exception</text>
+  <text class="text-small" x="240" y="260">(pero NO RuntimeException)</text>
+  
+  <!-- Cuándo usar -->
+  <text class="text" x="70" y="295" font-weight="bold" fill="#ce9178">Cuándo usar:</text>
+  <text class="check" x="70" y="315">✓</text>
+  <text class="text-small" x="95" y="315">Situaciones RECUPERABLES</text>
+  <text class="check" x="70" y="335">✓</text>
+  <text class="text-small" x="95" y="335">Problemas EXTERNOS (archivos, red, BD)</text>
+  <text class="check" x="70" y="355">✓</text>
+  <text class="text-small" x="95" y="355">Usuario puede tomar acción</text>
+  
+  <!-- Ejemplos -->
+  <text class="text" x="70" y="385" font-weight="bold" fill="#ce9178">Ejemplos comunes:</text>
+  <rect class="box-checked" x="70" y="395" width="440" height="25" rx="3" fill="#2d2d2d"/>
+  <text class="code" x="80" y="413" fill="#ce9178">IOException</text>
+  <text class="text-small" x="250" y="413">← Archivo no encontrado</text>
+  
+  <rect class="box-checked" x="70" y="425" width="440" height="25" rx="3" fill="#2d2d2d"/>
+  <text class="code" x="80" y="443" fill="#ce9178">SQLException</text>
+  <text class="text-small" x="250" y="443">← Error de base de datos</text>
+  
+  <rect class="box-checked" x="70" y="455" width="440" height="25" rx="3" fill="#2d2d2d"/>
+  <text class="code" x="80" y="473" fill="#ce9178">ClassNotFoundException</text>
+  <text class="text-small" x="250" y="473">← Clase no existe</text>
+  
+  <!-- Código ejemplo -->
+  <text class="text" x="70" y="505" font-weight="bold" fill="#ce9178">Ejemplo de código:</text>
+  <rect class="box-checked" x="70" y="515" width="440" height="120" rx="3" fill="#2d2d2d"/>
+  <text class="code" x="80" y="535" fill="#6a9955">// Compilador EXIGE manejo:</text>
+  <text class="code" x="80" y="555" fill="#c586c0">public void</text>
+  <text class="code" x="165" y="555">leerArchivo(String ruta)</text>
+  <text class="code" x="80" y="575" fill="#ce9178">    throws IOException</text>
+  <text class="code" x="80" y="595">{</text>
+  <text class="code" x="100" y="615">FileReader reader =</text>
+  <text class="code" x="100" y="627">    new FileReader(ruta);</text>
+  <text class="code" x="80" y="630">}</text>
+  
+  
+  <!-- Right Column: Unchecked Exceptions -->
+  <rect class="header-unchecked" x="570" y="70" width="480" height="50" rx="5"/>
+  <text class="subtitle" x="810" y="100" text-anchor="middle" fill="#d7ba7d">Unchecked Exceptions</text>
+  
+  <rect class="box-unchecked" x="570" y="130" width="480" height="520" rx="5"/>
+  
+  <!-- Definición -->
+  <text class="text" x="590" y="160" font-weight="bold" fill="#d7ba7d">Definición:</text>
+  <text class="text-small" x="590" y="180">Excepciones NO verificadas en compilación.</text>
+  <text class="text-small" x="590" y="197">Manejo es OPCIONAL (decisión del programador).</text>
+  
+  <!-- Herencia -->
+  <text class="text" x="590" y="230" font-weight="bold" fill="#d7ba7d">Herencia:</text>
+  <rect class="box-unchecked" x="590" y="240" width="440" height="30" rx="3" fill="#2d2d2d"/>
+  <text class="code" x="600" y="260" fill="#d7ba7d">extends RuntimeException</text>
+  
+  <!-- Cuándo usar -->
+  <text class="text" x="590" y="295" font-weight="bold" fill="#d7ba7d">Cuándo usar:</text>
+  <text class="check" x="590" y="315">✓</text>
+  <text class="text-small" x="615" y="315">Errores de PROGRAMACIÓN</text>
+  <text class="check" x="590" y="335">✓</text>
+  <text class="text-small" x="615" y="335">Bugs que deben CORREGIRSE en código</text>
+  <text class="check" x="590" y="355">✓</text>
+  <text class="text-small" x="615" y="355">Violaciones de lógica interna</text>
+  
+  <!-- Ejemplos -->
+  <text class="text" x="590" y="385" font-weight="bold" fill="#d7ba7d">Ejemplos comunes:</text>
+  <rect class="box-unchecked" x="590" y="395" width="440" height="25" rx="3" fill="#2d2d2d"/>
+  <text class="code" x="600" y="413" fill="#d7ba7d">NullPointerException</text>
+  <text class="text-small" x="770" y="413">← null.metodo()</text>
+  
+  <rect class="box-unchecked" x="590" y="425" width="440" height="25" rx="3" fill="#2d2d2d"/>
+  <text class="code" x="600" y="443" fill="#d7ba7d">IllegalArgumentException</text>
+  <text class="text-small" x="770" y="443">← Argumento inválido</text>
+  
+  <rect class="box-unchecked" x="590" y="455" width="440" height="25" rx="3" fill="#2d2d2d"/>
+  <text class="code" x="600" y="473" fill="#d7ba7d">ArrayIndexOutOfBoundsException</text>
+  <text class="text-small" x="840" y="473">← arr[999]</text>
+  
+  <!-- Código ejemplo -->
+  <text class="text" x="590" y="505" font-weight="bold" fill="#d7ba7d">Ejemplo de código:</text>
+  <rect class="box-unchecked" x="590" y="515" width="440" height="120" rx="3" fill="#2d2d2d"/>
+  <text class="code" x="600" y="535" fill="#6a9955">// NO requiere declaración:</text>
+  <text class="code" x="600" y="555" fill="#c586c0">public void</text>
+  <text class="code" x="685" y="555">setEdad(int edad) {</text>
+  <text class="code" x="620" y="575" fill="#c586c0">if</text>
+  <text class="code" x="645" y="575">(edad &lt; 0) {</text>
+  <text class="code" x="640" y="595" fill="#c586c0">throw new</text>
+  <text class="code" x="735" y="595" fill="#d7ba7d">IllegalArgumentException</text>
+  <text class="code" x="670" y="615">("Edad inválida");</text>
+  <text class="code" x="620" y="627">}</text>
+  <text class="code" x="600" y="630">}</text>
+  
+  
+  <!-- Bottom comparison table -->
+  <rect x="50" y="670" width="1000" height="20" rx="3" fill="#264f78" stroke="#569cd6" stroke-width="2"/>
+  <text class="text-small" x="100" y="685" fill="#ce9178" font-weight="bold">Checked: DEBE manejarse</text>
+  <text class="text-small" x="400" y="685" fill="#ffffff">|</text>
+  <text class="text-small" x="450" y="685" fill="#d7ba7d" font-weight="bold">Unchecked: Manejo OPCIONAL</text>
+  <text class="text-small" x="800" y="685" fill="#ffffff">|</text>
+  <text class="text-small" x="820" y="685" fill="#4ec9b0">Usa según el contexto</text>
+</svg>

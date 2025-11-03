@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <style>
+      .bg { fill: #1e1e1e; }
+      .title { fill: #ffffff; font-family: 'Segoe UI', Arial, sans-serif; font-size: 24px; font-weight: bold; }
+      .text { fill: #e0e0e0; font-family: 'Courier New', monospace; font-size: 14px; }
+      .text-small { fill: #b0b0b0; font-family: Arial, sans-serif; font-size: 12px; }
+      .box { fill: #2d2d2d; stroke: #569cd6; stroke-width: 2; }
+      .folder { fill: #3d3d3d; stroke: #ce9178; stroke-width: 2; }
+      .arrow { fill: none; stroke: #4ec9b0; stroke-width: 2; marker-end: url(#arrowhead); }
+      .code { fill: #dcdcaa; font-family: 'Courier New', monospace; font-size: 13px; }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#4ec9b0" />
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect class="bg" width="800" height="600"/>
+  
+  <!-- Title -->
+  <text class="title" x="400" y="35" text-anchor="middle">Estructura de Paquetes en Java</text>
+  
+  <!-- Package Declaration -->
+  <rect class="box" x="50" y="60" width="300" height="80" rx="5"/>
+  <text class="code" x="70" y="90">package com.agencia.modelo;</text>
+  <text class="text-small" x="70" y="115" fill="#6a9955">// Declaración de paquete</text>
+  
+  <!-- Arrow 1 -->
+  <path class="arrow" d="M 200 140 L 200 170"/>
+  
+  <!-- File System Structure -->
+  <text class="text" x="50" y="200" font-weight="bold">Estructura de Carpetas:</text>
+  
+  <!-- Root folder -->
+  <rect class="folder" x="50" y="210" width="300" height="40" rx="3"/>
+  <text class="text" x="70" y="235">📁 src/</text>
+  
+  <!-- com folder -->
+  <rect class="folder" x="70" y="260" width="260" height="40" rx="3"/>
+  <text class="text" x="90" y="285">📁 com/</text>
+  
+  <!-- agencia folder -->
+  <rect class="folder" x="90" y="310" width="220" height="40" rx="3"/>
+  <text class="text" x="110" y="335">📁 agencia/</text>
+  
+  <!-- modelo folder -->
+  <rect class="folder" x="110" y="360" width="180" height="40" rx="3"/>
+  <text class="text" x="130" y="385">📁 modelo/</text>
+  
+  <!-- Java files -->
+  <rect class="box" x="130" y="410" width="140" height="30" rx="3"/>
+  <text class="text" x="145" y="430" fill="#4ec9b0">📄 Reserva.java</text>
+  
+  <rect class="box" x="130" y="445" width="140" height="30" rx="3"/>
+  <text class="text" x="145" y="465" fill="#4ec9b0">📄 Cliente.java</text>
+  
+  <!-- Right side: Multiple packages example -->
+  <text class="text" x="450" y="200" font-weight="bold">Múltiples Paquetes:</text>
+  
+  <!-- servicio package -->
+  <rect class="folder" x="450" y="210" width="300" height="100" rx="5"/>
+  <text class="code" x="470" y="235" fill="#ce9178">com.agencia.servicio</text>
+  <rect class="box" x="470" y="250" width="250" height="25" rx="3"/>
+  <text class="text-small" x="480" y="268">GestorReservas.java</text>
+  <rect class="box" x="470" y="280" width="250" height="25" rx="3"/>
+  <text class="text-small" x="480" y="298">ServicioPago.java</text>
+  
+  <!-- excepciones package -->
+  <rect class="folder" x="450" y="330" width="300" height="100" rx="5"/>
+  <text class="code" x="470" y="355" fill="#ce9178">com.agencia.excepciones</text>
+  <rect class="box" x="470" y="370" width="250" height="25" rx="3"/>
+  <text class="text-small" x="480" y="388">ReservaInvalidaException.java</text>
+  <rect class="box" x="470" y="400" width="250" height="25" rx="3"/>
+  <text class="text-small" x="480" y="418">PagoRechazadoException.java</text>
+  
+  <!-- util package -->
+  <rect class="folder" x="450" y="450" width="300" height="70" rx="5"/>
+  <text class="code" x="470" y="475" fill="#ce9178">com.agencia.util</text>
+  <rect class="box" x="470" y="490" width="250" height="25" rx="3"/>
+  <text class="text-small" x="480" y="508">Validador.java</text>
+  
+  <!-- Bottom notes -->
+  <rect class="box" x="50" y="540" width="700" height="45" rx="5" fill="#264f78"/>
+  <text class="text-small" x="70" y="560" fill="#ffffff">✨ La estructura de carpetas DEBE coincidir con el nombre del paquete</text>
+  <text class="text-small" x="70" y="575" fill="#ffffff">✨ Convención: dominio invertido (com.empresa.proyecto.modulo)</text>
+</svg>

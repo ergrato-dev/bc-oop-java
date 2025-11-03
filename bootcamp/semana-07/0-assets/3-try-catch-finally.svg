@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 650">
+  <defs>
+    <style>
+      .bg { fill: #1e1e1e; }
+      .title { fill: #ffffff; font-family: 'Segoe UI', Arial, sans-serif; font-size: 24px; font-weight: bold; }
+      .text { fill: #e0e0e0; font-family: Arial, sans-serif; font-size: 14px; }
+      .text-small { fill: #b0b0b0; font-family: Arial, sans-serif; font-size: 12px; }
+      .box-try { fill: #1e3a1e; stroke: #4ec9b0; stroke-width: 2; }
+      .box-catch { fill: #3d2a1e; stroke: #ce9178; stroke-width: 2; }
+      .box-finally { fill: #1e2a3d; stroke: #569cd6; stroke-width: 2; }
+      .arrow { fill: none; stroke: #4ec9b0; stroke-width: 2; marker-end: url(#arrowhead); }
+      .arrow-exception { fill: none; stroke: #f48771; stroke-width: 2; stroke-dasharray: 5,5; marker-end: url(#arrowhead-red); }
+      .code { fill: #dcdcaa; font-family: 'Courier New', monospace; font-size: 13px; }
+      .comment { fill: #6a9955; font-family: 'Courier New', monospace; font-size: 12px; font-style: italic; }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#4ec9b0" />
+    </marker>
+    <marker id="arrowhead-red" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#f48771" />
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect class="bg" width="1000" height="650"/>
+  
+  <!-- Title -->
+  <text class="title" x="500" y="35" text-anchor="middle">Flujo de Ejecución: try-catch-finally</text>
+  
+  <!-- Left side: Normal flow -->
+  <text class="text" x="100" y="70" font-weight="bold" fill="#4ec9b0">Flujo Normal (Sin Excepción)</text>
+  
+  <!-- Try block -->
+  <rect class="box-try" x="50" y="90" width="300" height="120" rx="5"/>
+  <text class="code" x="70" y="115" fill="#c586c0">try</text>
+  <text class="code" x="85" y="140">{</text>
+  <text class="code" x="100" y="165">int resultado = 10 / 2;</text>
+  <text class="comment" x="100" y="185">// ✅ Sin error</text>
+  <text class="code" x="85" y="200">}</text>
+  
+  <!-- Arrow to finally (normal) -->
+  <path class="arrow" d="M 200 210 L 200 280"/>
+  <text class="text-small" x="210" y="250" fill="#4ec9b0">✅ Ejecución normal</text>
+  
+  <!-- Finally block (normal) -->
+  <rect class="box-finally" x="50" y="280" width="300" height="100" rx="5"/>
+  <text class="code" x="70" y="305" fill="#c586c0">finally</text>
+  <text class="code" x="85" y="330">{</text>
+  <text class="code" x="100" y="355">System.out.println("Limpieza");</text>
+  <text class="code" x="85" y="370">}</text>
+  
+  <!-- Arrow to end -->
+  <path class="arrow" d="M 200 380 L 200 420"/>
+  <text class="text" x="200" y="435" text-anchor="middle" fill="#4ec9b0" font-weight="bold">✅ Continúa programa</text>
+  
+  
+  <!-- Right side: Exception flow -->
+  <text class="text" x="550" y="70" font-weight="bold" fill="#f48771">Flujo con Excepción</text>
+  
+  <!-- Try block with exception -->
+  <rect class="box-try" x="500" y="90" width="400" height="120" rx="5"/>
+  <text class="code" x="520" y="115" fill="#c586c0">try</text>
+  <text class="code" x="535" y="140">{</text>
+  <text class="code" x="550" y="165">int resultado = 10 / 0;</text>
+  <text class="comment" x="550" y="185">// ❌ ArithmeticException lanzada</text>
+  <text class="code" x="535" y="200">}</text>
+  
+  <!-- Arrow to catch -->
+  <path class="arrow-exception" d="M 700 210 L 700 240"/>
+  <text class="text-small" x="710" y="230" fill="#f48771">❌ Excepción lanzada</text>
+  
+  <!-- Catch block -->
+  <rect class="box-catch" x="500" y="240" width="400" height="120" rx="5"/>
+  <text class="code" x="520" y="265" fill="#c586c0">catch</text>
+  <text class="code" x="565" y="265">(ArithmeticException e) {</text>
+  <text class="code" x="550" y="290">System.out.println(</text>
+  <text class="code" x="570" y="310">"Error: " + e.getMessage()</text>
+  <text class="code" x="550" y="330">);</text>
+  <text class="comment" x="550" y="350">// ✅ Manejada</text>
+  <text class="code" x="535" y="355">}</text>
+  
+  <!-- Arrow to finally (after catch) -->
+  <path class="arrow" d="M 700 360 L 700 390"/>
+  <text class="text-small" x="710" y="380" fill="#569cd6">→ Siempre ejecuta</text>
+  
+  <!-- Finally block (exception) -->
+  <rect class="box-finally" x="500" y="390" width="400" height="100" rx="5"/>
+  <text class="code" x="520" y="415" fill="#c586c0">finally</text>
+  <text class="code" x="535" y="440">{</text>
+  <text class="code" x="550" y="465">System.out.println("Limpieza siempre");</text>
+  <text class="code" x="535" y="480">}</text>
+  
+  <!-- Arrow to end -->
+  <path class="arrow" d="M 700 490 L 700 520"/>
+  <text class="text" x="700" y="535" text-anchor="middle" fill="#4ec9b0" font-weight="bold">✅ Continúa programa</text>
+  
+  
+  <!-- Bottom: Key points -->
+  <rect x="50" y="560" width="900" height="75" rx="5" fill="#264f78" stroke="#569cd6" stroke-width="2"/>
+  <text class="text" x="70" y="585" fill="#ffffff" font-weight="bold">Puntos Clave:</text>
+  <text class="text-small" x="70" y="605" fill="#4ec9b0">✅ try: Código que puede lanzar excepciones</text>
+  <text class="text-small" x="70" y="620" fill="#ce9178">✅ catch: Maneja la excepción específica</text>
+  <text class="text-small" x="500" y="605" fill="#569cd6">✅ finally: SIEMPRE se ejecuta (con o sin excepción)</text>
+  <text class="text-small" x="500" y="620" fill="#ffffff">✅ Orden fijo: try → [catch] → finally</text>
+</svg>
