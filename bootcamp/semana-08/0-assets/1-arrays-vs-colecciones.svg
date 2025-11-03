@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700">
+  <!-- Fondo oscuro -->
+  <rect width="1000" height="700" fill="#0d1117"/>
+  
+  <!-- Título -->
+  <text x="500" y="40" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#58a6ff" text-anchor="middle">
+    Arrays vs Colecciones en Java
+  </text>
+  
+  <!-- Línea divisoria -->
+  <line x1="500" y1="80" x2="500" y2="660" stroke="#30363d" stroke-width="2"/>
+  
+  <!-- ARRAYS - Lado Izquierdo -->
+  <text x="250" y="100" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#3fb950" text-anchor="middle">
+    📊 ARRAYS
+  </text>
+  
+  <text x="250" y="140" font-family="Arial, sans-serif" font-size="16" fill="#c9d1d9" text-anchor="middle">
+    Tamaño FIJO
+  </text>
+  
+  <!-- Array visual -->
+  <rect x="80" y="160" width="80" height="50" fill="none" stroke="#3fb950" stroke-width="2"/>
+  <rect x="160" y="160" width="80" height="50" fill="none" stroke="#3fb950" stroke-width="2"/>
+  <rect x="240" y="160" width="80" height="50" fill="none" stroke="#3fb950" stroke-width="2"/>
+  <rect x="320" y="160" width="80" height="50" fill="none" stroke="#3fb950" stroke-width="2"/>
+  <rect x="400" y="160" width="80" height="50" fill="none" stroke="#3fb950" stroke-width="2"/>
+  
+  <text x="120" y="192" font-family="monospace" font-size="18" fill="#c9d1d9" text-anchor="middle">10</text>
+  <text x="200" y="192" font-family="monospace" font-size="18" fill="#c9d1d9" text-anchor="middle">20</text>
+  <text x="280" y="192" font-family="monospace" font-size="18" fill="#c9d1d9" text-anchor="middle">30</text>
+  <text x="360" y="192" font-family="monospace" font-size="18" fill="#c9d1d9" text-anchor="middle">40</text>
+  <text x="440" y="192" font-family="monospace" font-size="18" fill="#c9d1d9" text-anchor="middle">50</text>
+  
+  <!-- Características Arrays -->
+  <text x="50" y="250" font-family="Arial, sans-serif" font-size="14" fill="#c9d1d9">✅ Tamaño fijo definido en creación</text>
+  <text x="50" y="280" font-family="Arial, sans-serif" font-size="14" fill="#c9d1d9">✅ Acceso directo por índice O(1)</text>
+  <text x="50" y="310" font-family="Arial, sans-serif" font-size="14" fill="#c9d1d9">✅ Eficiencia de memoria</text>
+  <text x="50" y="340" font-family="Arial, sans-serif" font-size="14" fill="#c9d1d9">✅ Tipos primitivos y objetos</text>
+  <text x="50" y="370" font-family="Arial, sans-serif" font-size="14" fill="#f85149">❌ Sin métodos de utilidad</text>
+  <text x="50" y="400" font-family="Arial, sans-serif" font-size="14" fill="#f85149">❌ No redimensionable</text>
+  
+  <!-- Código ejemplo Arrays -->
+  <rect x="50" y="420" width="400" height="220" fill="#161b22" stroke="#30363d" stroke-width="2" rx="8"/>
+  <text x="70" y="450" font-family="monospace" font-size="13" fill="#c9d1d9">// Declaración</text>
+  <text x="70" y="475" font-family="monospace" font-size="13" fill="#ff7b72">int</text>
+  <text x="105" y="475" font-family="monospace" font-size="13" fill="#c9d1d9">[] numeros = </text>
+  <text x="215" y="475" font-family="monospace" font-size="13" fill="#ff7b72">new int</text>
+  <text x="285" y="475" font-family="monospace" font-size="13" fill="#c9d1d9">[5];</text>
+  
+  <text x="70" y="510" font-family="monospace" font-size="13" fill="#c9d1d9">// Asignación</text>
+  <text x="70" y="535" font-family="monospace" font-size="13" fill="#c9d1d9">numeros[0] = 10;</text>
+  
+  <text x="70" y="570" font-family="monospace" font-size="13" fill="#c9d1d9">// Acceso</text>
+  <text x="70" y="595" font-family="monospace" font-size="13" fill="#ff7b72">int</text>
+  <text x="105" y="595" font-family="monospace" font-size="13" fill="#c9d1d9"> valor = numeros[0];</text>
+  
+  <text x="70" y="620" font-family="monospace" font-size="13" fill="#8b949e">// length fijo</text>
+  
+  <!-- COLECCIONES - Lado Derecho -->
+  <text x="750" y="100" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#58a6ff" text-anchor="middle">
+    📦 COLECCIONES
+  </text>
+  
+  <text x="750" y="140" font-family="Arial, sans-serif" font-size="16" fill="#c9d1d9" text-anchor="middle">
+    Tamaño DINÁMICO
+  </text>
+  
+  <!-- ArrayList visual (crece dinámicamente) -->
+  <rect x="580" y="160" width="70" height="50" fill="none" stroke="#58a6ff" stroke-width="2"/>
+  <rect x="650" y="160" width="70" height="50" fill="none" stroke="#58a6ff" stroke-width="2"/>
+  <rect x="720" y="160" width="70" height="50" fill="none" stroke="#58a6ff" stroke-width="2"/>
+  <rect x="790" y="160" width="70" height="50" fill="none" stroke="#58a6ff" stroke-width="2"/>
+  <rect x="860" y="160" width="70" height="50" fill="none" stroke="#58a6ff" stroke-width="2" stroke-dasharray="5,5"/>
+  
+  <text x="615" y="192" font-family="monospace" font-size="16" fill="#c9d1d9" text-anchor="middle">"A"</text>
+  <text x="685" y="192" font-family="monospace" font-size="16" fill="#c9d1d9" text-anchor="middle">"B"</text>
+  <text x="755" y="192" font-family="monospace" font-size="16" fill="#c9d1d9" text-anchor="middle">"C"</text>
+  <text x="825" y="192" font-family="monospace" font-size="16" fill="#c9d1d9" text-anchor="middle">"D"</text>
+  <text x="895" y="192" font-family="monospace" font-size="16" fill="#8b949e" text-anchor="middle">...</text>
+  
+  <!-- Características Colecciones -->
+  <text x="550" y="250" font-family="Arial, sans-serif" font-size="14" fill="#c9d1d9">✅ Tamaño dinámico (crece/decrece)</text>
+  <text x="550" y="280" font-family="Arial, sans-serif" font-size="14" fill="#c9d1d9">✅ Métodos de utilidad (add, remove, etc.)</text>
+  <text x="550" y="310" font-family="Arial, sans-serif" font-size="14" fill="#c9d1d9">✅ Type safety con generics</text>
+  <text x="550" y="340" font-family="Arial, sans-serif" font-size="14" fill="#c9d1d9">✅ Implementaciones variadas</text>
+  <text x="550" y="370" font-family="Arial, sans-serif" font-size="14" fill="#f85149">❌ Solo objetos (no primitivos)</text>
+  <text x="550" y="400" font-family="Arial, sans-serif" font-size="14" fill="#f85149">❌ Overhead de memoria</text>
+  
+  <!-- Código ejemplo Colecciones -->
+  <rect x="550" y="420" width="400" height="220" fill="#161b22" stroke="#30363d" stroke-width="2" rx="8"/>
+  <text x="570" y="450" font-family="monospace" font-size="13" fill="#c9d1d9">// Declaración</text>
+  <text x="570" y="475" font-family="monospace" font-size="13" fill="#ff7b72">List</text>
+  <text x="605" y="475" font-family="monospace" font-size="13" fill="#c9d1d9">&lt;</text>
+  <text x="620" y="475" font-family="monospace" font-size="13" fill="#79c0ff">String</text>
+  <text x="675" y="475" font-family="monospace" font-size="13" fill="#c9d1d9">&gt; lista = </text>
+  <text x="755" y="475" font-family="monospace" font-size="13" fill="#ff7b72">new</text>
+  <text x="790" y="475" font-family="monospace" font-size="13" fill="#79c0ff"> ArrayList</text>
+  <text x="885" y="475" font-family="monospace" font-size="13" fill="#c9d1d9">&lt;&gt;();</text>
+  
+  <text x="570" y="510" font-family="monospace" font-size="13" fill="#c9d1d9">// Agregar</text>
+  <text x="570" y="535" font-family="monospace" font-size="13" fill="#c9d1d9">lista.</text>
+  <text x="615" y="535" font-family="monospace" font-size="13" fill="#d2a8ff">add</text>
+  <text x="650" y="535" font-family="monospace" font-size="13" fill="#c9d1d9">(</text>
+  <text x="665" y="535" font-family="monospace" font-size="13" fill="#a5d6ff">"Hola"</text>
+  <text x="720" y="535" font-family="monospace" font-size="13" fill="#c9d1d9">);</text>
+  
+  <text x="570" y="570" font-family="monospace" font-size="13" fill="#c9d1d9">// Acceso</text>
+  <text x="570" y="595" font-family="monospace" font-size="13" fill="#79c0ff">String</text>
+  <text x="630" y="595" font-family="monospace" font-size="13" fill="#c9d1d9"> valor = lista.</text>
+  <text x="770" y="595" font-family="monospace" font-size="13" fill="#d2a8ff">get</text>
+  <text x="805" y="595" font-family="monospace" font-size="13" fill="#c9d1d9">(0);</text>
+  
+  <text x="570" y="620" font-family="monospace" font-size="13" fill="#8b949e">// size() dinámico</text>
+</svg>
