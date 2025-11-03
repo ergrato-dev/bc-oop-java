@@ -245,7 +245,7 @@ Los contribuidores serán añadidos al archivo [CONTRIBUTORS.md](CONTRIBUTORS.md
 
 Si tienes preguntas sobre cómo contribuir:
 
-- Abre un [Discussion](https://github.com/elparchetipk/bc-oop-java/discussions)
+- Abre un [Discussion](https://github.com/ergrato-dev/bc-oop-java/discussions)
 - Contacta a los maintainers
 
 ---

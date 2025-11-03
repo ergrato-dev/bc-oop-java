@@ -65,7 +65,7 @@ Presentación moderna de **13 slides** con:
 **Opción 1: Repositorio Git**
 ```bash
 # Los estudiantes clonan/pull el repo y abren:
-git clone https://github.com/elparchetipk/bc-oop-java.git
+git clone https://github.com/ergrato-dev/bc-oop-java.git
 cd bc-oop-java/_docs
 xdg-open presentacion-intellij-setup.html
 ```

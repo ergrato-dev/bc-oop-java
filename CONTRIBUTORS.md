@@ -4,7 +4,7 @@
 
 ## 👨‍💻 Mantenedores del Proyecto
 
-- **[@elparchetipk](https://github.com/elparchetipk)** - Creador y Mantenedor Principal
+- **[@ergrato-dev](https://github.com/ergrato-dev)** - Creador y Mantenedor Principal
 
 ## 🎓 Instructores Contribuyentes
 

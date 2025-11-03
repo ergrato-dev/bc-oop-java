@@ -132,7 +132,7 @@ bootcamp/semana-00/2-practica/
 ### Método 2: Clonar desde Git (Para Estudiantes)
 
 1. `File` → `New` → `Project from Version Control`
-2. URL: `https://github.com/elparchetipk/bc-oop-java.git`
+2. URL: `https://github.com/ergrato-dev/bc-oop-java.git`
 3. Directory: Elegir ubicación local
 4. Click `Clone`
 

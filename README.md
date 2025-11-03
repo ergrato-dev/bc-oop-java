@@ -93,7 +93,7 @@ bootcamp/semana-XX/
 ### 1. Clonar el Repositorio
 
 ```bash
-git clone https://github.com/elparchetipk/bc-oop-java.git
+git clone https://github.com/ergrato-dev/bc-oop-java.git
 cd bc-oop-java
 ```
 
@@ -190,8 +190,8 @@ Este es un proyecto educativo del SENA. Si eres instructor o estudiante y deseas
 Si tienes preguntas o necesitas ayuda:
 
 - 📧 Email: [instructor@example.com](mailto:instructor@example.com)
-- 💬 Discussions: [GitHub Discussions](https://github.com/elparchetipk/bc-oop-java/discussions)
-- 🐛 Issues: [GitHub Issues](https://github.com/elparchetipk/bc-oop-java/issues)
+- 💬 Discussions: [GitHub Discussions](https://github.com/ergrato-dev/bc-oop-java/discussions)
+- 🐛 Issues: [GitHub Issues](https://github.com/ergrato-dev/bc-oop-java/issues)
 
 ---
 
@@ -254,7 +254,7 @@ Si encuentras un problema de seguridad, por favor revisa nuestra [Política de S
 
 **🚀 ¡Comienza tu viaje en la Programación Orientada a Objetos con Java! ☕**
 
-[Ir a Semana 0](bootcamp/semana-00) | [Ver Documentación](_docs/) | [Reportar Issue](https://github.com/elparchetipk/bc-oop-java/issues) | [Contribuir](CONTRIBUTING.md)
+[Ir a Semana 0](bootcamp/semana-00) | [Ver Documentación](_docs/) | [Reportar Issue](https://github.com/ergrato-dev/bc-oop-java/issues) | [Contribuir](CONTRIBUTING.md)
 
 ---
 

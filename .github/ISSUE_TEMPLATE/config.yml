@@ -3,11 +3,11 @@
 blank_issues_enabled: false
 contact_links:
   - name: 💬 GitHub Discussions
-    url: https://github.com/elparchetipk/bc-oop-java/discussions
+    url: https://github.com/ergrato-dev/bc-oop-java/discussions
     about: Haz preguntas generales, comparte ideas o inicia conversaciones con la comunidad
   - name: 📚 Documentación
-    url: https://github.com/elparchetipk/bc-oop-java/blob/main/README.md
+    url: https://github.com/ergrato-dev/bc-oop-java/blob/main/README.md
     about: Lee la documentación completa del bootcamp
   - name: 🤝 Guía de Contribución
-    url: https://github.com/elparchetipk/bc-oop-java/blob/main/CONTRIBUTING.md
+    url: https://github.com/ergrato-dev/bc-oop-java/blob/main/CONTRIBUTING.md
     about: Aprende cómo contribuir al proyecto
