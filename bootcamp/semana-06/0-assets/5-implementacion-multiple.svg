@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600">
+  <defs>
+    <style>
+      .bg { fill: #1a1a1a; }
+      .text { fill: #ecf0f1; font-family: 'Segoe UI', Arial, sans-serif; }
+      .title { font-size: 24px; font-weight: bold; }
+      .label { font-size: 14px; }
+      .code { font-size: 12px; font-family: 'Consolas', monospace; }
+      .interface-box { fill: #2c3e50; stroke: #3498db; stroke-width: 2; }
+      .class-box { fill: #27ae60; stroke: #2ecc71; stroke-width: 2; }
+      .arrow { stroke: #3498db; stroke-width: 2; fill: none; marker-end: url(#arrowhead); }
+      .dashed { stroke-dasharray: 5,5; }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#3498db"/>
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect class="bg" width="900" height="600"/>
+  
+  <!-- Title -->
+  <text class="text title" x="450" y="35" text-anchor="middle">Implementación Múltiple de Interfaces</text>
+  
+  <!-- Interface Dibujable -->
+  <rect class="interface-box" x="50" y="80" width="200" height="120" rx="5"/>
+  <text class="text label" x="150" y="100" text-anchor="middle" font-style="italic">&lt;&lt;interface&gt;&gt;</text>
+  <text class="text label" x="150" y="120" text-anchor="middle" font-weight="bold">Dibujable</text>
+  <line x1="60" y1="125" x2="240" y2="125" stroke="#3498db" stroke-width="1"/>
+  <text class="text code" x="60" y="145">+ dibujar(): void</text>
+  <text class="text code" x="60" y="165">+ obtenerColor(): String</text>
+  <text class="text code" x="60" y="185">+ establecerColor(c): void</text>
+  
+  <!-- Interface Redimensionable -->
+  <rect class="interface-box" x="350" y="80" width="200" height="120" rx="5"/>
+  <text class="text label" x="450" y="100" text-anchor="middle" font-style="italic">&lt;&lt;interface&gt;&gt;</text>
+  <text class="text label" x="450" y="120" text-anchor="middle" font-weight="bold">Redimensionable</text>
+  <line x1="360" y1="125" x2="540" y2="125" stroke="#3498db" stroke-width="1"/>
+  <text class="text code" x="360" y="145">+ redimensionar(f): void</text>
+  <text class="text code" x="360" y="165">+ escalar(x, y): void</text>
+  <text class="text code" x="360" y="185">+ obtenerTamaño(): double</text>
+  
+  <!-- Interface Rotable -->
+  <rect class="interface-box" x="650" y="80" width="200" height="120" rx="5"/>
+  <text class="text label" x="750" y="100" text-anchor="middle" font-style="italic">&lt;&lt;interface&gt;&gt;</text>
+  <text class="text label" x="750" y="120" text-anchor="middle" font-weight="bold">Rotable</text>
+  <line x1="660" y1="125" x2="840" y2="125" stroke="#3498db" stroke-width="1"/>
+  <text class="text code" x="660" y="145">+ rotar(grados): void</text>
+  <text class="text code" x="660" y="165">+ rotarIzquierda(): void</text>
+  <text class="text code" x="660" y="185">+ rotarDerecha(): void</text>
+  
+  <!-- Class Circulo -->
+  <rect class="class-box" x="300" y="350" width="300" height="200" rx="5"/>
+  <text class="text label" x="450" y="375" text-anchor="middle" font-weight="bold">Circulo</text>
+  <line x1="310" y1="380" x2="590" y2="380" stroke="#2ecc71" stroke-width="1"/>
+  <text class="text code" x="310" y="400">- radio: double</text>
+  <text class="text code" x="310" y="420">- color: String</text>
+  <text class="text code" x="310" y="440">- x, y: double</text>
+  <text class="text code" x="310" y="460">- anguloRotacion: double</text>
+  <line x1="310" y1="465" x2="590" y2="465" stroke="#2ecc71" stroke-width="1"/>
+  <text class="text code" x="310" y="485">+ dibujar(): void</text>
+  <text class="text code" x="310" y="505">+ redimensionar(factor): void</text>
+  <text class="text code" x="310" y="525">+ rotar(grados): void</text>
+  <text class="text code" x="310" y="545">+ calcularArea(): double</text>
+  
+  <!-- Arrows from interfaces to class -->
+  <path class="arrow dashed" d="M 150 200 L 150 280 L 400 280 L 400 350"/>
+  <path class="arrow dashed" d="M 450 200 L 450 350"/>
+  <path class="arrow dashed" d="M 750 200 L 750 280 L 500 280 L 500 350"/>
+  
+  <!-- Labels -->
+  <text class="text code" x="320" y="270" font-style="italic">implements</text>
+  <text class="text code" x="455" y="320" font-style="italic">implements</text>
+  <text class="text code" x="520" y="270" font-style="italic">implements</text>
+  
+  <!-- Code Example -->
+  <rect fill="#34495e" x="50" y="450" width="200" height="120" rx="5"/>
+  <text class="text label" x="150" y="470" text-anchor="middle" font-weight="bold">Ejemplo de Uso</text>
+  <text class="text code" x="60" y="490" fill="#e74c3c">Circulo</text>
+  <text class="text code" x="115" y="490"> c = </text>
+  <text class="text code" x="140" y="490" fill="#e74c3c">new</text>
+  <text class="text code" x="165" y="490"> Circulo();</text>
+  <text class="text code" x="60" y="510">c.dibujar();</text>
+  <text class="text code" x="60" y="530">c.redimensionar(</text>
+  <text class="text code" x="185" y="530" fill="#f39c12">1.5</text>
+  <text class="text code" x="210" y="530">);</text>
+  <text class="text code" x="60" y="550">c.rotar(</text>
+  <text class="text code" x="120" y="550" fill="#f39c12">45</text>
+  <text class="text code" x="140" y="550">);</text>
+  
+  <!-- Note -->
+  <rect fill="#34495e" x="650" y="350" width="230" height="100" rx="5"/>
+  <text class="text label" x="765" y="375" text-anchor="middle" font-weight="bold">✨ Ventajas</text>
+  <text class="text code" x="660" y="395">• Múltiples capacidades</text>
+  <text class="text code" x="660" y="415">• Sin jerarquía rígida</text>
+  <text class="text code" x="660" y="435">• Máxima flexibilidad</text>
+</svg>
