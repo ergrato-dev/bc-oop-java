@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <!-- Fondo oscuro -->
+  <rect width="800" height="600" fill="#1a1a1a"/>
+  
+  <!-- Título -->
+  <text x="400" y="40" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#ecf0f1" text-anchor="middle">
+    Clases Abstractas en Java
+  </text>
+  
+  <!-- Línea divisoria -->
+  <line x1="50" y1="60" x2="750" y2="60" stroke="#34495e" stroke-width="2"/>
+  
+  <!-- Clase Abstracta (Superior) -->
+  <g id="clase-abstracta">
+    <rect x="280" y="90" width="240" height="180" fill="#8e44ad" stroke="#9b59b6" stroke-width="3" rx="5"/>
+    
+    <!-- Nombre de clase en cursiva -->
+    <text x="400" y="120" font-family="Arial, sans-serif" font-size="16" font-weight="bold" font-style="italic" fill="#ecf0f1" text-anchor="middle">
+      &lt;&lt;abstract&gt;&gt;
+    </text>
+    <text x="400" y="142" font-family="Arial, sans-serif" font-size="18" font-weight="bold" font-style="italic" fill="#ecf0f1" text-anchor="middle">
+      Empleado
+    </text>
+    <line x1="285" y1="150" x2="515" y2="150" stroke="#ecf0f1" stroke-width="1"/>
+    
+    <!-- Atributos -->
+    <text x="290" y="172" font-family="Arial, sans-serif" font-size="12" fill="#ecf0f1">- nombre: String</text>
+    <text x="290" y="190" font-family="Arial, sans-serif" font-size="12" fill="#ecf0f1">- salarioBase: double</text>
+    <line x1="285" y1="200" x2="515" y2="200" stroke="#ecf0f1" stroke-width="1"/>
+    
+    <!-- Métodos -->
+    <text x="290" y="220" font-family="Arial, sans-serif" font-size="12" fill="#ecf0f1">+ getNombre(): String</text>
+    <text x="290" y="238" font-family="Arial, sans-serif" font-size="12" font-style="italic" fill="#f39c12">+ calcularSalario(): double</text>
+    <text x="290" y="256" font-family="Arial, sans-serif" font-size="12" fill="#ecf0f1">+ mostrarInfo(): void</text>
+  </g>
+  
+  <!-- Etiqueta de método abstracto -->
+  <rect x="530" y="220" width="150" height="30" fill="#34495e" stroke="#7f8c8d" stroke-width="1" rx="3"/>
+  <text x="605" y="240" font-family="Arial, sans-serif" font-size="11" fill="#f39c12" text-anchor="middle">
+    Método abstracto
+  </text>
+  <path d="M 520 235 L 530 235" stroke="#f39c12" stroke-width="2"/>
+  
+  <!-- Flechas de herencia -->
+  <path d="M 320 270 L 320 350" stroke="#ecf0f1" stroke-width="2" fill="none"/>
+  <path d="M 400 270 L 400 350" stroke="#ecf0f1" stroke-width="2" fill="none"/>
+  <path d="M 480 270 L 480 350" stroke="#ecf0f1" stroke-width="2" fill="none"/>
+  
+  <!-- Triángulo de herencia -->
+  <polygon points="400,270 410,285 390,285" fill="#ecf0f1"/>
+  
+  <!-- Clases Concretas -->
+  <g id="clases-concretas">
+    <!-- EmpleadoPlanta -->
+    <rect x="80" y="350" width="200" height="140" fill="#27ae60" stroke="#2ecc71" stroke-width="2" rx="5"/>
+    <text x="180" y="375" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#ecf0f1" text-anchor="middle">
+      EmpleadoPlanta
+    </text>
+    <line x1="85" y1="383" x2="275" y2="383" stroke="#ecf0f1" stroke-width="1"/>
+    
+    <text x="90" y="403" font-family="Arial, sans-serif" font-size="11" fill="#ecf0f1">- bonificacion: double</text>
+    <line x1="85" y1="413" x2="275" y2="413" stroke="#ecf0f1" stroke-width="1"/>
+    
+    <text x="90" y="433" font-family="Arial, sans-serif" font-size="11" fill="#ecf0f1">+ EmpleadoPlanta(...)</text>
+    <text x="90" y="450" font-family="Arial, sans-serif" font-size="11" fill="#2ecc71">@Override</text>
+    <text x="90" y="467" font-family="Arial, sans-serif" font-size="11" fill="#ecf0f1">+ calcularSalario(): double</text>
+    <text x="90" y="484" font-family="Arial, sans-serif" font-size="11" fill="#95a5a6" font-style="italic">  // salario + bonificacion</text>
+    
+    <!-- EmpleadoContrato -->
+    <rect x="300" y="350" width="200" height="140" fill="#27ae60" stroke="#2ecc71" stroke-width="2" rx="5"/>
+    <text x="400" y="375" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#ecf0f1" text-anchor="middle">
+      EmpleadoContrato
+    </text>
+    <line x1="305" y1="383" x2="495" y2="383" stroke="#ecf0f1" stroke-width="1"/>
+    
+    <text x="310" y="403" font-family="Arial, sans-serif" font-size="11" fill="#ecf0f1">- horasTrabajadas: int</text>
+    <text x="310" y="420" font-family="Arial, sans-serif" font-size="11" fill="#ecf0f1">- valorHora: double</text>
+    <line x1="305" y1="430" x2="495" y2="430" stroke="#ecf0f1" stroke-width="1"/>
+    
+    <text x="310" y="450" font-family="Arial, sans-serif" font-size="11" fill="#2ecc71">@Override</text>
+    <text x="310" y="467" font-family="Arial, sans-serif" font-size="11" fill="#ecf0f1">+ calcularSalario(): double</text>
+    <text x="310" y="484" font-family="Arial, sans-serif" font-size="11" fill="#95a5a6" font-style="italic">  // horas * valorHora</text>
+    
+    <!-- Practicante -->
+    <rect x="520" y="350" width="200" height="140" fill="#27ae60" stroke="#2ecc71" stroke-width="2" rx="5"/>
+    <text x="620" y="375" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#ecf0f1" text-anchor="middle">
+      Practicante
+    </text>
+    <line x1="525" y1="383" x2="715" y2="383" stroke="#ecf0f1" stroke-width="1"/>
+    
+    <text x="530" y="403" font-family="Arial, sans-serif" font-size="11" fill="#ecf0f1">- auxilio: double</text>
+    <line x1="525" y1="413" x2="715" y2="413" stroke="#ecf0f1" stroke-width="1"/>
+    
+    <text x="530" y="433" font-family="Arial, sans-serif" font-size="11" fill="#ecf0f1">+ Practicante(...)</text>
+    <text x="530" y="450" font-family="Arial, sans-serif" font-size="11" fill="#2ecc71">@Override</text>
+    <text x="530" y="467" font-family="Arial, sans-serif" font-size="11" fill="#ecf0f1">+ calcularSalario(): double</text>
+    <text x="530" y="484" font-family="Arial, sans-serif" font-size="11" fill="#95a5a6" font-style="italic">  // auxilio</text>
+  </g>
+  
+  <!-- Notas clave -->
+  <rect x="50" y="510" width="350" height="75" fill="#34495e" stroke="#7f8c8d" stroke-width="1" rx="5"/>
+  <text x="225" y="532" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#3498db" text-anchor="middle">
+    Características Clases Abstractas
+  </text>
+  <text x="60" y="552" font-family="Arial, sans-serif" font-size="11" fill="#ecf0f1">• No se pueden instanciar directamente</text>
+  <text x="60" y="568" font-family="Arial, sans-serif" font-size="11" fill="#ecf0f1">• Pueden tener métodos abstractos y concretos</text>
+  <text x="60" y="584" font-family="Arial, sans-serif" font-size="11" fill="#ecf0f1">• Subclases DEBEN implementar métodos abstractos</text>
+  
+  <!-- Código ejemplo -->
+  <rect x="420" y="510" width="330" height="75" fill="#2c3e50" stroke="#34495e" stroke-width="1" rx="5"/>
+  <text x="585" y="532" font-family="Courier New, monospace" font-size="11" fill="#e74c3c" text-anchor="middle">
+    // NO SE PUEDE:
+  </text>
+  <text x="430" y="552" font-family="Courier New, monospace" font-size="10" fill="#95a5a6">
+    Empleado emp = new Empleado(...);
+  </text>
+  <text x="430" y="568" font-family="Courier New, monospace" font-size="10" fill="#95a5a6" text-decoration="line-through">
+    // ❌ Error de compilación
+  </text>
+  <text x="430" y="584" font-family="Courier New, monospace" font-size="10" fill="#2ecc71">
+    Empleado emp = new EmpleadoPlanta(...); ✓
+  </text>
+</svg>

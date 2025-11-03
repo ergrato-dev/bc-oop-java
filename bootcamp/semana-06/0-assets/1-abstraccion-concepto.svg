@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <!-- Fondo oscuro -->
+  <rect width="800" height="600" fill="#1a1a1a"/>
+  
+  <!-- Título -->
+  <text x="400" y="40" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#ecf0f1" text-anchor="middle">
+    Concepto de Abstracción en POO
+  </text>
+  
+  <!-- Línea divisoria -->
+  <line x1="50" y1="60" x2="750" y2="60" stroke="#34495e" stroke-width="2"/>
+  
+  <!-- Sección Superior: Mundo Real -->
+  <rect x="50" y="80" width="700" height="200" fill="#2c3e50" stroke="#34495e" stroke-width="2" rx="8"/>
+  <text x="400" y="110" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#3498db" text-anchor="middle">
+    Mundo Real - Sistema Complejo
+  </text>
+  
+  <!-- Elementos del mundo real -->
+  <g id="elementos-reales">
+    <!-- Auto completo -->
+    <rect x="80" y="130" width="180" height="120" fill="#34495e" stroke="#7f8c8d" stroke-width="1" rx="5"/>
+    <text x="170" y="155" font-family="Arial, sans-serif" font-size="14" fill="#ecf0f1" text-anchor="middle">Automóvil</text>
+    <text x="90" y="180" font-family="Arial, sans-serif" font-size="11" fill="#95a5a6">• Motor (4 cilindros)</text>
+    <text x="90" y="200" font-family="Arial, sans-serif" font-size="11" fill="#95a5a6">• Transmisión (manual)</text>
+    <text x="90" y="220" font-family="Arial, sans-serif" font-size="11" fill="#95a5a6">• Sistema eléctrico</text>
+    <text x="90" y="240" font-family="Arial, sans-serif" font-size="11" fill="#95a5a6">• +50 componentes...</text>
+  </g>
+  
+  <!-- Flecha hacia abajo (Abstracción) -->
+  <path d="M 400 290 L 400 340" stroke="#e74c3c" stroke-width="3" fill="none" marker-end="url(#arrowRed)"/>
+  <text x="420" y="320" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#e74c3c">
+    ABSTRACCIÓN
+  </text>
+  
+  <!-- Sección Inferior: Modelo Abstracto -->
+  <rect x="50" y="350" width="700" height="200" fill="#2c3e50" stroke="#34495e" stroke-width="2" rx="8"/>
+  <text x="400" y="380" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#2ecc71" text-anchor="middle">
+    Modelo Abstracto - Solo lo Esencial
+  </text>
+  
+  <!-- Clase abstracta simplificada -->
+  <g id="modelo-abstracto">
+    <rect x="280" y="400" width="240" height="120" fill="#27ae60" stroke="#2ecc71" stroke-width="2" rx="5"/>
+    <text x="400" y="425" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#ecf0f1" text-anchor="middle">
+      Vehiculo (abstracto)
+    </text>
+    <line x1="285" y1="435" x2="515" y2="435" stroke="#ecf0f1" stroke-width="1"/>
+    
+    <text x="290" y="455" font-family="Arial, sans-serif" font-size="12" fill="#ecf0f1">+ marca: String</text>
+    <text x="290" y="475" font-family="Arial, sans-serif" font-size="12" fill="#ecf0f1">+ velocidad: int</text>
+    <line x1="285" y1="485" x2="515" y2="485" stroke="#ecf0f1" stroke-width="1"/>
+    
+    <text x="290" y="505" font-family="Arial, sans-serif" font-size="12" fill="#ecf0f1">+ acelerar()</text>
+    <text x="290" y="520" font-family="Arial, sans-serif" font-size="12" fill="#ecf0f1">+ frenar()</text>
+  </g>
+  
+  <!-- Nota explicativa -->
+  <rect x="540" y="400" width="200" height="120" fill="#34495e" stroke="#7f8c8d" stroke-width="1" rx="5"/>
+  <text x="640" y="425" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#f39c12" text-anchor="middle">
+    Ventajas
+  </text>
+  <text x="550" y="450" font-family="Arial, sans-serif" font-size="11" fill="#ecf0f1">✓ Oculta complejidad</text>
+  <text x="550" y="470" font-family="Arial, sans-serif" font-size="11" fill="#ecf0f1">✓ Enfoca en esencial</text>
+  <text x="550" y="490" font-family="Arial, sans-serif" font-size="11" fill="#ecf0f1">✓ Facilita mantenimiento</text>
+  <text x="550" y="510" font-family="Arial, sans-serif" font-size="11" fill="#ecf0f1">✓ Reutilización de código</text>
+  
+  <!-- Definición en pie de página -->
+  <rect x="50" y="560" width="700" height="30" fill="#34495e" stroke="#34495e" stroke-width="1" rx="5"/>
+  <text x="400" y="582" font-family="Arial, sans-serif" font-size="12" fill="#ecf0f1" text-anchor="middle">
+    Abstracción: Ocultar detalles de implementación y mostrar solo la funcionalidad esencial
+  </text>
+  
+  <!-- Marcadores de flecha -->
+  <defs>
+    <marker id="arrowRed" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#e74c3c"/>
+    </marker>
+  </defs>
+</svg>
