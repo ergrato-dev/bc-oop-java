@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 650">
+  <rect width="1000" height="650" fill="#0d1117"/>
+  
+  <text x="500" y="40" font-family="Arial" font-size="28" font-weight="bold" fill="#58a6ff" text-anchor="middle">
+    Generics en Java - Fundamentos
+  </text>
+  
+  <!-- Sin Generics -->
+  <text x="250" y="90" font-family="Arial" font-size="20" font-weight="bold" fill="#f85149" text-anchor="middle">
+    ❌ Sin Generics (Antiguo)
+  </text>
+  
+  <rect x="50" y="110" width="400" height="200" fill="#161b22" stroke="#f85149" stroke-width="2" rx="8"/>
+  <text x="70" y="140" font-family="monospace" font-size="14" fill="#8b949e">// Sin type safety</text>
+  <text x="70" y="165" font-family="monospace" font-size="14" fill="#ff7b72">List</text>
+  <text x="115" y="165" font-family="monospace" font-size="14" fill="#c9d1d9"> lista = </text>
+  <text x="200" y="165" font-family="monospace" font-size="14" fill="#ff7b72">new</text>
+  <text x="235" y="165" font-family="monospace" font-size="14" fill="#79c0ff"> ArrayList</text>
+  <text x="335" y="165" font-family="monospace" font-size="14" fill="#c9d1d9">();</text>
+  
+  <text x="70" y="195" font-family="monospace" font-size="14" fill="#c9d1d9">lista.add(</text>
+  <text x="170" y="195" font-family="monospace" font-size="14" fill="#a5d6ff">"Hola"</text>
+  <text x="225" y="195" font-family="monospace" font-size="14" fill="#c9d1d9">);</text>
+  
+  <text x="70" y="220" font-family="monospace" font-size="14" fill="#c9d1d9">lista.add(</text>
+  <text x="170" y="220" font-family="monospace" font-size="14" fill="#79c0ff">42</text>
+  <text x="195" y="220" font-family="monospace" font-size="14" fill="#c9d1d9">);  </text>
+  <text x="220" y="220" font-family="monospace" font-size="14" fill="#8b949e">// Acepta cualquier tipo!</text>
+  
+  <text x="70" y="255" font-family="monospace" font-size="14" fill="#79c0ff">String</text>
+  <text x="135" y="255" font-family="monospace" font-size="14" fill="#c9d1d9"> s = (</text>
+  <text x="185" y="255" font-family="monospace" font-size="14" fill="#79c0ff">String</text>
+  <text x="250" y="255" font-family="monospace" font-size="14" fill="#c9d1d9">) lista.get(0);</text>
+  
+  <text x="70" y="280" font-family="monospace" font-size="14" fill="#79c0ff">String</text>
+  <text x="135" y="280" font-family="monospace" font-size="14" fill="#c9d1d9"> n = (</text>
+  <text x="185" y="280" font-family="monospace" font-size="14" fill="#79c0ff">String</text>
+  <text x="250" y="280" font-family="monospace" font-size="14" fill="#c9d1d9">) lista.get(1);</text>
+  
+  <text x="70" y="300" font-family="monospace" font-size="13" font-weight="bold" fill="#f85149">// ❌ ClassCastException en runtime!</text>
+  
+  <!-- Con Generics -->
+  <text x="750" y="90" font-family="Arial" font-size="20" font-weight="bold" fill="#3fb950" text-anchor="middle">
+    ✅ Con Generics (Moderno)
+  </text>
+  
+  <rect x="550" y="110" width="400" height="200" fill="#161b22" stroke="#3fb950" stroke-width="2" rx="8"/>
+  <text x="570" y="140" font-family="monospace" font-size="14" fill="#8b949e">// Type safe</text>
+  <text x="570" y="165" font-family="monospace" font-size="14" fill="#ff7b72">List</text>
+  <text x="615" y="165" font-family="monospace" font-size="14" fill="#c9d1d9">&lt;</text>
+  <text x="630" y="165" font-family="monospace" font-size="14" fill="#79c0ff">String</text>
+  <text x="690" y="165" font-family="monospace" font-size="14" fill="#c9d1d9">&gt; lista = </text>
+  <text x="790" y="165" font-family="monospace" font-size="14" fill="#ff7b72">new</text>
+  <text x="825" y="165" font-family="monospace" font-size="14" fill="#79c0ff"> ArrayList</text>
+  <text x="925" y="165" font-family="monospace" font-size="14" fill="#c9d1d9">&lt;&gt;();</text>
+  
+  <text x="570" y="195" font-family="monospace" font-size="14" fill="#c9d1d9">lista.add(</text>
+  <text x="670" y="195" font-family="monospace" font-size="14" fill="#a5d6ff">"Hola"</text>
+  <text x="725" y="195" font-family="monospace" font-size="14" fill="#c9d1d9">);</text>
+  
+  <text x="570" y="220" font-family="monospace" font-size="14" fill="#8b949e">// lista.add(42);  </text>
+  <text x="740" y="220" font-family="monospace" font-size="14" fill="#8b949e">❌ Error de compilación</text>
+  
+  <text x="570" y="255" font-family="monospace" font-size="14" fill="#79c0ff">String</text>
+  <text x="635" y="255" font-family="monospace" font-size="14" fill="#c9d1d9"> s = lista.get(0);  </text>
+  <text x="800" y="255" font-family="monospace" font-size="14" fill="#8b949e">// Sin cast</text>
+  
+  <text x="570" y="290" font-family="monospace" font-size="13" font-weight="bold" fill="#3fb950">// ✅ Error detectado en compilación</text>
+  
+  <!-- Sintaxis de Type Parameters -->
+  <rect x="50" y="340" width="900" height="280" fill="#161b22" stroke="#58a6ff" stroke-width="2" rx="8"/>
+  <text x="500" y="370" font-family="Arial" font-size="18" font-weight="bold" fill="#58a6ff" text-anchor="middle">
+    Type Parameters - Convenciones
+  </text>
+  
+  <text x="70" y="410" font-family="monospace" font-size="15" fill="#d2a8ff" font-weight="bold">E</text>
+  <text x="95" y="410" font-family="Arial" font-size="14" fill="#c9d1d9"> - Element</text>
+  <text x="240" y="410" font-family="monospace" font-size="13" fill="#8b949e">Collection&lt;E&gt;, List&lt;E&gt;, Set&lt;E&gt;</text>
+  
+  <text x="70" y="440" font-family="monospace" font-size="15" fill="#d2a8ff" font-weight="bold">K</text>
+  <text x="95" y="440" font-family="Arial" font-size="14" fill="#c9d1d9"> - Key</text>
+  <text x="240" y="440" font-family="monospace" font-size="13" fill="#8b949e">Map&lt;K, V&gt;</text>
+  
+  <text x="70" y="470" font-family="monospace" font-size="15" fill="#d2a8ff" font-weight="bold">V</text>
+  <text x="95" y="470" font-family="Arial" font-size="14" fill="#c9d1d9"> - Value</text>
+  <text x="240" y="470" font-family="monospace" font-size="13" fill="#8b949e">Map&lt;K, V&gt;</text>
+  
+  <text x="70" y="500" font-family="monospace" font-size="15" fill="#d2a8ff" font-weight="bold">T</text>
+  <text x="95" y="500" font-family="Arial" font-size="14" fill="#c9d1d9"> - Type</text>
+  <text x="240" y="500" font-family="monospace" font-size="13" fill="#8b949e">Clase&lt;T&gt;</text>
+  
+  <text x="70" y="530" font-family="monospace" font-size="15" fill="#d2a8ff" font-weight="bold">N</text>
+  <text x="95" y="530" font-family="Arial" font-size="14" fill="#c9d1d9"> - Number</text>
+  <text x="240" y="530" font-family="monospace" font-size="13" fill="#8b949e">Calculadora&lt;N extends Number&gt;</text>
+  
+  <!-- Wildcards -->
+  <text x="520" y="400" font-family="Arial" font-size="16" font-weight="bold" fill="#d29922">Wildcards:</text>
+  
+  <text x="520" y="430" font-family="monospace" font-size="14" fill="#d29922">?</text>
+  <text x="570" y="430" font-family="Arial" font-size="14" fill="#c9d1d9"> - Cualquier tipo</text>
+  <text x="520" y="450" font-family="monospace" font-size="13" fill="#8b949e">List&lt;?&gt; lista;</text>
+  
+  <text x="520" y="485" font-family="monospace" font-size="14" fill="#d29922">? extends T</text>
+  <text x="650" y="485" font-family="Arial" font-size="14" fill="#c9d1d9"> - T o subtipos</text>
+  <text x="520" y="505" font-family="monospace" font-size="13" fill="#8b949e">List&lt;? extends Number&gt; numeros;</text>
+  
+  <text x="520" y="540" font-family="monospace" font-size="14" fill="#d29922">? super T</text>
+  <text x="635" y="540" font-family="Arial" font-size="14" fill="#c9d1d9"> - T o supertipos</text>
+  <text x="520" y="560" font-family="monospace" font-size="13" fill="#8b949e">List&lt;? super Integer&gt; lista;</text>
+  
+  <!-- Ejemplo de clase genérica -->
+  <text x="70" y="595" font-family="Arial" font-size="15" font-weight="bold" fill="#79c0ff">Ejemplo: Clase Genérica</text>
+  <text x="70" y="615" font-family="monospace" font-size="13" fill="#ff7b72">public class</text>
+  <text x="190" y="615" font-family="monospace" font-size="13" fill="#79c0ff"> Caja</text>
+  <text x="230" y="615" font-family="monospace" font-size="13" fill="#c9d1d9">&lt;</text>
+  <text x="245" y="615" font-family="monospace" font-size="13" fill="#d2a8ff">T</text>
+  <text x="260" y="615" font-family="monospace" font-size="13" fill="#c9d1d9">&gt; { </text>
+  <text x="320" y="615" font-family="monospace" font-size="13" fill="#ff7b72">private</text>
+  <text x="385" y="615" font-family="monospace" font-size="13" fill="#d2a8ff"> T</text>
+  <text x="400" y="615" font-family="monospace" font-size="13" fill="#c9d1d9"> contenido; }</text>
+  
+  <text x="520" y="595" font-family="Arial" font-size="15" font-weight="bold" fill="#79c0ff">Uso:</text>
+  <text x="520" y="615" font-family="monospace" font-size="13" fill="#79c0ff">Caja</text>
+  <text x="565" y="615" font-family="monospace" font-size="13" fill="#c9d1d9">&lt;</text>
+  <text x="580" y="615" font-family="monospace" font-size="13" fill="#79c0ff">String</text>
+  <text x="640" y="615" font-family="monospace" font-size="13" fill="#c9d1d9">&gt; caja = </text>
+  <text x="720" y="615" font-family="monospace" font-size="13" fill="#ff7b72">new</text>
+  <text x="755" y="615" font-family="monospace" font-size="13" fill="#79c0ff"> Caja</text>
+  <text x="810" y="615" font-family="monospace" font-size="13" fill="#c9d1d9">&lt;&gt;();</text>
+</svg>
