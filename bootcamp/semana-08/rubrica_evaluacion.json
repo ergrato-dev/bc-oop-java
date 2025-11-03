@@ -1,0 +1,701 @@
+{
+  "semana": 8,
+  "titulo": "Colecciones y Programación Genérica",
+  "duracion_horas": 4,
+  "nota_aprobacion": 3.0,
+  "nota_maxima": 5.0,
+  
+  "distribucion_evaluacion": {
+    "conocimiento": {
+      "peso": 0.30,
+      "descripcion": "Cuestionarios, preguntas teóricas"
+    },
+    "desempeno": {
+      "peso": 0.40,
+      "descripcion": "Ejercicios prácticos, talleres"
+    },
+    "producto": {
+      "peso": 0.30,
+      "descripcion": "Proyecto de agenda de contactos"
+    }
+  },
+  
+  "evidencias_conocimiento": [
+    {
+      "id": "C1",
+      "nombre": "Cuestionario sobre Colecciones",
+      "peso": 0.15,
+      "criterios": [
+        {
+          "nombre": "Diferencias Arrays vs Colecciones",
+          "niveles": {
+            "excelente": {
+              "valor": 5.0,
+              "descripcion": "Explica claramente 4+ diferencias con ejemplos concretos"
+            },
+            "bueno": {
+              "valor": 4.0,
+              "descripcion": "Explica 3 diferencias correctamente"
+            },
+            "suficiente": {
+              "valor": 3.0,
+              "descripcion": "Identifica 2 diferencias básicas"
+            },
+            "insuficiente": {
+              "valor": 2.0,
+              "descripcion": "No diferencia o explica incorrectamente"
+            }
+          }
+        },
+        {
+          "nombre": "Interfaces principales",
+          "niveles": {
+            "excelente": {
+              "valor": 5.0,
+              "descripcion": "Identifica y explica List, Set, Map con casos de uso específicos"
+            },
+            "bueno": {
+              "valor": 4.0,
+              "descripcion": "Identifica las 3 interfaces con explicación básica"
+            },
+            "suficiente": {
+              "valor": 3.0,
+              "descripcion": "Identifica 2 interfaces correctamente"
+            },
+            "insuficiente": {
+              "valor": 2.0,
+              "descripcion": "Confunde las interfaces o no las identifica"
+            }
+          }
+        },
+        {
+          "nombre": "Cuándo usar cada colección",
+          "niveles": {
+            "excelente": {
+              "valor": 5.0,
+              "descripcion": "Justifica correctamente 5+ escenarios de uso"
+            },
+            "bueno": {
+              "valor": 4.0,
+              "descripcion": "Justifica 3-4 escenarios apropiadamente"
+            },
+            "suficiente": {
+              "valor": 3.0,
+              "descripcion": "Justifica 2 escenarios básicos"
+            },
+            "insuficiente": {
+              "valor": 2.0,
+              "descripcion": "No justifica o lo hace incorrectamente"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "C2",
+      "nombre": "Evaluación de Generics",
+      "peso": 0.15,
+      "criterios": [
+        {
+          "nombre": "Sintaxis de Generics",
+          "niveles": {
+            "excelente": {
+              "valor": 5.0,
+              "descripcion": "Escribe correctamente 5+ declaraciones genéricas"
+            },
+            "bueno": {
+              "valor": 4.0,
+              "descripcion": "Escribe 3-4 declaraciones correctas"
+            },
+            "suficiente": {
+              "valor": 3.0,
+              "descripcion": "Escribe 2 declaraciones básicas"
+            },
+            "insuficiente": {
+              "valor": 2.0,
+              "descripcion": "Sintaxis incorrecta o no comprende"
+            }
+          }
+        },
+        {
+          "nombre": "Type Safety",
+          "niveles": {
+            "excelente": {
+              "valor": 5.0,
+              "descripcion": "Explica beneficios y prevención de errores con ejemplos"
+            },
+            "bueno": {
+              "valor": 4.0,
+              "descripcion": "Explica beneficios básicos correctamente"
+            },
+            "suficiente": {
+              "valor": 3.0,
+              "descripcion": "Identifica al menos 1 beneficio"
+            },
+            "insuficiente": {
+              "valor": 2.0,
+              "descripcion": "No comprende el concepto"
+            }
+          }
+        },
+        {
+          "nombre": "Wildcards y Bounds",
+          "niveles": {
+            "excelente": {
+              "valor": 5.0,
+              "descripcion": "Explica <?>, <? extends>, <? super>"
+            },
+            "bueno": {
+              "valor": 4.0,
+              "descripcion": "Explica al menos 2 conceptos"
+            },
+            "suficiente": {
+              "valor": 3.0,
+              "descripcion": "Explica wildcards básicos"
+            },
+            "insuficiente": {
+              "valor": 2.0,
+              "descripcion": "No comprende wildcards"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  
+  "evidencias_desempeno": [
+    {
+      "id": "D1",
+      "nombre": "Ejercicio 1: Sistema de Inventario con ArrayList",
+      "peso": 0.10,
+      "criterios": [
+        {
+          "nombre": "Uso de ArrayList",
+          "niveles": {
+            "excelente": {
+              "valor": 5.0,
+              "descripcion": "Implementa todas las operaciones (add, remove, get, size) correctamente"
+            },
+            "bueno": {
+              "valor": 4.0,
+              "descripcion": "Implementa 3-4 operaciones correctamente"
+            },
+            "suficiente": {
+              "valor": 3.0,
+              "descripcion": "Implementa 2 operaciones básicas"
+            },
+            "insuficiente": {
+              "valor": 2.0,
+              "descripcion": "Implementación incorrecta o incompleta"
+            }
+          }
+        },
+        {
+          "nombre": "Generics",
+          "niveles": {
+            "excelente": {
+              "valor": 5.0,
+              "descripcion": "Usa tipos genéricos apropiadamente en toda la implementación"
+            },
+            "bueno": {
+              "valor": 4.0,
+              "descripcion": "Usa generics en la mayoría del código"
+            },
+            "suficiente": {
+              "valor": 3.0,
+              "descripcion": "Usa generics básicamente"
+            },
+            "insuficiente": {
+              "valor": 2.0,
+              "descripcion": "No usa generics o uso incorrecto"
+            }
+          }
+        },
+        {
+          "nombre": "Funcionalidad",
+          "niveles": {
+            "excelente": {
+              "valor": 5.0,
+              "descripcion": "Sistema completo con búsqueda, filtrado y actualización"
+            },
+            "bueno": {
+              "valor": 4.0,
+              "descripcion": "Operaciones CRUD básicas funcionan"
+            },
+            "suficiente": {
+              "valor": 3.0,
+              "descripcion": "Funcionalidad mínima operativa"
+            },
+            "insuficiente": {
+              "valor": 2.0,
+              "descripcion": "No funciona o tiene errores críticos"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "D2",
+      "nombre": "Ejercicio 2: Agenda de Contactos con HashMap",
+      "peso": 0.15,
+      "criterios": [
+        {
+          "nombre": "Uso de HashMap",
+          "niveles": {
+            "excelente": {
+              "valor": 5.0,
+              "descripcion": "Implementa correctamente put, get, remove, containsKey"
+            },
+            "bueno": {
+              "valor": 4.0,
+              "descripcion": "Implementa 3 métodos correctamente"
+            },
+            "suficiente": {
+              "valor": 3.0,
+              "descripcion": "Implementa 2 métodos básicos"
+            },
+            "insuficiente": {
+              "valor": 2.0,
+              "descripcion": "Implementación incorrecta"
+            }
+          }
+        },
+        {
+          "nombre": "Clave-Valor apropiado",
+          "niveles": {
+            "excelente": {
+              "valor": 5.0,
+              "descripcion": "Diseño óptimo de clave (ej: ID único) y objeto complejo como valor"
+            },
+            "bueno": {
+              "valor": 4.0,
+              "descripcion": "Diseño funcional de clave-valor"
+            },
+            "suficiente": {
+              "valor": 3.0,
+              "descripcion": "Diseño básico funcional"
+            },
+            "insuficiente": {
+              "valor": 2.0,
+              "descripcion": "Diseño inadecuado o confuso"
+            }
+          }
+        },
+        {
+          "nombre": "Búsqueda y filtrado",
+          "niveles": {
+            "excelente": {
+              "valor": 5.0,
+              "descripcion": "Implementa búsquedas avanzadas (por nombre, teléfono, etc.)"
+            },
+            "bueno": {
+              "valor": 4.0,
+              "descripcion": "Implementa búsqueda por clave"
+            },
+            "suficiente": {
+              "valor": 3.0,
+              "descripcion": "Búsqueda básica funcional"
+            },
+            "insuficiente": {
+              "valor": 2.0,
+              "descripcion": "No implementa búsqueda"
+            }
+          }
+        },
+        {
+          "nombre": "Iteración",
+          "niveles": {
+            "excelente": {
+              "valor": 5.0,
+              "descripcion": "Usa entrySet(), keySet(), values() apropiadamente"
+            },
+            "bueno": {
+              "valor": 4.0,
+              "descripcion": "Usa 2 formas de iteración"
+            },
+            "suficiente": {
+              "valor": 3.0,
+              "descripcion": "Itera de forma básica"
+            },
+            "insuficiente": {
+              "valor": 2.0,
+              "descripcion": "No itera o lo hace incorrectamente"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "D3",
+      "nombre": "Ejercicio 3: Gestión de Productos con Set",
+      "peso": 0.10,
+      "criterios": [
+        {
+          "nombre": "Uso de Set",
+          "niveles": {
+            "excelente": {
+              "valor": 5.0,
+              "descripcion": "Implementa HashSet/TreeSet con eliminación efectiva de duplicados"
+            },
+            "bueno": {
+              "valor": 4.0,
+              "descripcion": "Usa Set correctamente con operaciones básicas"
+            },
+            "suficiente": {
+              "valor": 3.0,
+              "descripcion": "Implementación funcional mínima"
+            },
+            "insuficiente": {
+              "valor": 2.0,
+              "descripcion": "No elimina duplicados o uso incorrecto"
+            }
+          }
+        },
+        {
+          "nombre": "equals() y hashCode()",
+          "niveles": {
+            "excelente": {
+              "valor": 5.0,
+              "descripcion": "Sobrescribe ambos métodos correctamente en clase personalizada"
+            },
+            "bueno": {
+              "valor": 4.0,
+              "descripcion": "Sobrescribe correctamente uno de los métodos"
+            },
+            "suficiente": {
+              "valor": 3.0,
+              "descripcion": "Implementación básica de comparación"
+            },
+            "insuficiente": {
+              "valor": 2.0,
+              "descripcion": "No implementa o implementa incorrectamente"
+            }
+          }
+        },
+        {
+          "nombre": "Operaciones de conjuntos",
+          "niveles": {
+            "excelente": {
+              "valor": 5.0,
+              "descripcion": "Implementa union, intersección, diferencia"
+            },
+            "bueno": {
+              "valor": 4.0,
+              "descripcion": "Implementa 2 operaciones de conjuntos"
+            },
+            "suficiente": {
+              "valor": 3.0,
+              "descripcion": "Implementa 1 operación básica"
+            },
+            "insuficiente": {
+              "valor": 2.0,
+              "descripcion": "No implementa operaciones de conjuntos"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "D4",
+      "nombre": "Taller: Iteradores y Bucles",
+      "peso": 0.05,
+      "criterios": [
+        {
+          "nombre": "For-each loop",
+          "niveles": {
+            "excelente": {
+              "valor": 5.0,
+              "descripcion": "Usa for-each en todos los casos apropiados"
+            },
+            "bueno": {
+              "valor": 4.0,
+              "descripcion": "Usa for-each en la mayoría de los casos"
+            },
+            "suficiente": {
+              "valor": 3.0,
+              "descripcion": "Usa for-each básicamente"
+            },
+            "insuficiente": {
+              "valor": 2.0,
+              "descripcion": "No usa for-each o uso incorrecto"
+            }
+          }
+        },
+        {
+          "nombre": "Iterator explícito",
+          "niveles": {
+            "excelente": {
+              "valor": 5.0,
+              "descripcion": "Implementa Iterator para operaciones de eliminación segura"
+            },
+            "bueno": {
+              "valor": 4.0,
+              "descripcion": "Usa Iterator correctamente"
+            },
+            "suficiente": {
+              "valor": 3.0,
+              "descripcion": "Uso básico de Iterator"
+            },
+            "insuficiente": {
+              "valor": 2.0,
+              "descripcion": "No usa Iterator o uso incorrecto"
+            }
+          }
+        },
+        {
+          "nombre": "Comparación de métodos",
+          "niveles": {
+            "excelente": {
+              "valor": 5.0,
+              "descripcion": "Compara rendimiento y casos de uso de 3+ formas de iteración"
+            },
+            "bueno": {
+              "valor": 4.0,
+              "descripcion": "Compara 2 formas de iteración"
+            },
+            "suficiente": {
+              "valor": 3.0,
+              "descripcion": "Identifica diferencias básicas"
+            },
+            "insuficiente": {
+              "valor": 2.0,
+              "descripcion": "No comprende diferencias"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  
+  "evidencias_producto": [
+    {
+      "id": "P1",
+      "nombre": "Proyecto: Agenda de Contactos Completa",
+      "peso": 0.30,
+      "criterios": [
+        {
+          "nombre": "Arquitectura",
+          "niveles": {
+            "excelente": {
+              "valor": 5.0,
+              "descripcion": "Usa ArrayList para historial + HashMap para búsqueda rápida"
+            },
+            "bueno": {
+              "valor": 4.0,
+              "descripcion": "Usa 2 colecciones apropiadamente"
+            },
+            "suficiente": {
+              "valor": 3.0,
+              "descripcion": "Usa 1 colección adecuada"
+            },
+            "insuficiente": {
+              "valor": 2.0,
+              "descripcion": "Estructura de datos inadecuada"
+            }
+          }
+        },
+        {
+          "nombre": "Operaciones CRUD",
+          "niveles": {
+            "excelente": {
+              "valor": 5.0,
+              "descripcion": "Implementa Create, Read, Update, Delete completamente"
+            },
+            "bueno": {
+              "valor": 4.0,
+              "descripcion": "Implementa 3 operaciones correctamente"
+            },
+            "suficiente": {
+              "valor": 3.0,
+              "descripcion": "Implementa 2 operaciones básicas"
+            },
+            "insuficiente": {
+              "valor": 2.0,
+              "descripcion": "Funcionalidad incompleta o errónea"
+            }
+          }
+        },
+        {
+          "nombre": "Búsqueda y filtrado",
+          "niveles": {
+            "excelente": {
+              "valor": 5.0,
+              "descripcion": "Múltiples criterios de búsqueda (nombre, teléfono, email)"
+            },
+            "bueno": {
+              "valor": 4.0,
+              "descripcion": "2 criterios de búsqueda"
+            },
+            "suficiente": {
+              "valor": 3.0,
+              "descripcion": "1 criterio de búsqueda"
+            },
+            "insuficiente": {
+              "valor": 2.0,
+              "descripcion": "No implementa búsqueda"
+            }
+          }
+        },
+        {
+          "nombre": "Generics y Type Safety",
+          "niveles": {
+            "excelente": {
+              "valor": 5.0,
+              "descripcion": "Código 100% type-safe con generics apropiados"
+            },
+            "bueno": {
+              "valor": 4.0,
+              "descripcion": "Mayoría del código usa generics"
+            },
+            "suficiente": {
+              "valor": 3.0,
+              "descripcion": "Uso básico de generics"
+            },
+            "insuficiente": {
+              "valor": 2.0,
+              "descripcion": "No usa generics o uso incorrecto"
+            }
+          }
+        },
+        {
+          "nombre": "Manejo de excepciones",
+          "niveles": {
+            "excelente": {
+              "valor": 5.0,
+              "descripcion": "Valida entradas y maneja excepciones apropiadamente"
+            },
+            "bueno": {
+              "valor": 4.0,
+              "descripcion": "Manejo básico de excepciones"
+            },
+            "suficiente": {
+              "valor": 3.0,
+              "descripcion": "Validación mínima"
+            },
+            "insuficiente": {
+              "valor": 2.0,
+              "descripcion": "No valida o maneja excepciones"
+            }
+          }
+        },
+        {
+          "nombre": "Documentación",
+          "niveles": {
+            "excelente": {
+              "valor": 5.0,
+              "descripcion": "Javadoc completo + README con instrucciones de uso"
+            },
+            "bueno": {
+              "valor": 4.0,
+              "descripcion": "Javadoc básico + comentarios"
+            },
+            "suficiente": {
+              "valor": 3.0,
+              "descripcion": "Comentarios mínimos"
+            },
+            "insuficiente": {
+              "valor": 2.0,
+              "descripcion": "Sin documentación"
+            }
+          }
+        },
+        {
+          "nombre": "Código limpio",
+          "niveles": {
+            "excelente": {
+              "valor": 5.0,
+              "descripcion": "Nombres descriptivos, métodos pequeños, buena organización"
+            },
+            "bueno": {
+              "valor": 4.0,
+              "descripcion": "Código generalmente limpio"
+            },
+            "suficiente": {
+              "valor": 3.0,
+              "descripcion": "Código funcional pero desorganizado"
+            },
+            "insuficiente": {
+              "valor": 2.0,
+              "descripcion": "Código difícil de leer o mantener"
+            }
+          }
+        },
+        {
+          "nombre": "Testing",
+          "niveles": {
+            "excelente": {
+              "valor": 5.0,
+              "descripcion": "Incluye casos de prueba para operaciones principales"
+            },
+            "bueno": {
+              "valor": 4.0,
+              "descripcion": "Prueba funcionalidad básica manualmente"
+            },
+            "suficiente": {
+              "valor": 3.0,
+              "descripcion": "Prueba mínima"
+            },
+            "insuficiente": {
+              "valor": 2.0,
+              "descripcion": "No prueba o no funciona"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  
+  "requisitos_minimos_aprobacion": [
+    "Completar al menos 4 de los 5 ejercicios prácticos",
+    "Entregar el proyecto final de agenda de contactos funcional",
+    "Demostrar comprensión de List, Set y Map",
+    "Usar generics apropiadamente en el código",
+    "Asistir al 80% de la sesión práctica"
+  ],
+  
+  "plan_mejoramiento": {
+    "actividades": [
+      {
+        "nombre": "Semana de recuperación",
+        "descripcion": "Repasa los conceptos de colecciones con tutoriales"
+      },
+      {
+        "nombre": "Ejercicios adicionales",
+        "descripcion": "Completa ejercicios de refuerzo proporcionados"
+      },
+      {
+        "nombre": "Tutoría personalizada",
+        "descripcion": "Sesión 1:1 con el instructor (30 min)"
+      },
+      {
+        "nombre": "Evaluación de recuperación",
+        "descripcion": "Nuevo proyecto integrador similar"
+      }
+    ]
+  },
+  
+  "recursos_apoyo": [
+    {
+      "titulo": "Java Collections Framework",
+      "url": "https://docs.oracle.com/javase/8/docs/technotes/guides/collections/",
+      "tipo": "Documentación oficial"
+    },
+    {
+      "titulo": "ArrayList vs LinkedList",
+      "url": "https://www.geeksforgeeks.org/arraylist-vs-linkedlist-java/",
+      "tipo": "Tutorial"
+    },
+    {
+      "titulo": "HashMap Internal Working",
+      "url": "https://www.baeldung.com/java-hashmap",
+      "tipo": "Artículo técnico"
+    }
+  ],
+  
+  "metadata": {
+    "version": "1.0",
+    "fecha_creacion": "2024-11-03",
+    "autor": "SENA - Bootcamp POO Java",
+    "ultima_actualizacion": "2024-11-03"
+  }
+}

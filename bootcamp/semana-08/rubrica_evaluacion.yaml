@@ -1,0 +1,181 @@
+semana: 8
+titulo: "Colecciones y Programación Genérica"
+duracion_horas: 4
+nota_aprobacion: 3.0
+nota_maxima: 5.0
+
+distribucion_evaluacion:
+  conocimiento:
+    peso: 0.30
+    descripcion: "Cuestionarios, preguntas teóricas"
+  desempeno:
+    peso: 0.40
+    descripcion: "Ejercicios prácticos, talleres"
+  producto:
+    peso: 0.30
+    descripcion: "Proyecto de agenda de contactos"
+
+evidencias_conocimiento:
+  - id: C1
+    nombre: "Cuestionario sobre Colecciones"
+    peso: 0.15
+    criterios:
+      - nombre: "Diferencias Arrays vs Colecciones"
+        niveles:
+          excelente:
+            valor: 5.0
+            descripcion: "Explica claramente 4+ diferencias con ejemplos concretos"
+          bueno:
+            valor: 4.0
+            descripcion: "Explica 3 diferencias correctamente"
+          suficiente:
+            valor: 3.0
+            descripcion: "Identifica 2 diferencias básicas"
+          insuficiente:
+            valor: 2.0
+            descripcion: "No diferencia o explica incorrectamente"
+      
+      - nombre: "Interfaces principales"
+        niveles:
+          excelente:
+            valor: 5.0
+            descripcion: "Identifica y explica List, Set, Map con casos de uso específicos"
+          bueno:
+            valor: 4.0
+            descripcion: "Identifica las 3 interfaces con explicación básica"
+          suficiente:
+            valor: 3.0
+            descripcion: "Identifica 2 interfaces correctamente"
+          insuficiente:
+            valor: 2.0
+            descripcion: "Confunde las interfaces o no las identifica"
+      
+      - nombre: "Cuándo usar cada colección"
+        niveles:
+          excelente:
+            valor: 5.0
+            descripcion: "Justifica correctamente 5+ escenarios de uso"
+          bueno:
+            valor: 4.0
+            descripcion: "Justifica 3-4 escenarios apropiadamente"
+          suficiente:
+            valor: 3.0
+            descripcion: "Justifica 2 escenarios básicos"
+          insuficiente:
+            valor: 2.0
+            descripcion: "No justifica o lo hace incorrectamente"
+  
+  - id: C2
+    nombre: "Evaluación de Generics"
+    peso: 0.15
+    criterios:
+      - nombre: "Sintaxis de Generics"
+        niveles:
+          excelente:
+            valor: 5.0
+            descripcion: "Escribe correctamente 5+ declaraciones genéricas"
+          bueno:
+            valor: 4.0
+            descripcion: "Escribe 3-4 declaraciones correctas"
+          suficiente:
+            valor: 3.0
+            descripcion: "Escribe 2 declaraciones básicas"
+          insuficiente:
+            valor: 2.0
+            descripcion: "Sintaxis incorrecta o no comprende"
+      
+      - nombre: "Type Safety"
+        niveles:
+          excelente:
+            valor: 5.0
+            descripcion: "Explica beneficios y prevención de errores con ejemplos"
+          bueno:
+            valor: 4.0
+            descripcion: "Explica beneficios básicos correctamente"
+          suficiente:
+            valor: 3.0
+            descripcion: "Identifica al menos 1 beneficio"
+          insuficiente:
+            valor: 2.0
+            descripcion: "No comprende el concepto"
+      
+      - nombre: "Wildcards y Bounds"
+        niveles:
+          excelente:
+            valor: 5.0
+            descripcion: "Explica <?>, <? extends>, <? super>"
+          bueno:
+            valor: 4.0
+            descripcion: "Explica al menos 2 conceptos"
+          suficiente:
+            valor: 3.0
+            descripcion: "Explica wildcards básicos"
+          insuficiente:
+            valor: 2.0
+            descripcion: "No comprende wildcards"
+
+evidencias_desempeno:
+  - id: D1
+    nombre: "Ejercicio 1: Sistema de Inventario con ArrayList"
+    peso: 0.10
+    
+  - id: D2
+    nombre: "Ejercicio 2: Agenda de Contactos con HashMap"
+    peso: 0.15
+    
+  - id: D3
+    nombre: "Ejercicio 3: Gestión de Productos con Set"
+    peso: 0.10
+    
+  - id: D4
+    nombre: "Taller: Iteradores y Bucles"
+    peso: 0.05
+
+evidencias_producto:
+  - id: P1
+    nombre: "Proyecto: Agenda de Contactos Completa"
+    peso: 0.30
+    criterios:
+      - nombre: "Arquitectura"
+      - nombre: "Operaciones CRUD"
+      - nombre: "Búsqueda y filtrado"
+      - nombre: "Generics y Type Safety"
+      - nombre: "Manejo de excepciones"
+      - nombre: "Documentación"
+      - nombre: "Código limpio"
+      - nombre: "Testing"
+
+requisitos_minimos_aprobacion:
+  - "Completar al menos 4 de los 5 ejercicios prácticos"
+  - "Entregar el proyecto final de agenda de contactos funcional"
+  - "Demostrar comprensión de List, Set y Map"
+  - "Usar generics apropiadamente en el código"
+  - "Asistir al 80% de la sesión práctica"
+
+plan_mejoramiento:
+  actividades:
+    - nombre: "Semana de recuperación"
+      descripcion: "Repasa los conceptos de colecciones con tutoriales"
+    - nombre: "Ejercicios adicionales"
+      descripcion: "Completa ejercicios de refuerzo proporcionados"
+    - nombre: "Tutoría personalizada"
+      descripcion: "Sesión 1:1 con el instructor (30 min)"
+    - nombre: "Evaluación de recuperación"
+      descripcion: "Nuevo proyecto integrador similar"
+
+recursos_apoyo:
+  - titulo: "Java Collections Framework"
+    url: "https://docs.oracle.com/javase/8/docs/technotes/guides/collections/"
+    tipo: "Documentación oficial"
+  - titulo: "ArrayList vs LinkedList"
+    url: "https://www.geeksforgeeks.org/arraylist-vs-linkedlist-java/"
+    tipo: "Tutorial"
+  - titulo: "HashMap Internal Working"
+    url: "https://www.baeldung.com/java-hashmap"
+    tipo: "Artículo técnico"
+
+metadata:
+  version: "1.0"
+  fecha_creacion: "2024-11-03"
+  autor: "SENA - Bootcamp POO Java"
+  ultima_actualizacion: "2024-11-03"
