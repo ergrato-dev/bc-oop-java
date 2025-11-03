@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700">
+  <rect width="1000" height="700" fill="#0d1117"/>
+  
+  <text x="500" y="40" font-family="Arial" font-size="28" font-weight="bold" fill="#58a6ff" text-anchor="middle">
+    Arquitectura del Proyecto - Organización en Paquetes
+  </text>
+  
+  <!-- Paquete Modelo -->
+  <rect x="50" y="80" width="200" height="250" fill="#161b22" stroke="#3fb950" stroke-width="2" rx="8"/>
+  <text x="150" y="110" font-family="Arial" font-size="18" font-weight="bold" fill="#3fb950" text-anchor="middle">📦 modelo/</text>
+  
+  <text x="70" y="140" font-family="monospace" font-size="13" fill="#79c0ff">Cliente.java</text>
+  <text x="70" y="165" font-family="monospace" font-size="13" fill="#79c0ff">Producto.java</text>
+  <text x="70" y="190" font-family="monospace" font-size="13" fill="#79c0ff">Pedido.java</text>
+  <text x="70" y="215" font-family="monospace" font-size="13" fill="#79c0ff">Usuario.java</text>
+  <text x="70" y="240" font-family="monospace" font-size="13" fill="#8b949e">...</text>
+  
+  <text x="70" y="275" font-family="Arial" font-size="11" fill="#8b949e">Entidades del</text>
+  <text x="70" y="290" font-family="Arial" font-size="11" fill="#8b949e">dominio</text>
+  <text x="70" y="310" font-family="Arial" font-size="11" font-weight="bold" fill="#3fb950">✅ Encapsulación</text>
+  
+  <!-- Paquete Servicio -->
+  <rect x="280" y="80" width="220" height="250" fill="#161b22" stroke="#58a6ff" stroke-width="2" rx="8"/>
+  <text x="390" y="110" font-family="Arial" font-size="18" font-weight="bold" fill="#58a6ff" text-anchor="middle">📦 servicio/</text>
+  
+  <text x="300" y="140" font-family="monospace" font-size="13" fill="#79c0ff">ClienteServicio.java</text>
+  <text x="300" y="165" font-family="monospace" font-size="13" fill="#79c0ff">ProductoServicio.java</text>
+  <text x="300" y="190" font-family="monospace" font-size="13" fill="#79c0ff">PedidoServicio.java</text>
+  <text x="300" y="215" font-family="monospace" font-size="13" fill="#8b949e">...</text>
+  
+  <text x="300" y="250" font-family="Arial" font-size="11" fill="#8b949e">Lógica de negocio</text>
+  <text x="300" y="265" font-family="Arial" font-size="11" fill="#8b949e">CRUD + operaciones</text>
+  <text x="300" y="285" font-family="Arial" font-size="11" font-weight="bold" fill="#58a6ff">✅ Colecciones</text>
+  <text x="300" y="305" font-family="Arial" font-size="11" font-weight="bold" fill="#58a6ff">✅ Validaciones</text>
+  
+  <!-- Paquete Excepciones -->
+  <rect x="530" y="80" width="220" height="250" fill="#161b22" stroke="#f85149" stroke-width="2" rx="8"/>
+  <text x="640" y="110" font-family="Arial" font-size="18" font-weight="bold" fill="#f85149" text-anchor="middle">📦 excepciones/</text>
+  
+  <text x="550" y="140" font-family="monospace" font-size="12" fill="#f85149">ClienteNoEncontradoException</text>
+  <text x="550" y="165" font-family="monospace" font-size="12" fill="#f85149">ProductoAgotadoException</text>
+  <text x="550" y="190" font-family="monospace" font-size="12" fill="#f85149">DatoInvalidoException</text>
+  <text x="550" y="215" font-family="monospace" font-size="12" fill="#8b949e">...</text>
+  
+  <text x="550" y="250" font-family="Arial" font-size="11" fill="#8b949e">Excepciones</text>
+  <text x="550" y="265" font-family="Arial" font-size="11" fill="#8b949e">personalizadas</text>
+  <text x="550" y="285" font-family="Arial" font-size="11" font-weight="bold" fill="#f85149">✅ Manejo errores</text>
+  <text x="550" y="305" font-family="Arial" font-size="11" font-weight="bold" fill="#f85149">✅ Mensajes claros</text>
+  
+  <!-- Paquete Util -->
+  <rect x="780" y="80" width="180" height="250" fill="#161b22" stroke="#d29922" stroke-width="2" rx="8"/>
+  <text x="870" y="110" font-family="Arial" font-size="18" font-weight="bold" fill="#d29922" text-anchor="middle">📦 util/</text>
+  
+  <text x="800" y="140" font-family="monospace" font-size="13" fill="#79c0ff">Validador.java</text>
+  <text x="800" y="165" font-family="monospace" font-size="13" fill="#79c0ff">Utilidades.java</text>
+  <text x="800" y="190" font-family="monospace" font-size="13" fill="#79c0ff">Constantes.java</text>
+  <text x="800" y="215" font-family="monospace" font-size="13" fill="#8b949e">...</text>
+  
+  <text x="800" y="250" font-family="Arial" font-size="11" fill="#8b949e">Funciones</text>
+  <text x="800" y="265" font-family="Arial" font-size="11" fill="#8b949e">auxiliares</text>
+  <text x="800" y="285" font-family="Arial" font-size="11" font-weight="bold" fill="#d29922">✅ Reutilizables</text>
+  
+  <!-- Main.java -->
+  <rect x="350" y="370" width="300" height="120" fill="#161b22" stroke="#d2a8ff" stroke-width="3" rx="8"/>
+  <text x="500" y="405" font-family="Arial" font-size="20" font-weight="bold" fill="#d2a8ff" text-anchor="middle">📄 Main.java</text>
+  
+  <text x="370" y="435" font-family="Arial" font-size="13" fill="#8b949e">• Punto de entrada del programa</text>
+  <text x="370" y="455" font-family="Arial" font-size="13" fill="#8b949e">• Menú interactivo</text>
+  <text x="370" y="475" font-family="Arial" font-size="13" fill="#8b949e">• Coordinación de servicios</text>
+  
+  <!-- Flechas de flujo -->
+  <line x1="150" y1="330" x2="470" y2="370" stroke="#ffa657" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="390" y1="330" x2="490" y2="370" stroke="#ffa657" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="640" y1="330" x2="530" y2="370" stroke="#ffa657" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="870" y1="330" x2="530" y2="370" stroke="#ffa657" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Flujo detallado -->
+  <text x="500" y="540" font-family="Arial" font-size="18" font-weight="bold" fill="#58a6ff" text-anchor="middle">
+    Flujo de Comunicación
+  </text>
+  
+  <rect x="100" y="560" width="800" height="120" fill="#161b22" stroke="#58a6ff" stroke-width="2" rx="8"/>
+  
+  <text x="120" y="590" font-family="Arial" font-size="14" font-weight="bold" fill="#ffa657">1. Usuario</text>
+  <text x="120" y="610" font-family="Arial" font-size="12" fill="#8b949e">Selecciona opción</text>
+  <text x="120" y="625" font-family="Arial" font-size="12" fill="#8b949e">del menú</text>
+  
+  <text x="240" y="600" font-family="Arial" font-size="20" fill="#ffa657">→</text>
+  
+  <text x="280" y="590" font-family="Arial" font-size="14" font-weight="bold" fill="#d2a8ff">2. Main</text>
+  <text x="280" y="610" font-family="Arial" font-size="12" fill="#8b949e">Llama al servicio</text>
+  <text x="280" y="625" font-family="Arial" font-size="12" fill="#8b949e">correspondiente</text>
+  
+  <text x="410" y="600" font-family="Arial" font-size="20" fill="#ffa657">→</text>
+  
+  <text x="450" y="590" font-family="Arial" font-size="14" font-weight="bold" fill="#58a6ff">3. Servicio</text>
+  <text x="450" y="610" font-family="Arial" font-size="12" fill="#8b949e">Procesa lógica</text>
+  <text x="450" y="625" font-family="Arial" font-size="12" fill="#8b949e">usa colecciones</text>
+  
+  <text x="590" y="600" font-family="Arial" font-size="20" fill="#ffa657">→</text>
+  
+  <text x="630" y="590" font-family="Arial" font-size="14" font-weight="bold" fill="#3fb950">4. Modelo</text>
+  <text x="630" y="610" font-family="Arial" font-size="12" fill="#8b949e">Entidades</text>
+  <text x="630" y="625" font-family="Arial" font-size="12" fill="#8b949e">encapsuladas</text>
+  
+  <text x="120" y="660" font-family="Arial" font-size="12" fill="#8b949e">⚠️ Si hay errores:</text>
+  <text x="250" y="660" font-family="Arial" font-size="12" fill="#f85149">throw new MiException()</text>
+  <text x="500" y="660" font-family="Arial" font-size="12" fill="#8b949e">→ Capturado en Main con</text>
+  <text x="720" y="660" font-family="Arial" font-size="12" fill="#f85149">try-catch</text>
+  
+  <!-- Definición de flecha -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#ffa657"/>
+    </marker>
+  </defs>
+</svg>

@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 650">
+  <rect width="1100" height="650" fill="#0d1117"/>
+  
+  <text x="550" y="40" font-family="Arial" font-size="28" font-weight="bold" fill="#58a6ff" text-anchor="middle">
+    Flujo de Operaciones CRUD
+  </text>
+  
+  <!-- CREATE -->
+  <rect x="50" y="80" width="480" height="120" fill="#161b22" stroke="#3fb950" stroke-width="2" rx="8"/>
+  <text x="290" y="110" font-family="Arial" font-size="20" font-weight="bold" fill="#3fb950" text-anchor="middle">CREATE - Agregar</text>
+  
+  <text x="70" y="140" font-family="Arial" font-size="13" fill="#8b949e">1. Usuario ingresa datos</text>
+  <text x="290" y="140" font-family="Arial" font-size="16" fill="#ffa657">→</text>
+  <text x="320" y="140" font-family="Arial" font-size="13" fill="#8b949e">2. Validar datos</text>
+  
+  <text x="70" y="165" font-family="monospace" font-size="12" fill="#f85149">if</text>
+  <text x="95" y="165" font-family="monospace" font-size="12" fill="#c9d1d9"> (datos inválidos) </text>
+  <text x="250" y="165" font-family="monospace" font-size="12" fill="#f85149">throw</text>
+  <text x="290" y="165" font-family="monospace" font-size="12" fill="#f85149"> new DatoInvalidoException()</text>
+  
+  <text x="70" y="185" font-family="monospace" font-size="12" fill="#79c0ff">Entidad</text>
+  <text x="130" y="185" font-family="monospace" font-size="12" fill="#c9d1d9"> nueva = </text>
+  <text x="215" y="185" font-family="monospace" font-size="12" fill="#ff7b72">new</text>
+  <text x="250" y="185" font-family="monospace" font-size="12" fill="#79c0ff"> Entidad</text>
+  <text x="330" y="185" font-family="monospace" font-size="12" fill="#c9d1d9">(datos);</text>
+  
+  <text x="70" y="185" font-family="monospace" font-size="12" fill="#c9d1d9">lista.add(nueva);</text>
+  <text x="290" y="185" font-family="Arial" font-size="12" fill="#3fb950">✅ Agregado exitosamente</text>
+  
+  <!-- READ -->
+  <rect x="570" y="80" width="480" height="120" fill="#161b22" stroke="#58a6ff" stroke-width="2" rx="8"/>
+  <text x="810" y="110" font-family="Arial" font-size="20" font-weight="bold" fill="#58a6ff" text-anchor="middle">READ - Leer/Buscar</text>
+  
+  <text x="590" y="140" font-family="Arial" font-size="13" fill="#8b949e">Opción A: Listar Todos</text>
+  <text x="590" y="160" font-family="monospace" font-size="12" fill="#ff7b72">for</text>
+  <text x="620" y="160" font-family="monospace" font-size="12" fill="#c9d1d9"> (</text>
+  <text x="635" y="160" font-family="monospace" font-size="12" fill="#79c0ff">Entidad</text>
+  <text x="700" y="160" font-family="monospace" font-size="12" fill="#c9d1d9"> e : lista) System.out.println(e);</text>
+  
+  <text x="590" y="185" font-family="Arial" font-size="13" fill="#8b949e">Opción B: Buscar por ID/Nombre</text>
+  <text x="590" y="205" font-family="monospace" font-size="12" fill="#79c0ff">Entidad</text>
+  <text x="650" y="205" font-family="monospace" font-size="12" fill="#c9d1d9"> encontrada = mapa.get(clave);</text>
+  
+  <!-- UPDATE -->
+  <rect x="50" y="230" width="480" height="130" fill="#161b22" stroke="#d29922" stroke-width="2" rx="8"/>
+  <text x="290" y="260" font-family="Arial" font-size="20" font-weight="bold" fill="#d29922" text-anchor="middle">UPDATE - Actualizar</text>
+  
+  <text x="70" y="290" font-family="Arial" font-size="13" fill="#8b949e">1. Buscar entidad</text>
+  <text x="220" y="290" font-family="Arial" font-size="16" fill="#ffa657">→</text>
+  <text x="250" y="290" font-family="Arial" font-size="13" fill="#8b949e">2. Verificar que existe</text>
+  
+  <text x="70" y="315" font-family="monospace" font-size="12" fill="#ff7b72">if</text>
+  <text x="95" y="315" font-family="monospace" font-size="12" fill="#c9d1d9"> (entidad == </text>
+  <text x="215" y="315" font-family="monospace" font-size="12" fill="#ff7b72">null</text>
+  <text x="255" y="315" font-family="monospace" font-size="12" fill="#c9d1d9">) </text>
+  <text x="280" y="315" font-family="monospace" font-size="12" fill="#f85149">throw</text>
+  <text x="330" y="315" font-family="monospace" font-size="12" fill="#f85149"> new NoEncontradoException()</text>
+  
+  <text x="70" y="340" font-family="Arial" font-size="13" fill="#8b949e">3. Validar nuevos datos</text>
+  <text x="260" y="340" font-family="Arial" font-size="16" fill="#ffa657">→</text>
+  <text x="290" y="340" font-family="Arial" font-size="13" fill="#8b949e">4. Aplicar cambios</text>
+  
+  <text x="70" y="360" font-family="monospace" font-size="12" fill="#c9d1d9">entidad.setNombre(nuevoNombre);</text>
+  <text x="330" y="360" font-family="Arial" font-size="12" fill="#3fb950">✅ Actualizado</text>
+  
+  <!-- DELETE -->
+  <rect x="570" y="230" width="480" height="130" fill="#161b22" stroke="#f85149" stroke-width="2" rx="8"/>
+  <text x="810" y="260" font-family="Arial" font-size="20" font-weight="bold" fill="#f85149" text-anchor="middle">DELETE - Eliminar</text>
+  
+  <text x="590" y="290" font-family="Arial" font-size="13" fill="#8b949e">1. Buscar entidad</text>
+  <text x="740" y="290" font-family="Arial" font-size="16" fill="#ffa657">→</text>
+  <text x="770" y="290" font-family="Arial" font-size="13" fill="#8b949e">2. Confirmar eliminación</text>
+  
+  <text x="590" y="315" font-family="monospace" font-size="12" fill="#ff7b72">if</text>
+  <text x="615" y="315" font-family="monospace" font-size="12" fill="#c9d1d9"> (lista.remove(entidad)) {</text>
+  
+  <text x="610" y="335" font-family="Arial" font-size="12" fill="#3fb950">System.out.println("Eliminado");</text>
+  
+  <text x="590" y="355" font-family="monospace" font-size="12" fill="#c9d1d9">} </text>
+  <text x="615" y="355" font-family="monospace" font-size="12" fill="#ff7b72">else</text>
+  <text x="655" y="355" font-family="monospace" font-size="12" fill="#c9d1d9"> {</text>
+  <text x="690" y="355" font-family="Arial" font-size="12" fill="#f85149">/* No encontrado */</text>
+  <text x="870" y="355" font-family="monospace" font-size="12" fill="#c9d1d9">}</text>
+  
+  <!-- Ejemplo Completo -->
+  <rect x="50" y="390" width="1000" height="230" fill="#161b22" stroke="#ffa657" stroke-width="2" rx="8"/>
+  <text x="550" y="420" font-family="Arial" font-size="20" font-weight="bold" fill="#ffa657" text-anchor="middle">
+    Ejemplo Completo: Gestión de Productos
+  </text>
+  
+  <text x="70" y="450" font-family="monospace" font-size="12" fill="#8b949e">// En ProductoServicio.java</text>
+  
+  <text x="70" y="475" font-family="monospace" font-size="12" fill="#ff7b72">private</text>
+  <text x="130" y="475" font-family="monospace" font-size="12" fill="#79c0ff"> Map</text>
+  <text x="165" y="475" font-family="monospace" font-size="12" fill="#c9d1d9">&lt;</text>
+  <text x="180" y="475" font-family="monospace" font-size="12" fill="#79c0ff">String</text>
+  <text x="235" y="475" font-family="monospace" font-size="12" fill="#c9d1d9">, </text>
+  <text x="250" y="475" font-family="monospace" font-size="12" fill="#79c0ff">Producto</text>
+  <text x="320" y="475" font-family="monospace" font-size="12" fill="#c9d1d9">&gt; productos = </text>
+  <text x="450" y="475" font-family="monospace" font-size="12" fill="#ff7b72">new</text>
+  <text x="485" y="475" font-family="monospace" font-size="12" fill="#79c0ff"> HashMap</text>
+  <text x="565" y="475" font-family="monospace" font-size="12" fill="#c9d1d9">&lt;&gt;();</text>
+  
+  <text x="70" y="505" font-family="monospace" font-size="12" fill="#ff7b72">public</text>
+  <text x="130" y="505" font-family="monospace" font-size="12" fill="#ff7b72"> void</text>
+  <text x="170" y="505" font-family="monospace" font-size="12" fill="#d2a8ff"> agregar</text>
+  <text x="240" y="505" font-family="monospace" font-size="12" fill="#c9d1d9">(</text>
+  <text x="250" y="505" font-family="monospace" font-size="12" fill="#79c0ff">Producto</text>
+  <text x="320" y="505" font-family="monospace" font-size="12" fill="#c9d1d9"> p) </text>
+  <text x="360" y="505" font-family="monospace" font-size="12" fill="#ff7b72">throws</text>
+  <text x="420" y="505" font-family="monospace" font-size="12" fill="#f85149"> ProductoDuplicadoException</text>
+  <text x="650" y="505" font-family="monospace" font-size="12" fill="#c9d1d9"> {</text>
+  
+  <text x="90" y="530" font-family="monospace" font-size="12" fill="#ff7b72">if</text>
+  <text x="115" y="530" font-family="monospace" font-size="12" fill="#c9d1d9"> (productos.containsKey(p.getId())) {</text>
+  
+  <text x="110" y="550" font-family="monospace" font-size="12" fill="#ff7b72">throw</text>
+  <text x="160" y="550" font-family="monospace" font-size="12" fill="#ff7b72"> new</text>
+  <text x="195" y="550" font-family="monospace" font-size="12" fill="#f85149"> ProductoDuplicadoException</text>
+  <text x="425" y="550" font-family="monospace" font-size="12" fill="#c9d1d9">(</text>
+  <text x="435" y="550" font-family="monospace" font-size="12" fill="#a5d6ff">"Producto ya existe"</text>
+  <text x="610" y="550" font-family="monospace" font-size="12" fill="#c9d1d9">);</text>
+  
+  <text x="90" y="570" font-family="monospace" font-size="12" fill="#c9d1d9">}</text>
+  
+  <text x="90" y="590" font-family="monospace" font-size="12" fill="#c9d1d9">productos.put(p.getId(), p);</text>
+  <text x="340" y="590" font-family="monospace" font-size="12" fill="#8b949e">// CREATE exitoso</text>
+  
+  <text x="70" y="610" font-family="monospace" font-size="12" fill="#c9d1d9">}</text>
+</svg>
