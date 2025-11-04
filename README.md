@@ -7,12 +7,15 @@
 [![Java](https://img.shields.io/badge/Java-17+-orange.svg)](https://www.oracle.com/java/)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![SENA](https://img.shields.io/badge/SENA-Formación-green.svg)](https://www.sena.edu.co/)
+[![Status](https://img.shields.io/badge/status-COMPLETO-success.svg)](bootcamp/BOOTCAMP-COMPLETO.md)
+[![Semanas](https://img.shields.io/badge/semanas-10-blue.svg)](bootcamp/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 [![Contributions](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)](CONTRIBUTORS.md)
 
 </div>
 
-> Bootcamp intensivo de 10 semanas enfocado en análisis, diseño y programación orientada a objetos utilizando Java y UML.
+> 🎓 Bootcamp intensivo de 10 semanas (40 horas) enfocado en análisis, diseño y programación orientada a objetos utilizando Java y UML.  
+> ✅ **Estado**: COMPLETO - Listo para uso en clase (Noviembre 2025)
 
 ---
 
@@ -20,31 +23,36 @@
 
 Este bootcamp está diseñado para desarrollar competencias sólidas en **Análisis Orientado a Objetos (AOO)**, **Diseño con UML** y **Programación en Java**, con un enfoque práctico y basado en proyectos reales.
 
+**📦 Contenido completo**: 340+ archivos educativos | 64 diagramas SVG | 50+ ejemplos Java | 10 semanas estructuradas
+
 ### 🎯 Objetivos
 
-- Dominar los principios fundamentales de la Programación Orientada a Objetos (POO)
-- Aplicar técnicas de análisis y diseño de software con UML
-- Desarrollar aplicaciones Java utilizando mejores prácticas
-- Construir proyectos integradores que demuestren competencias laborales
+- ✅ Dominar los principios fundamentales de la Programación Orientada a Objetos (POO)
+- ✅ Aplicar técnicas de análisis y diseño de software con UML
+- ✅ Desarrollar aplicaciones Java utilizando mejores prácticas
+- ✅ Construir proyectos integradores que demuestren competencias laborales
+- ✅ Manejar colecciones, excepciones y patrones de diseño básicos
 
 ---
 
 ## 🗓️ Estructura del Bootcamp
 
-| Semana | Tema Principal | Duración |
-|--------|---------------|----------|
-| **0** | [Fundamentos de Java (Nivelación)](bootcamp/semana-00) | 4 horas |
-| **1** | [Introducción a POO](bootcamp/semana-01) | 4 horas |
-| **2** | [Fundamentos de Clases y Objetos](bootcamp/semana-02) | 4 horas |
-| **3** | [Encapsulación y Constructores](bootcamp/semana-03) | 4 horas |
-| **4** | [Herencia](bootcamp/semana-04) | 4 horas |
-| **5** | [Polimorfismo](bootcamp/semana-05) | 4 horas |
-| **6** | [Abstracción e Interfaces](bootcamp/semana-06) | 4 horas |
-| **7** | [Manejo de Paquetes y Excepciones](bootcamp/semana-07) | 4 horas |
-| **8** | [Colecciones y Programación Genérica](bootcamp/semana-08) | 4 horas |
-| **9** | [Proyecto Final Aplicado](bootcamp/semana-09) | 4 horas |
+| Semana | Tema Principal | Estado | Duración |
+|--------|---------------|--------|----------|
+| **0** | [Fundamentos de Java (Nivelación)](bootcamp/semana-00) | ✅ | 4 horas |
+| **1** | [Introducción a POO](bootcamp/semana-01) | ✅ | 4 horas |
+| **2** | [Fundamentos de Clases y Objetos](bootcamp/semana-02) | ✅ | 4 horas |
+| **3** | [Encapsulación y Constructores](bootcamp/semana-03) | ✅ | 4 horas |
+| **4** | [Herencia](bootcamp/semana-04) | ✅ | 4 horas |
+| **5** | [Polimorfismo](bootcamp/semana-05) | ✅ | 4 horas |
+| **6** | [Abstracción e Interfaces](bootcamp/semana-06) | ✅ | 4 horas |
+| **7** | [Manejo de Paquetes y Excepciones](bootcamp/semana-07) | ✅ | 4 horas |
+| **8** | [Colecciones y Programación Genérica](bootcamp/semana-08) | ✅ | 4 horas |
+| **9** | [Proyecto Final Aplicado](bootcamp/semana-09) | ✅ | 4 horas |
 
-**Total**: 40 horas de formación intensiva
+**Total**: 40 horas de formación intensiva | **Estado**: ✅ **BOOTCAMP COMPLETO**
+
+📄 **Ver resumen completo**: [BOOTCAMP-COMPLETO.md](bootcamp/BOOTCAMP-COMPLETO.md)
 
 ---
 
@@ -242,15 +250,42 @@ Si encuentras un problema de seguridad, por favor revisa nuestra [Política de S
 ## 📚 Documentación Adicional
 
 - [📖 Tema Completo](_docs/tema.md)
+- [✅ Bootcamp Completo](bootcamp/BOOTCAMP-COMPLETO.md) - Resumen y estadísticas
 - [🤖 Instrucciones de Copilot](.github/copilot-instructions.md)
-- [🔧 Setup de Auto-commit](.github/scripts/SETUP_AUTOCOMMIT.md)
+- [� Sistema de Evaluación](_docs/evaluacion/README.md)
+- [🎯 Guía IntelliJ IDEA](_docs/GUIA-INTELLIJ-IDEA.md)
+- [🚫 Política Anticopia](_docs/POLITICA_ANTICOPIA.md)
 - [🤝 Guía de Contribución](CONTRIBUTING.md)
 - [📜 Código de Conducta](CODE_OF_CONDUCT.md)
 - [🔒 Política de Seguridad](SECURITY.md)
 
 ---
 
+## 📊 Estadísticas del Bootcamp
+
 <div align="center">
+
+| Métrica | Cantidad |
+|---------|----------|
+| 📁 Semanas | 10 |
+| ⏱️ Horas totales | 40 |
+| 📄 Archivos educativos | 340+ |
+| 🎨 Diagramas SVG | 64 |
+| ☕ Ejemplos Java | 50+ |
+| 📚 Archivos de teoría | 55+ |
+| 💻 Ejercicios prácticos | 52+ |
+| 📝 Rúbricas de evaluación | 30 |
+
+</div>
+
+---
+
+<div align="center">
+
+**🎓 Bootcamp POO Java - SENA 2025**  
+**✅ COMPLETO Y LISTO PARA USO EN CLASE**
+
+---
 
 **🚀 ¡Comienza tu viaje en la Programación Orientada a Objetos con Java! ☕**
 
