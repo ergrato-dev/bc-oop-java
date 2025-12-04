@@ -72,9 +72,9 @@ semana-09/
 │   ├── videos.md
 │   └── checklist-proyecto.md
 └── 4. asignación_dominios/
-    ├── asignacion-ficha-3228970A.md
-    ├── asignacion-ficha-3228970B.md
-    └── asignacion-ficha-3228973A.md
+    ├── README.md
+    ├── EJERCICIOS_SEMANALES.md
+    └── FORMATO_ENTREGA.md
 ```
 
 ---

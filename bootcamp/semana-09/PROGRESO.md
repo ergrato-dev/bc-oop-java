@@ -62,9 +62,9 @@
 - [ ] estructura-proyecto.md (guía de carpetas)
 
 ### 4. asignación_dominios/
-- [ ] asignacion-ficha-3228970A.md
-- [ ] asignacion-ficha-3228970B.md
-- [ ] asignacion-ficha-3228973A.md
+- [x] README.md (instrucciones para proyecto final)
+- [x] EJERCICIOS_SEMANALES.md (componentes y criterios)
+- [x] FORMATO_ENTREGA.md (estructura y plantillas)
 
 ---
 
@@ -85,11 +85,10 @@ Todo el contenido crítico para que los estudiantes puedan iniciar su proyecto f
 ### Opción 1: Crear ejemplos de sistemas (recomendado)
 Los ejemplos ayudarían a los estudiantes a ver implementaciones completas de diferentes dominios.
 
-### Opción 2: Crear asignaciones por ficha
-Asignar dominios específicos a cada estudiante según su ficha (similar a semanas anteriores).
+### Opción 2: Cerrar semana-09
+Los elementos críticos están completos. Los ejemplos pueden crearse bajo demanda.
 
-### Opción 3: Cerrar semana-09
-Los elementos críticos están completos. Los ejemplos y asignaciones pueden crearse bajo demanda.
+> **Nota**: Cada estudiante trabaja con el dominio asignado desde la Semana 01.
 
 ---
 
