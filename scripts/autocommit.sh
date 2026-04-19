@@ -69,7 +69,7 @@ if ! git diff --quiet || ! git diff --cached --quiet || [ -n "$(git ls-files --o
                 IMPACT="enables student evaluation"
             fi
         fi
-    elif git diff --cached --name-only | grep -q "^_docs/"; then
+    elif git diff --cached --name-only | grep -q "^docs/"; then
         COMMIT_TYPE="docs"
         SCOPE="docs"
         WHAT="update project documentation"

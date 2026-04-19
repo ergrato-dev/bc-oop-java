@@ -181,8 +181,8 @@ oop_java/
 
 ## 📚 Recursos Adicionales
 
-- 📖 **Guía Completa**: Ver [`_docs/GUIA-INTELLIJ-SOURCE-ROOTS.md`](../../_docs/GUIA-INTELLIJ-SOURCE-ROOTS.md)
-- 📖 **Guía Avanzada**: Ver [`_docs/GUIA-INTELLIJ-IDEA.md`](../../_docs/GUIA-INTELLIJ-IDEA.md)
+- 📖 **Guía Completa**: Ver [`docs/GUIA-INTELLIJ-SOURCE-ROOTS.md`](../../docs/GUIA-INTELLIJ-SOURCE-ROOTS.md)
+- 📖 **Guía Avanzada**: Ver [`docs/GUIA-INTELLIJ-IDEA.md`](../../docs/GUIA-INTELLIJ-IDEA.md)
 - 🎥 **Tutorial IntelliJ**: https://www.jetbrains.com/idea/guide/
 - 📄 **Atajos PDF**: https://resources.jetbrains.com/storage/products/intellij-idea/docs/IntelliJIDEA_ReferenceCard.pdf
 
@@ -207,7 +207,7 @@ Antes de empezar a programar, verifica:
 Si tienes problemas con la configuración:
 
 1. Revisa la sección **Solución de Problemas** arriba
-2. Consulta la guía completa en `_docs/GUIA-INTELLIJ-SOURCE-ROOTS.md`
+2. Consulta la guía completa en `docs/GUIA-INTELLIJ-SOURCE-ROOTS.md`
 3. Pregunta al instructor durante la sesión
 4. Revisa la documentación oficial: https://www.jetbrains.com/idea/documentation/
 

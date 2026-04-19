@@ -482,7 +482,7 @@ employees.add(new HallEmployee("Francesca Greco", "Hostess", 1800000, "Completo"
 
 ### Archivo de Aprendices
 
-**Ubicación**: `_docs/APRENDICES-3147234.md`
+**Ubicación**: `docs/APRENDICES-3147234.md`
 
 **Contenido**:
 
@@ -641,7 +641,7 @@ dominios = [
 
 # Leer lista de aprendices por ficha
 ficha = "3147234"
-aprendices_file = f"_docs/fichas/APRENDICES-{ficha}.md"
+aprendices_file = f"docs/fichas/APRENDICES-{ficha}.md"
 
 with open(aprendices_file, "r") as f:
     aprendices = [line.strip() for line in f if line.strip()]

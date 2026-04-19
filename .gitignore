@@ -111,8 +111,8 @@ bootcamp/semana-*/4. asignación_dominios/fichas/*.zip
 bootcamp/semana-*/4. asignación_dominios/fichas/*/
 
 # Sistema de evaluación automatizada (contiene credenciales y datos sensibles)
-_docs/evaluacion/
-!_docs/evaluacion/README.md
-!_docs/evaluacion/requirements.txt
-!_docs/evaluacion/.env.example
-_docs/fichas/
+docs/evaluacion/
+!docs/evaluacion/README.md
+!docs/evaluacion/requirements.txt
+!docs/evaluacion/.env.example
+docs/fichas/

@@ -113,7 +113,7 @@
 ### Documentación Adicional
 - ✅ README.md principal actualizado
 - ✅ BOOTCAMP-COMPLETO.md con resumen general
-- ✅ Sistema de evaluación automatizado (_docs/evaluacion/)
+- ✅ Sistema de evaluación automatizado (docs/evaluacion/)
 - ✅ Guías de IntelliJ IDEA
 - ✅ Política anticopia
 - ✅ Información de fichas

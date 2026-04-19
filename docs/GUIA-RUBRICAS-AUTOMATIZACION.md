@@ -434,7 +434,7 @@ python-dotenv>=1.0.0
 ## 📞 Soporte
 
 Para dudas sobre las rúbricas o el sistema de evaluación:
-- Revisar documentación en `_docs/`
+- Revisar documentación en `docs/`
 - Consultar con instructor del bootcamp
 - Abrir issue en el repositorio
 

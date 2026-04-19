@@ -481,7 +481,7 @@ Ver todos los TODOs: `View` → `Tool Windows` → `TODO`
 
 ### Obtener Ayuda
 
-1. **Documentación del proyecto**: Ver `_docs/GUIA-INTELLIJ-IDEA.md` (guía completa)
+1. **Documentación del proyecto**: Ver `docs/GUIA-INTELLIJ-IDEA.md` (guía completa)
 2. **IntelliJ Help**: `Help` → `Help`
 3. **Instructor**: Durante las sesiones del bootcamp
 4. **GitHub Issues**: Reportar problemas técnicos

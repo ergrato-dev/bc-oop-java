@@ -58,7 +58,7 @@ Compatible con:
 Para regenerar o modificar el video:
 
 ```bash
-cd _docs/scripts
+cd docs/scripts
 ./generate-video-tutorial.sh
 ```
 
