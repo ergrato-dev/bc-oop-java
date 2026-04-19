@@ -109,7 +109,7 @@ git lfs track "*.mp4"
 git add .gitattributes
 
 # Agregar video al repo
-git add _docs/scripts/video-tutorial/tutorial-intellij-setup.mp4
+git add docs/scripts/video-tutorial/tutorial-intellij-setup.mp4
 git commit -m "docs: add generated video tutorial (939KB)"
 git push
 ```
@@ -119,7 +119,7 @@ git push
 ## 🎨 Personalizar y Regenerar
 
 ### Cambiar Duración de Slides
-Edita: `_docs/scripts/generate-video-tutorial.sh` (línea ~228)
+Edita: `docs/scripts/generate-video-tutorial.sh` (línea ~228)
 
 ```bash
 # Ejemplo: Slide 1 más largo
@@ -140,7 +140,7 @@ convert -size 1920x1080 \
 
 ### Regenerar Video
 ```bash
-cd _docs/scripts
+cd docs/scripts
 ./generate-video-tutorial.sh
 ```
 
@@ -223,10 +223,10 @@ Para evaluar efectividad:
 
 ## 🔗 Enlaces Útiles
 
-- **Presentación HTML:** `_docs/presentacion-intellij-setup.html`
-- **Script generador:** `_docs/scripts/generate-video-tutorial.sh`
-- **Guía de uso:** `_docs/GUIA-USO-RECURSOS-VISUALES.md`
-- **Documentación completa:** `_docs/GUIA-INTELLIJ-SOURCE-ROOTS.md`
+- **Presentación HTML:** `docs/presentacion-intellij-setup.html`
+- **Script generador:** `docs/scripts/generate-video-tutorial.sh`
+- **Guía de uso:** `docs/GUIA-USO-RECURSOS-VISUALES.md`
+- **Documentación completa:** `docs/GUIA-INTELLIJ-SOURCE-ROOTS.md`
 
 ---
 

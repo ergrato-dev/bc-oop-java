@@ -217,7 +217,7 @@ generate_slides() {
         -pointsize 80 -fill '#4a9eff' -annotate +0-50 '🎓' \
         -pointsize 60 -fill '#e0e0e0' -annotate +0+100 'Bootcamp POO Java - SENA' \
         -pointsize 45 -fill '#b0b0b0' -annotate +0+250 'Consulta la documentación para más detalles' \
-        -pointsize 40 -fill '#7b68ee' -annotate +0+350 '_docs/GUIA-INTELLIJ-SOURCE-ROOTS.md' \
+        -pointsize 40 -fill '#7b68ee' -annotate +0+350 'docs/GUIA-INTELLIJ-SOURCE-ROOTS.md' \
         "${ASSETS_DIR}/slide_09.png"
     echo -e "   ${GREEN}✓${NC} Slide 9: Final"
     
@@ -424,7 +424,7 @@ Compatible con:
 Para regenerar o modificar el video:
 
 ```bash
-cd _docs/scripts
+cd docs/scripts
 ./generate-video-tutorial.sh
 ```
 

@@ -152,7 +152,7 @@ Documento original con la estructura temática del bootcamp.
 ## 📊 Estructura de Carpetas
 
 ```
-_docs/
+docs/
 ├── README.md                      # Este archivo
 ├── GUIA-INTELLIJ-IDEA.md         # Guía de IntelliJ IDEA
 ├── tema.md                        # Documento temático original

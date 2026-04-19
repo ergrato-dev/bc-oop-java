@@ -222,7 +222,7 @@ bc-oop-java/
 ├── CONTRIBUTING.md
 ├── LICENSE
 ├── SECURITY.md
-├── _docs/
+├── docs/
 │   ├── evaluacion/          ← Sistema de evaluación automatizado
 │   ├── fichas/              ← Información de fichas SENA
 │   └── scripts/             ← Scripts de utilidad

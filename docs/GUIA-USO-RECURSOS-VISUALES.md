@@ -23,11 +23,11 @@ Presentación moderna de **13 slides** con:
 1. **Abrir la presentación:**
    ```bash
    # Opción 1: Con navegador predeterminado
-   xdg-open _docs/presentacion-intellij-setup.html
+   xdg-open docs/presentacion-intellij-setup.html
    
    # Opción 2: Con navegador específico
-   firefox _docs/presentacion-intellij-setup.html
-   google-chrome _docs/presentacion-intellij-setup.html
+   firefox docs/presentacion-intellij-setup.html
+   google-chrome docs/presentacion-intellij-setup.html
    ```
 
 2. **Modo pantalla completa:**
@@ -66,7 +66,7 @@ Presentación moderna de **13 slides** con:
 ```bash
 # Los estudiantes clonan/pull el repo y abren:
 git clone https://github.com/ergrato-dev/bc-oop-java.git
-cd bc-oop-java/_docs
+cd bc-oop-java/docs
 xdg-open presentacion-intellij-setup.html
 ```
 
@@ -149,7 +149,7 @@ sudo apt install espeak  # Ubuntu
 ### 🚀 Generar el Video
 
 ```bash
-cd /home/epti/Documentos/sena/4T25/oop_java/_docs/scripts
+cd /home/epti/Documentos/sena/4T25/oop_java/docs/scripts
 
 # Ejecutar generador
 ./generate-video-tutorial.sh
@@ -366,7 +366,7 @@ HEIGHT=720   # En lugar de 1080
 ### Actualizar Presentación HTML
 
 ```bash
-cd _docs
+cd docs
 nano presentacion-intellij-setup.html  # Editar
 # Probar abriendo en navegador
 xdg-open presentacion-intellij-setup.html
@@ -375,7 +375,7 @@ xdg-open presentacion-intellij-setup.html
 ### Regenerar Video
 
 ```bash
-cd _docs/scripts
+cd docs/scripts
 nano generate-video-tutorial.sh  # Hacer cambios
 ./generate-video-tutorial.sh      # Regenerar
 vlc ../video-tutorial/tutorial-intellij-setup.mp4  # Verificar
@@ -384,7 +384,7 @@ vlc ../video-tutorial/tutorial-intellij-setup.mp4  # Verificar
 ### Versionar Cambios
 
 ```bash
-git add _docs/
+git add docs/
 git commit -m "docs: update visual resources"
 git push
 ```

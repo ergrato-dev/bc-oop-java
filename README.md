@@ -249,12 +249,12 @@ Si encuentras un problema de seguridad, por favor revisa nuestra [Política de S
 
 ## 📚 Documentación Adicional
 
-- [📖 Tema Completo](_docs/tema.md)
+- [📖 Tema Completo](docs/tema.md)
 - [✅ Bootcamp Completo](bootcamp/BOOTCAMP-COMPLETO.md) - Resumen y estadísticas
 - [🤖 Instrucciones de Copilot](.github/copilot-instructions.md)
-- [� Sistema de Evaluación](_docs/evaluacion/README.md)
-- [🎯 Guía IntelliJ IDEA](_docs/GUIA-INTELLIJ-IDEA.md)
-- [🚫 Política Anticopia](_docs/POLITICA_ANTICOPIA.md)
+- [� Sistema de Evaluación](docs/evaluacion/README.md)
+- [🎯 Guía IntelliJ IDEA](docs/GUIA-INTELLIJ-IDEA.md)
+- [🚫 Política Anticopia](docs/POLITICA_ANTICOPIA.md)
 - [🤝 Guía de Contribución](CONTRIBUTING.md)
 - [📜 Código de Conducta](CODE_OF_CONDUCT.md)
 - [🔒 Política de Seguridad](SECURITY.md)
@@ -289,7 +289,7 @@ Si encuentras un problema de seguridad, por favor revisa nuestra [Política de S
 
 **🚀 ¡Comienza tu viaje en la Programación Orientada a Objetos con Java! ☕**
 
-[Ir a Semana 0](bootcamp/semana-00) | [Ver Documentación](_docs/) | [Reportar Issue](https://github.com/ergrato-dev/bc-oop-java/issues) | [Contribuir](CONTRIBUTING.md)
+[Ir a Semana 0](bootcamp/semana-00) | [Ver Documentación](docs/) | [Reportar Issue](https://github.com/ergrato-dev/bc-oop-java/issues) | [Contribuir](CONTRIBUTING.md)
 
 ---
 
