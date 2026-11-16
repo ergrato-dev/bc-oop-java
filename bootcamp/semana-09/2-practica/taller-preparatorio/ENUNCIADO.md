@@ -256,4 +256,3 @@ public class Main {
 - Nota cómo se manejan las excepciones
 - Presta atención a las validaciones
 
-**Ver solución completa en**: [./solucion/](./solucion/)
