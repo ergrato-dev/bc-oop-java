@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 300" role="img" aria-labelledby="t d">
+  <title id="t">Valores límite de la categoría de multa</title>
+  <desc id="d">Una recta de días de retraso dividida en clases: negativos no válidos, 0 sin multa, de 1 a 7 leve, de 8 a 30 grave y más de 30 bloqueo. Los valores límite que hay que probar son los dos lados de cada frontera: menos 1 y 0, 0 y 1, 7 y 8, 30 y 31. El 7 está marcado: con el error lateDays menor que 7 devuelve grave en lugar de leve. Los representantes del centro, 3 y 20, no detectan ese error.</desc>
+  <rect width="820" height="300" rx="12" fill="#0f172a"/>
+  <g font-family="Segoe UI, Ubuntu, Helvetica, Arial, sans-serif" font-size="14" fill="#e2e8f0">
+    <text x="30" y="40" font-size="15" font-weight="700">Prueba los dos lados de cada frontera</text>
+    <rect x="30" y="80" width="120" height="50" fill="#450a0a" stroke="#f87171"/><text x="90" y="110" text-anchor="middle" fill="#fecaca">no válido</text>
+    <rect x="150" y="80" width="90" height="50" fill="#1e293b" stroke="#94a3b8"/><text x="195" y="110" text-anchor="middle">sin multa</text>
+    <rect x="240" y="80" width="190" height="50" fill="#1e3a5f" stroke="#60a5fa"/><text x="335" y="110" text-anchor="middle">leve</text>
+    <rect x="430" y="80" width="210" height="50" fill="#422006" stroke="#fbbf24"/><text x="535" y="110" text-anchor="middle">grave</text>
+    <rect x="640" y="80" width="150" height="50" fill="#2e1065" stroke="#a78bfa"/><text x="715" y="110" text-anchor="middle">bloqueo</text>
+    <g font-size="13" fill="#cbd5e1" text-anchor="middle">
+      <text x="135" y="156">-1</text><text x="165" y="156">0</text>
+      <text x="255" y="156">1</text><text x="415" y="156">7</text>
+      <text x="445" y="156">8</text><text x="625" y="156">30</text><text x="655" y="156">31</text>
+    </g>
+    <g fill="#fbbf24"><circle cx="135" cy="172" r="5"/><circle cx="165" cy="172" r="5"/><circle cx="255" cy="172" r="5"/><circle cx="445" cy="172" r="5"/><circle cx="625" cy="172" r="5"/><circle cx="655" cy="172" r="5"/></g>
+    <circle cx="415" cy="172" r="8" fill="#f87171"/>
+    <text x="415" y="205" text-anchor="middle" font-size="13" fill="#f87171">con lateDays &lt; 7, el 7 da "grave"</text>
+    <g fill="#64748b"><circle cx="300" cy="172" r="4"/><circle cx="535" cy="172" r="4"/></g>
+    <text x="300" y="192" text-anchor="middle" font-size="12" fill="#64748b">3</text><text x="535" y="192" text-anchor="middle" font-size="12" fill="#64748b">20</text>
+    <circle cx="40" cy="250" r="5" fill="#fbbf24"/><text x="54" y="255" font-size="13">valores límite: aquí se esconden los errores de &lt; frente a &lt;=</text>
+    <circle cx="40" cy="276" r="4" fill="#64748b"/><text x="54" y="281" font-size="13" fill="#94a3b8">representantes del centro: no detectan ese error</text>
+  </g>
+</svg>

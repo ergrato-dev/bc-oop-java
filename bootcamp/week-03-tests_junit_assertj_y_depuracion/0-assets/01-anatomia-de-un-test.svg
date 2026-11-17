@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 320" role="img" aria-labelledby="t d">
+  <title id="t">Las tres partes de un test</title>
+  <desc id="d">Un test tiene tres partes en orden. Arrange prepara los datos de partida, capacity igual a 8. Act hace la única llamada que se prueba, Shelf.free con capacity y capacity, y guarda el resultado en room. Assert compara el resultado con el esperado, room es cero. Si coincide, el test pasa en verde; si no, es un failure en rojo con el valor esperado y el real.</desc>
+  <defs><marker id="a1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#94a3b8"/></marker></defs>
+  <rect width="820" height="320" rx="12" fill="#0f172a"/>
+  <g font-family="Segoe UI, Ubuntu, Helvetica, Arial, sans-serif" font-size="14" fill="#e2e8f0">
+    <text x="30" y="40" font-size="15" font-weight="700">Un test: preparar, actuar, comprobar</text>
+    <rect x="30" y="70" width="220" height="110" rx="10" fill="#1e293b" stroke="#60a5fa"/>
+    <text x="140" y="98" text-anchor="middle" font-weight="700" fill="#60a5fa">1 · Arrange</text>
+    <text x="140" y="124" text-anchor="middle">Los datos de partida</text>
+    <text x="140" y="154" text-anchor="middle" fill="#cbd5e1">capacity = 8</text>
+    <rect x="300" y="70" width="220" height="110" rx="10" fill="#1e293b" stroke="#a78bfa"/>
+    <text x="410" y="98" text-anchor="middle" font-weight="700" fill="#a78bfa">2 · Act</text>
+    <text x="410" y="124" text-anchor="middle">Una sola llamada</text>
+    <text x="410" y="154" text-anchor="middle" fill="#cbd5e1">room = free(8, 8)</text>
+    <rect x="570" y="70" width="220" height="110" rx="10" fill="#1e293b" stroke="#fbbf24"/>
+    <text x="680" y="98" text-anchor="middle" font-weight="700" fill="#fbbf24">3 · Assert</text>
+    <text x="680" y="124" text-anchor="middle">Real frente a esperado</text>
+    <text x="680" y="154" text-anchor="middle" fill="#cbd5e1">assertThat(room).isZero()</text>
+    <path d="M250 125H296" stroke="#94a3b8" stroke-width="2" marker-end="url(#a1)"/>
+    <path d="M520 125H566" stroke="#94a3b8" stroke-width="2" marker-end="url(#a1)"/>
+    <path d="M640 180L560 236" stroke="#94a3b8" stroke-width="2" marker-end="url(#a1)"/>
+    <path d="M720 180L760 236" stroke="#94a3b8" stroke-width="2" marker-end="url(#a1)"/>
+    <rect x="420" y="240" width="200" height="54" rx="10" fill="#14532d" stroke="#4ade80"/>
+    <text x="520" y="263" text-anchor="middle" font-weight="700" fill="#4ade80">Coincide: pasa</text>
+    <text x="520" y="283" text-anchor="middle" font-size="12" fill="#bbf7d0">cuenta en Tests run</text>
+    <rect x="640" y="240" width="160" height="54" rx="10" fill="#450a0a" stroke="#f87171"/>
+    <text x="720" y="263" text-anchor="middle" font-weight="700" fill="#f87171">No: failure</text>
+    <text x="720" y="283" text-anchor="middle" font-size="12" fill="#fecaca">expected / but was</text>
+    <text x="30" y="225" font-size="13" fill="#94a3b8">Los esperados se calculan a mano,</text>
+    <text x="30" y="245" font-size="13" fill="#94a3b8">nunca copiando lo que imprime el código.</text>
+  </g>
+</svg>

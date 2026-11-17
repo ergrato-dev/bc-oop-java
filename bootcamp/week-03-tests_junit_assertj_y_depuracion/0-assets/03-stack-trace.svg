@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 320" role="img" aria-labelledby="t d">
+  <title id="t">Cómo se lee un stack trace</title>
+  <desc id="d">Un stack trace de ArithmeticException por división entre cero. La primera línea da el tipo de excepción y el mensaje. La primera línea at, Main.average en Main.java línea 7, es donde saltó. La siguiente, Main.main en la línea 36, es quien llamó a average. A la derecha, la pila de llamadas: main llamó a average, y average es la llamada en curso cuando falló.</desc>
+  <rect width="820" height="320" rx="12" fill="#0f172a"/>
+  <g font-family="Segoe UI, Ubuntu, Helvetica, Arial, sans-serif" font-size="14" fill="#e2e8f0">
+    <text x="30" y="40" font-size="15" font-weight="700">De arriba abajo: qué pasó, dónde saltó, quién llamó</text>
+    <rect x="30" y="64" width="500" height="120" rx="8" fill="#1e293b" stroke="#334155"/>
+    <text x="46" y="94" fill="#f87171">java.lang.ArithmeticException<tspan fill="#e2e8f0">: </tspan><tspan fill="#fbbf24">/ by zero</tspan></text>
+    <text x="66" y="128" fill="#60a5fa">at Main.average(Main.java:7)</text>
+    <text x="66" y="160" fill="#94a3b8">at Main.main(Main.java:36)</text>
+    <g font-size="13">
+      <text x="30" y="214" fill="#f87171">■ tipo: qué clase de problema</text>
+      <text x="30" y="238" fill="#fbbf24">■ mensaje: el detalle</text>
+      <text x="30" y="262" fill="#60a5fa">■ primera línea at: dónde saltó (método, archivo, línea)</text>
+      <text x="30" y="286" fill="#94a3b8">■ siguientes: cómo se llegó hasta allí</text>
+    </g>
+    <text x="680" y="80" text-anchor="middle" font-size="13" fill="#94a3b8">pila de llamadas</text>
+    <rect x="590" y="96" width="180" height="46" rx="8" fill="#1e3a5f" stroke="#60a5fa"/><text x="680" y="124" text-anchor="middle">average  · línea 7</text>
+    <rect x="590" y="146" width="180" height="46" rx="8" fill="#1e293b" stroke="#94a3b8"/><text x="680" y="174" text-anchor="middle">main  · línea 36</text>
+    <text x="680" y="222" text-anchor="middle" font-size="12" fill="#94a3b8">arriba, la llamada en curso;</text>
+    <text x="680" y="240" text-anchor="middle" font-size="12" fill="#94a3b8">abajo, la que empezó la cadena</text>
+  </g>
+</svg>

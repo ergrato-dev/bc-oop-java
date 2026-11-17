@@ -88,4 +88,4 @@ Se evalúa **cómo** construiste el proyecto, con evidencia del repositorio y un
 
 | Anterior | Actual | Siguiente |
 | -------- | ------ | --------- |
-| [Glosario](5-glosario/README.md) | **Rúbrica de evaluación** | Semana 03 |
+| [Glosario](5-glosario/README.md) | **Rúbrica de evaluación** | [Semana 03](../week-03-tests_junit_assertj_y_depuracion/README.md) |

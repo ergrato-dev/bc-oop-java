@@ -127,6 +127,6 @@ El primero debe terminar en `BUILD SUCCESS` con al menos 40 tests y `Failures: 0
 
 | Anterior | Actual | Siguiente |
 | -------- | ------ | --------- |
-| [Semana 01](../week-01-entorno_jdk_maven_jshell_y_tipos/README.md) | **Semana 02** | Semana 03 |
+| [Semana 01](../week-01-entorno_jdk_maven_jshell_y_tipos/README.md) | **Semana 02** | [Semana 03](../week-03-tests_junit_assertj_y_depuracion/README.md) |
 
 ← [Volver al inicio del bootcamp](../../README.md)
