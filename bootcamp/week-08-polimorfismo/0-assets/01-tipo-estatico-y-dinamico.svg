@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 360" role="img" aria-labelledby="t d">
+  <title id="t">Tipo estático y tipo dinámico</title>
+  <desc id="d">La línea Book chronicle = new RareBook(...) tiene dos tipos. A la izquierda, la variable chronicle, de tipo Book: es el tipo estático, el que mira el compilador para decidir qué métodos se pueden llamar. Con describe compila; con getRoom no, porque Book no tiene sala. A la derecha, el objeto, de clase RareBook: es el tipo dinámico, el que mira la JVM para decidir qué cuerpo se ejecuta. describe ejecuta el de RareBook y muestra la sala.</desc>
+  <rect width="820" height="360" rx="12" fill="#0f172a"/>
+  <g font-family="Segoe UI, Ubuntu, Helvetica, Arial, sans-serif" font-size="14" fill="#e2e8f0">
+    <text x="410" y="38" text-anchor="middle" font-size="17" font-weight="700">Book chronicle = new RareBook(...);</text>
+    <text x="200" y="76" text-anchor="middle" font-size="15" font-weight="700" fill="#93c5fd">Tipo estático: la variable</text>
+    <rect x="80" y="92" width="240" height="70" rx="8" fill="#1e293b" stroke="#93c5fd" stroke-width="2"/>
+    <text x="200" y="120" text-anchor="middle" font-weight="700">chronicle</text>
+    <text x="200" y="144" text-anchor="middle" font-size="13" fill="#93c5fd">tipo Book</text>
+    <text x="620" y="76" text-anchor="middle" font-size="15" font-weight="700" fill="#fde68a">Tipo dinámico: el objeto</text>
+    <rect x="500" y="92" width="240" height="70" rx="8" fill="#1e293b" stroke="#fde68a" stroke-width="2"/>
+    <text x="620" y="120" text-anchor="middle" font-weight="700">objeto RareBook</text>
+    <text x="620" y="144" text-anchor="middle" font-size="13" fill="#fde68a">code · title · copies · room</text>
+    <path d="M320 127 H486" stroke="#e2e8f0" stroke-width="2"/>
+    <path d="M498 127 l-14 -7 v14 z" fill="#e2e8f0"/>
+    <text x="410" y="118" text-anchor="middle" font-size="12" fill="#94a3b8">apunta a</text>
+    <rect x="40" y="190" width="320" height="140" rx="8" fill="#172036" stroke="#334155"/>
+    <text x="200" y="216" text-anchor="middle" font-weight="700" fill="#93c5fd">El compilador mira la variable</text>
+    <text x="60" y="244" font-size="13">¿Qué métodos se pueden llamar?</text>
+    <text x="60" y="272" font-size="13" fill="#86efac">chronicle.describe()  compila: Book lo tiene</text>
+    <text x="60" y="298" font-size="13" fill="#fca5a5">chronicle.getRoom()  no compila</text>
+    <text x="60" y="318" font-size="12" fill="#94a3b8">cannot find symbol: Book no tiene sala</text>
+    <rect x="460" y="190" width="320" height="140" rx="8" fill="#172036" stroke="#334155"/>
+    <text x="620" y="216" text-anchor="middle" font-weight="700" fill="#fde68a">La JVM mira el objeto</text>
+    <text x="480" y="244" font-size="13">¿Qué cuerpo se ejecuta?</text>
+    <text x="480" y="272" font-size="13" fill="#86efac">describe() de RareBook</text>
+    <text x="480" y="298" font-size="13">BK-001 · Crónica de Núremberg ·</text>
+    <text x="480" y="318" font-size="13">ejemplares: 1 · Sala de fondo antiguo</text>
+  </g>
+</svg>

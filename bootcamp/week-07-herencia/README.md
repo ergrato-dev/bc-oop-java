@@ -127,6 +127,6 @@ El primero debe terminar en `BUILD SUCCESS` con al menos 194 tests y `Failures: 
 
 | Anterior | Actual | Siguiente |
 | -------- | ------ | --------- |
-| [Semana 06](../week-06-encapsulacion_constructores_y_composicion/README.md) | **Semana 07** | Semana 08 |
+| [Semana 06](../week-06-encapsulacion_constructores_y_composicion/README.md) | **Semana 07** | [Semana 08](../week-08-polimorfismo/README.md) |
 
 ← [Volver al inicio del bootcamp](../../README.md)

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 400" role="img" aria-labelledby="t d">
+  <title id="t">Búsqueda del método</title>
+  <desc id="d">Cómo encuentra la JVM el método que ejecuta en un objeto RareBook. A la izquierda, chronicle.describe(): busca primero en RareBook, la clase del objeto, y lo encuentra; el de Book no se usa. A la derecha, chronicle.card(): no está en RareBook, sube a Book y lo encuentra. Dentro de card, la llamada a describe vuelve a buscar desde RareBook, porque this es el mismo objeto, y ejecuta el describe de RareBook. La búsqueda empieza siempre por la clase del objeto y sube hasta Object.</desc>
+  <rect width="820" height="400" rx="12" fill="#0f172a"/>
+  <g font-family="Segoe UI, Ubuntu, Helvetica, Arial, sans-serif" font-size="14" fill="#e2e8f0">
+    <text x="200" y="40" text-anchor="middle" font-size="16" font-weight="700">chronicle.describe()</text>
+    <rect x="80" y="70" width="240" height="56" rx="8" fill="#1e293b" stroke="#334155" stroke-width="2"/>
+    <text x="200" y="94" text-anchor="middle" font-weight="700" fill="#94a3b8">Object</text>
+    <text x="200" y="114" text-anchor="middle" font-size="12" fill="#94a3b8">no se llega</text>
+    <rect x="80" y="160" width="240" height="56" rx="8" fill="#1e293b" stroke="#334155" stroke-width="2"/>
+    <text x="200" y="184" text-anchor="middle" font-weight="700">Book</text>
+    <text x="200" y="204" text-anchor="middle" font-size="12" fill="#94a3b8">describe() · no se usa</text>
+    <rect x="80" y="250" width="240" height="56" rx="8" fill="#1e293b" stroke="#86efac" stroke-width="3"/>
+    <text x="200" y="274" text-anchor="middle" font-weight="700">RareBook</text>
+    <text x="200" y="294" text-anchor="middle" font-size="13" fill="#86efac">describe()  encontrado: 1.º</text>
+    <text x="200" y="340" text-anchor="middle" font-size="13">Empieza por la clase del objeto</text>
+    <text x="200" y="360" text-anchor="middle" font-size="13">y ahí lo encuentra.</text>
+    <text x="620" y="40" text-anchor="middle" font-size="16" font-weight="700">chronicle.card()</text>
+    <rect x="500" y="70" width="240" height="56" rx="8" fill="#1e293b" stroke="#334155" stroke-width="2"/>
+    <text x="620" y="94" text-anchor="middle" font-weight="700" fill="#94a3b8">Object</text>
+    <text x="620" y="114" text-anchor="middle" font-size="12" fill="#94a3b8">no se llega</text>
+    <rect x="500" y="160" width="240" height="56" rx="8" fill="#1e293b" stroke="#86efac" stroke-width="3"/>
+    <text x="620" y="184" text-anchor="middle" font-weight="700">Book</text>
+    <text x="620" y="204" text-anchor="middle" font-size="13" fill="#86efac">card()  encontrado: 2.º</text>
+    <rect x="500" y="250" width="240" height="56" rx="8" fill="#1e293b" stroke="#fde68a" stroke-width="2"/>
+    <text x="620" y="274" text-anchor="middle" font-weight="700">RareBook</text>
+    <text x="620" y="294" text-anchor="middle" font-size="12" fill="#fde68a">no tiene card() · 1.º</text>
+    <path d="M500 278 H470 V188 H486" stroke="#fde68a" stroke-width="2" fill="none"/>
+    <path d="M498 188 l-12 -6 v12 z" fill="#fde68a"/>
+    <text x="462" y="238" text-anchor="end" font-size="12" fill="#fde68a">sube</text>
+    <path d="M740 188 H770 V278 H754" stroke="#93c5fd" stroke-width="2" fill="none"/>
+    <path d="M742 278 l12 -6 v12 z" fill="#93c5fd"/>
+    <text x="620" y="340" text-anchor="middle" font-size="13" fill="#93c5fd">Dentro de card(), describe() vuelve a buscar</text>
+    <text x="620" y="360" text-anchor="middle" font-size="13" fill="#93c5fd">desde RareBook: sale la sala.</text>
+  </g>
+</svg>

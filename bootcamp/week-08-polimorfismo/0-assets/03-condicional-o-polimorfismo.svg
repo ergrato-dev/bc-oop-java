@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 400" role="img" aria-labelledby="t d">
+  <title id="t">Condicional o polimorfismo</title>
+  <desc id="d">Dos formas de escribir los días de préstamo. A la izquierda, una función loanDays con una cadena de instanceof: RareBook 0, AudioBook 21 y, si no, 14. Cuando llega Magazine, que debería dar 7, no tiene rama y cae en el 14 sin ningún aviso. A la derecha, cada clase sobrescribe loanDays: Book 14, RareBook 0, AudioBook 21 y Magazine 7. Quien la usa solo llama a book.loanDays() y el objeto responde con sus días.</desc>
+  <rect width="820" height="400" rx="12" fill="#0f172a"/>
+  <g font-family="Segoe UI, Ubuntu, Helvetica, Arial, sans-serif" font-size="14" fill="#e2e8f0">
+    <text x="30" y="40" font-size="16" font-weight="700" fill="#fca5a5">Cadena de instanceof</text>
+    <rect x="30" y="60" width="360" height="190" rx="8" fill="#1e293b" stroke="#fca5a5" stroke-width="2"/>
+    <text x="50" y="88" font-weight="700">loanDays(Book book)</text>
+    <text x="50" y="118" font-size="13">¿instanceof RareBook? Devuelve 0</text>
+    <text x="50" y="146" font-size="13">¿instanceof AudioBook? Devuelve 21</text>
+    <text x="50" y="174" font-size="13">Si no, devuelve 14</text>
+    <text x="50" y="210" font-size="13" fill="#fca5a5">Magazine no tiene rama:</text>
+    <text x="50" y="232" font-size="13" fill="#fca5a5">cae en el 14 sin avisar (debía ser 7)</text>
+    <text x="30" y="290" font-size="13">Una clase nueva obliga a encontrar</text>
+    <text x="30" y="312" font-size="13">cada cadena de if del programa.</text>
+    <text x="30" y="334" font-size="13" fill="#94a3b8">El compilador no ayuda a encontrarlas.</text>
+    <text x="430" y="40" font-size="16" font-weight="700" fill="#86efac">Método sobrescrito</text>
+    <rect x="530" y="60" width="180" height="50" rx="8" fill="#1e293b" stroke="#86efac" stroke-width="2"/>
+    <text x="620" y="82" text-anchor="middle" font-weight="700">Book</text>
+    <text x="620" y="100" text-anchor="middle" font-size="13" fill="#86efac">loanDays()  14</text>
+    <path d="M620 160 V124" stroke="#e2e8f0" stroke-width="2"/>
+    <path d="M620 112 l-8 13 h16 z" fill="#0f172a" stroke="#e2e8f0" stroke-width="2"/>
+    <path d="M490 160 H750" stroke="#e2e8f0" stroke-width="2"/>
+    <path d="M490 160 V180 M620 160 V180 M750 160 V180" stroke="#e2e8f0" stroke-width="2"/>
+    <rect x="430" y="180" width="120" height="50" rx="8" fill="#1e293b" stroke="#334155" stroke-width="2"/>
+    <text x="490" y="202" text-anchor="middle" font-weight="700">RareBook</text>
+    <text x="490" y="220" text-anchor="middle" font-size="13" fill="#86efac">0</text>
+    <rect x="560" y="180" width="120" height="50" rx="8" fill="#1e293b" stroke="#334155" stroke-width="2"/>
+    <text x="620" y="202" text-anchor="middle" font-weight="700">AudioBook</text>
+    <text x="620" y="220" text-anchor="middle" font-size="13" fill="#86efac">21</text>
+    <rect x="690" y="180" width="120" height="50" rx="8" fill="#1e293b" stroke="#86efac" stroke-width="2"/>
+    <text x="750" y="202" text-anchor="middle" font-weight="700">Magazine</text>
+    <text x="750" y="220" text-anchor="middle" font-size="13" fill="#86efac">7</text>
+    <text x="430" y="290" font-size="13">for (Book book : all)</text>
+    <text x="450" y="312" font-size="13" fill="#86efac">book.loanDays()</text>
+    <text x="430" y="334" font-size="13" fill="#94a3b8">Cada objeto responde con sus días.</text>
+    <text x="430" y="356" font-size="13" fill="#94a3b8">Una clase nueva escribe su método; nadie más cambia.</text>
+  </g>
+</svg>
