@@ -88,4 +88,4 @@ Se evalúa **cómo** construiste el proyecto, con evidencia del repositorio y un
 
 | Anterior | Actual | Siguiente |
 | -------- | ------ | --------- |
-| [Glosario](5-glosario/README.md) | **Rúbrica de evaluación** | Semana 06 |
+| [Glosario](5-glosario/README.md) | **Rúbrica de evaluación** | [Semana 06](../week-06-encapsulacion_constructores_y_composicion/README.md) |

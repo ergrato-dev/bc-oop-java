@@ -126,6 +126,6 @@ El primero debe terminar en `BUILD SUCCESS` con al menos 141 tests y `Failures: 
 
 | Anterior | Actual | Siguiente |
 | -------- | ------ | --------- |
-| [Semana 04](../week-04-analisis_requisitos_casos_de_uso_y_dominio/README.md) | **Semana 05** | Semana 06 |
+| [Semana 04](../week-04-analisis_requisitos_casos_de_uso_y_dominio/README.md) | **Semana 05** | [Semana 06](../week-06-encapsulacion_constructores_y_composicion/README.md) |
 
 ← [Volver al inicio del bootcamp](../../README.md)

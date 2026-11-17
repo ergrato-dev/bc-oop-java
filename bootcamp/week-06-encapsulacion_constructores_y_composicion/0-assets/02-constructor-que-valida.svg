@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 340" role="img" aria-labelledby="t d">
+  <title id="t">Un constructor que valida</title>
+  <desc id="d">new Book con un código, un título y unos ejemplares entra al constructor. Primero se normaliza el código en una variable local. Después hay tres comprobaciones en fila: código válido, título no vacío y ejemplares no negativos. Si cualquiera falla, sale una IllegalArgumentException y el objeto no llega a existir. Solo si pasan las tres se asignan los atributos y new devuelve un libro válido.</desc>
+  <rect width="820" height="340" rx="12" fill="#0f172a"/>
+  <g font-family="Segoe UI, Ubuntu, Helvetica, Arial, sans-serif" font-size="14" fill="#e2e8f0">
+    <text x="30" y="40" font-size="16" font-weight="700">new Book(" bk-042 ", "Ficciones", 2)</text>
+    <rect x="30" y="70" width="140" height="60" rx="6" fill="#1e293b" stroke="#94a3b8" stroke-width="2"/>
+    <text x="100" y="96" text-anchor="middle">normalizar</text>
+    <text x="100" y="116" text-anchor="middle" font-size="12" fill="#94a3b8">en una variable local</text>
+
+    <rect x="200" y="70" width="140" height="60" rx="6" fill="#1e293b" stroke="#93c5fd" stroke-width="2"/>
+    <text x="270" y="96" text-anchor="middle">¿código válido?</text>
+    <text x="270" y="116" text-anchor="middle" font-size="12" fill="#94a3b8">BK-042</text>
+    <rect x="370" y="70" width="140" height="60" rx="6" fill="#1e293b" stroke="#93c5fd" stroke-width="2"/>
+    <text x="440" y="96" text-anchor="middle">¿título con texto?</text>
+    <text x="440" y="116" text-anchor="middle" font-size="12" fill="#94a3b8">no null, no en blanco</text>
+    <rect x="540" y="70" width="140" height="60" rx="6" fill="#1e293b" stroke="#93c5fd" stroke-width="2"/>
+    <text x="610" y="96" text-anchor="middle">¿ejemplares ≥ 0?</text>
+    <text x="610" y="116" text-anchor="middle" font-size="12" fill="#94a3b8">nunca negativos</text>
+
+    <g stroke="#94a3b8" stroke-width="2" fill="none"><path d="M170 100 H196 M340 100 H366 M510 100 H536 M680 100 H720 V160"/></g>
+    <g fill="#94a3b8"><path d="M200 100 l-8 -5 v10 z M370 100 l-8 -5 v10 z M540 100 l-8 -5 v10 z M720 166 l-5 -8 h10 z"/></g>
+    <text x="728" y="94" font-size="12" fill="#86efac">las tres sí</text>
+
+    <g stroke="#fca5a5" stroke-width="2" fill="none"><path d="M270 130 V240 M440 130 V240 M610 130 V240"/></g>
+    <g fill="#fca5a5"><path d="M270 246 l-5 -8 h10 z M440 246 l-5 -8 h10 z M610 246 l-5 -8 h10 z"/></g>
+    <text x="280" y="190" font-size="12" fill="#fca5a5">no</text>
+    <text x="450" y="190" font-size="12" fill="#fca5a5">no</text>
+    <text x="620" y="190" font-size="12" fill="#fca5a5">no</text>
+    <rect x="200" y="250" width="480" height="60" rx="6" fill="#1e293b" stroke="#fca5a5" stroke-width="2"/>
+    <text x="440" y="276" text-anchor="middle" fill="#fca5a5" font-weight="700">IllegalArgumentException</text>
+    <text x="440" y="296" text-anchor="middle" font-size="12" fill="#94a3b8">no se asignó nada: el objeto no llega a existir</text>
+
+    <rect x="650" y="170" width="150" height="60" rx="6" fill="#1e293b" stroke="#86efac" stroke-width="2"/>
+    <text x="725" y="196" text-anchor="middle" fill="#86efac">asignar los tres</text>
+    <text x="725" y="216" text-anchor="middle" font-size="12" fill="#94a3b8">un libro válido</text>
+  </g>
+</svg>

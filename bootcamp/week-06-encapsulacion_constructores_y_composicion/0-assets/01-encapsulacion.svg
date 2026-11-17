@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 340" role="img" aria-labelledby="t d">
+  <title id="t">Un objeto encapsulado</title>
+  <desc id="d">El objeto Book tiene un núcleo privado con code, title y copies, rodeado de una capa pública de métodos: describe, getCode, getCopies, lend y giveBack. Desde Main, una flecha verde llama a lend y entra; otra flecha roja intenta escribir copies = -5 directamente y choca con la capa: no compila, copies has private access.</desc>
+  <rect width="820" height="340" rx="12" fill="#0f172a"/>
+  <g font-family="Segoe UI, Ubuntu, Helvetica, Arial, sans-serif" font-size="14" fill="#e2e8f0">
+    <text x="30" y="40" font-size="16" font-weight="700">Main: el resto del programa</text>
+    <rect x="30" y="60" width="210" height="250" rx="6" fill="#1e293b" stroke="#94a3b8" stroke-width="2"/>
+    <text x="48" y="120" fill="#86efac">ficciones.lend();</text>
+    <text x="48" y="150" font-size="12" fill="#94a3b8">pasa por un método</text>
+    <text x="48" y="230" fill="#fca5a5">ficciones.copies = -5;</text>
+    <text x="48" y="260" font-size="12" fill="#94a3b8">intenta tocar el dato</text>
+
+    <text x="400" y="40" font-size="16" font-weight="700">Book</text>
+    <rect x="390" y="60" width="400" height="250" rx="24" fill="#1e293b" stroke="#fde68a" stroke-width="3"/>
+    <text x="410" y="90" font-size="13" fill="#fde68a">public: lo que se puede pedir</text>
+    <text x="440" y="120" fill="#fde68a">lend()</text>
+    <text x="540" y="120" fill="#fde68a">giveBack()</text>
+    <text x="660" y="120" fill="#fde68a">describe()</text>
+    <text x="440" y="290" fill="#fde68a">getCode()</text>
+    <text x="580" y="290" fill="#fde68a">getCopies()</text>
+    <rect x="440" y="140" width="300" height="120" rx="16" fill="#0f172a" stroke="#93c5fd" stroke-width="2"/>
+    <text x="460" y="166" font-size="13" fill="#93c5fd">private: solo lo ve Book</text>
+    <text x="470" y="194">code = "BK-042"</text>
+    <text x="470" y="218">title = "Ficciones"</text>
+    <text x="470" y="242">copies = 2</text>
+
+    <path d="M240 115 H426" stroke="#86efac" stroke-width="3"/>
+    <path d="M436 115 l-12 -7 v14 z" fill="#86efac"/>
+    <path d="M240 225 H360" stroke="#fca5a5" stroke-width="3"/>
+    <path d="M362 210 l14 30 M376 210 l-14 30" stroke="#fca5a5" stroke-width="3"/>
+    <text x="250" y="186" font-size="12" fill="#fca5a5">no compila: copies has</text>
+    <text x="250" y="202" font-size="12" fill="#fca5a5">private access in Book</text>
+  </g>
+</svg>

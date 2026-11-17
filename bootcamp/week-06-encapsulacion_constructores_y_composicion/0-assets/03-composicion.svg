@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 400" role="img" aria-labelledby="t d">
+  <title id="t">Composición y copia defensiva</title>
+  <desc id="d">El objeto Inventory tiene un array privado items con cinco posiciones: tres apuntan a los libros Ficciones, El túnel y Rayuela, y dos están vacías, con null; size vale 3. App llama a inventory.take con BK-311, y el inventario delega en el take del libro Rayuela. A la derecha, items() devuelve una copia del array con solo tres posiciones: es un array distinto, pero sus posiciones apuntan a los mismos tres libros.</desc>
+  <rect width="820" height="400" rx="12" fill="#0f172a"/>
+  <g font-family="Segoe UI, Ubuntu, Helvetica, Arial, sans-serif" font-size="14" fill="#e2e8f0">
+    <text x="30" y="40" font-size="16" font-weight="700">App</text>
+    <rect x="30" y="96" width="196" height="50" rx="6" fill="#1e293b" stroke="#94a3b8" stroke-width="2"/>
+    <text x="44" y="126" font-size="13" fill="#86efac">inventory.take("BK-311")</text>
+    <path d="M226 121 H262" stroke="#86efac" stroke-width="2"/><path d="M268 121 l-8 -5 v10 z" fill="#86efac"/>
+
+    <text x="270" y="40" font-size="16" font-weight="700">Inventory</text>
+    <rect x="270" y="56" width="250" height="276" rx="12" fill="#1e293b" stroke="#fde68a" stroke-width="3"/>
+    <text x="290" y="84" font-size="13" fill="#93c5fd">private final Book[] items</text>
+    <g stroke="#93c5fd" stroke-width="2" fill="#0f172a">
+      <rect x="290" y="96" width="44" height="44"/><rect x="290" y="140" width="44" height="44"/><rect x="290" y="184" width="44" height="44"/><rect x="290" y="228" width="44" height="44"/><rect x="290" y="272" width="44" height="44"/>
+    </g>
+    <text x="312" y="254" text-anchor="middle" font-size="11" fill="#94a3b8">null</text>
+    <text x="312" y="298" text-anchor="middle" font-size="11" fill="#94a3b8">null</text>
+    <text x="350" y="256" font-size="13" fill="#93c5fd">private int size = 3</text>
+    <text x="350" y="284" font-size="12" fill="#94a3b8">sus reglas: sin códigos</text>
+    <text x="350" y="300" font-size="12" fill="#94a3b8">repetidos, sin pasarse</text>
+    <text x="350" y="316" font-size="12" fill="#94a3b8">de capacidad</text>
+
+    <g fill="#e2e8f0"><circle cx="312" cy="118" r="4"/><circle cx="312" cy="162" r="4"/><circle cx="312" cy="206" r="4"/></g>
+    <g stroke="#e2e8f0" stroke-width="2"><path d="M312 118 H530 M312 162 H530 M312 206 H530"/></g>
+    <g fill="#e2e8f0"><path d="M536 118 l-8 -5 v10 z M536 162 l-8 -5 v10 z M536 206 l-8 -5 v10 z"/></g>
+    <text x="346" y="198" font-size="12" fill="#86efac">delega: rayuela.take()</text>
+
+    <text x="540" y="40" font-size="16" font-weight="700">Tus objetos</text>
+    <rect x="540" y="100" width="170" height="36" rx="6" fill="#1e293b" stroke="#86efac" stroke-width="2"/>
+    <text x="554" y="123">BK-042 · Ficciones</text>
+    <rect x="540" y="144" width="170" height="36" rx="6" fill="#1e293b" stroke="#86efac" stroke-width="2"/>
+    <text x="554" y="167">BK-107 · El túnel</text>
+    <rect x="540" y="188" width="170" height="36" rx="6" fill="#1e293b" stroke="#86efac" stroke-width="3"/>
+    <text x="554" y="211">BK-311 · Rayuela</text>
+
+    <text x="788" y="84" text-anchor="middle" font-size="13" fill="#fde68a">items()</text>
+    <g stroke="#fde68a" stroke-width="2" fill="#0f172a">
+      <rect x="766" y="96" width="44" height="44"/><rect x="766" y="140" width="44" height="44"/><rect x="766" y="184" width="44" height="44"/>
+    </g>
+    <g fill="#94a3b8"><circle cx="788" cy="118" r="4"/><circle cx="788" cy="162" r="4"/><circle cx="788" cy="206" r="4"/></g>
+    <g stroke="#94a3b8" stroke-width="2" stroke-dasharray="5 4"><path d="M788 118 H720 M788 162 H720 M788 206 H720"/></g>
+    <g fill="#94a3b8"><path d="M714 118 l8 -5 v10 z M714 162 l8 -5 v10 z M714 206 l8 -5 v10 z"/></g>
+
+    <text x="30" y="364" font-size="13" fill="#94a3b8">items() devuelve Arrays.copyOf(items, size): un array nuevo, sin los null. Cambiarlo no toca el inventario,</text>
+    <text x="30" y="384" font-size="13" fill="#94a3b8">pero sus posiciones apuntan a los mismos objetos: por eso cada objeto también se protege solo.</text>
+  </g>
+</svg>
