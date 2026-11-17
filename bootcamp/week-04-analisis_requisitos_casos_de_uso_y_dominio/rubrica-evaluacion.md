@@ -88,4 +88,4 @@ Se evalúa **cómo** construiste el proyecto, con evidencia del repositorio y un
 
 | Anterior | Actual | Siguiente |
 | -------- | ------ | --------- |
-| [Glosario](5-glosario/README.md) | **Rúbrica de evaluación** | Semana 05 |
+| [Glosario](5-glosario/README.md) | **Rúbrica de evaluación** | [Semana 05](../week-05-clases_y_objetos/README.md) |

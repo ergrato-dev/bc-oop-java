@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 330" role="img" aria-labelledby="t d">
+  <title id="t">Variables, referencias y objetos</title>
+  <desc id="d">A la izquierda, las variables como cajas: copies guarda el número 5 dentro; original y alias guardan una flecha que apunta al mismo objeto Ficciones; twin apunta a otro objeto con los mismos datos; shelf[1] vale null y no apunta a nada. Debajo, las consecuencias: original == alias es true, original == twin es false, y usar shelf[1] lanza NullPointerException.</desc>
+  <rect width="820" height="330" rx="12" fill="#0f172a"/>
+  <g font-family="Segoe UI, Ubuntu, Helvetica, Arial, sans-serif" font-size="14" fill="#e2e8f0">
+    <text x="30" y="40" font-size="16" font-weight="700">Variables</text>
+    <text x="470" y="40" font-size="16" font-weight="700">Objetos</text>
+
+    <text x="30" y="78">copies</text>
+    <rect x="110" y="58" width="90" height="30" rx="4" fill="#1e293b" stroke="#fde68a" stroke-width="2"/>
+    <text x="155" y="78" text-anchor="middle" fill="#fde68a">5</text>
+    <text x="215" y="78" font-size="12" fill="#94a3b8">primitivo: el valor está dentro</text>
+
+    <text x="30" y="128">original</text>
+    <rect x="110" y="108" width="90" height="30" rx="4" fill="#1e293b" stroke="#93c5fd" stroke-width="2"/>
+    <circle cx="155" cy="123" r="5" fill="#93c5fd"/>
+    <text x="30" y="178">alias</text>
+    <rect x="110" y="158" width="90" height="30" rx="4" fill="#1e293b" stroke="#93c5fd" stroke-width="2"/>
+    <circle cx="155" cy="173" r="5" fill="#93c5fd"/>
+    <path d="M160 123 C300 123 360 140 460 145" stroke="#93c5fd" stroke-width="2" fill="none"/>
+    <path d="M160 173 C300 173 360 160 460 155" stroke="#93c5fd" stroke-width="2" fill="none"/>
+    <path d="M470 150 l-12 -8 l2 12 z" fill="#93c5fd"/>
+    <rect x="470" y="115" width="320" height="70" rx="6" fill="#1e293b" stroke="#86efac" stroke-width="2"/>
+    <text x="486" y="140" font-weight="700" fill="#86efac">Book</text>
+    <text x="486" y="166">"BK-042" · "Ficciones" · copies = 0</text>
+
+    <text x="30" y="228">twin</text>
+    <rect x="110" y="208" width="90" height="30" rx="4" fill="#1e293b" stroke="#93c5fd" stroke-width="2"/>
+    <circle cx="155" cy="223" r="5" fill="#93c5fd"/>
+    <path d="M160 223 H460" stroke="#93c5fd" stroke-width="2"/>
+    <path d="M470 223 l-12 -6 v12 z" fill="#93c5fd"/>
+    <rect x="470" y="198" width="320" height="50" rx="6" fill="#1e293b" stroke="#86efac" stroke-width="2"/>
+    <text x="486" y="228">otro Book con los mismos datos</text>
+
+    <text x="30" y="278">shelf[1]</text>
+    <rect x="110" y="258" width="90" height="30" rx="4" fill="#1e293b" stroke="#fca5a5" stroke-width="2"/>
+    <text x="155" y="278" text-anchor="middle" fill="#fca5a5">null</text>
+    <text x="215" y="278" font-size="12" fill="#94a3b8">no apunta a nada</text>
+
+    <text x="30" y="316" font-size="13" fill="#94a3b8">original == alias: true  ·  original == twin: false  ·  shelf[1].describe(): NullPointerException</text>
+  </g>
+</svg>

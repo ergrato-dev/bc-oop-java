@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 320" role="img" aria-labelledby="t d">
+  <title id="t">Una clase y tres objetos</title>
+  <desc id="d">A la izquierda, la clase Book como molde: dice que cada libro tiene code, title y copies, y que sabe describirse y prestar. A la derecha, tres objetos creados con new a partir de ella: Rayuela con BK-311 y 1 ejemplar, Ficciones con BK-042 y 2 ejemplares, y un libro recién creado con new Book() cuyos atributos tienen los valores por defecto null, null y 0.</desc>
+  <rect width="820" height="320" rx="12" fill="#0f172a"/>
+  <g font-family="Segoe UI, Ubuntu, Helvetica, Arial, sans-serif" font-size="14" fill="#e2e8f0">
+    <text x="30" y="40" font-size="16" font-weight="700">Clase: el molde</text>
+    <rect x="30" y="56" width="240" height="230" rx="6" fill="#1e293b" stroke="#93c5fd" stroke-width="2"/>
+    <path d="M30 100 H270 M30 196 H270" stroke="#93c5fd" stroke-width="2"/>
+    <text x="150" y="85" text-anchor="middle" font-size="18" font-weight="700">Book</text>
+    <text x="46" y="126" fill="#93c5fd">String code</text>
+    <text x="46" y="150" fill="#93c5fd">String title</text>
+    <text x="46" y="174" fill="#93c5fd">int copies</text>
+    <text x="46" y="224" fill="#fde68a">describe()</text>
+    <text x="46" y="248" fill="#fde68a">lend()</text>
+    <text x="46" y="274" font-size="12" fill="#94a3b8">atributos arriba, métodos abajo</text>
+
+    <path d="M280 170 H350" stroke="#94a3b8" stroke-width="2"/>
+    <path d="M350 170 l-10 -6 v12 z" fill="#94a3b8"/>
+    <text x="315" y="160" text-anchor="middle" font-size="13" fill="#94a3b8">new</text>
+
+    <text x="370" y="40" font-size="16" font-weight="700">Objetos: los ejemplares</text>
+    <rect x="370" y="56" width="420" height="66" rx="6" fill="#1e293b" stroke="#86efac" stroke-width="2"/>
+    <text x="386" y="80" font-weight="700" fill="#86efac">rayuela</text>
+    <text x="386" y="106">code = "BK-311"  ·  title = "Rayuela"  ·  copies = 1</text>
+    <rect x="370" y="138" width="420" height="66" rx="6" fill="#1e293b" stroke="#86efac" stroke-width="2"/>
+    <text x="386" y="162" font-weight="700" fill="#86efac">ficciones</text>
+    <text x="386" y="188">code = "BK-042"  ·  title = "Ficciones"  ·  copies = 2</text>
+    <rect x="370" y="220" width="420" height="66" rx="6" fill="#1e293b" stroke="#fca5a5" stroke-width="2"/>
+    <text x="386" y="244" font-weight="700" fill="#fca5a5">new Book() sin datos</text>
+    <text x="386" y="270">code = null  ·  title = null  ·  copies = 0</text>
+  </g>
+</svg>

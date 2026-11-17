@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 300" role="img" aria-labelledby="t d">
+  <title id="t">De arrays paralelos a un array de objetos</title>
+  <desc id="d">A la izquierda, la semana 04: tres arrays separados, codes, titles y authors, donde la posición 0 de cada uno habla de Rayuela solo porque coinciden. A la derecha, la semana 05: un solo array books cuya posición 0 apunta a un objeto Book que contiene BK-311, Rayuela y Cortázar juntos. Ordenar o crecer el array mueve el objeto entero.</desc>
+  <rect width="820" height="300" rx="12" fill="#0f172a"/>
+  <g font-family="Segoe UI, Ubuntu, Helvetica, Arial, sans-serif" font-size="14" fill="#e2e8f0">
+    <text x="30" y="40" font-size="16" font-weight="700">Semana 04: tres arrays paralelos</text>
+    <text x="30" y="84" fill="#94a3b8">codes</text>
+    <text x="30" y="134" fill="#94a3b8">titles</text>
+    <text x="30" y="184" fill="#94a3b8">authors</text>
+    <g fill="#1e293b" stroke="#fde68a" stroke-width="2">
+      <rect x="100" y="62" width="90" height="34" rx="4"/><rect x="190" y="62" width="90" height="34" rx="4"/><rect x="280" y="62" width="90" height="34" rx="4"/>
+      <rect x="100" y="112" width="90" height="34" rx="4"/><rect x="190" y="112" width="90" height="34" rx="4"/><rect x="280" y="112" width="90" height="34" rx="4"/>
+      <rect x="100" y="162" width="90" height="34" rx="4"/><rect x="190" y="162" width="90" height="34" rx="4"/><rect x="280" y="162" width="90" height="34" rx="4"/>
+    </g>
+    <g text-anchor="middle" font-size="13">
+      <text x="145" y="84">BK-311</text><text x="235" y="84">BK-042</text><text x="325" y="84">BK-107</text>
+      <text x="145" y="134">Rayuela</text><text x="235" y="134">Ficciones</text><text x="325" y="134">El túnel</text>
+      <text x="145" y="184">Cortázar</text><text x="235" y="184">Borges</text><text x="325" y="184">Sábato</text>
+    </g>
+    <rect x="96" y="56" width="98" height="146" rx="6" fill="none" stroke="#fca5a5" stroke-width="2" stroke-dasharray="6 4"/>
+    <text x="30" y="232" font-size="13" fill="#fca5a5">La posición 0 es Rayuela solo si nadie descuadra</text>
+    <text x="30" y="254" font-size="13" fill="#fca5a5">un array: Arrays.sort(titles) lo hace en silencio</text>
+
+    <path d="M400 130 H440" stroke="#94a3b8" stroke-width="2"/>
+    <path d="M450 130 l-10 -6 v12 z" fill="#94a3b8"/>
+
+    <text x="470" y="40" font-size="16" font-weight="700">Semana 05: un array de objetos</text>
+    <text x="470" y="84" fill="#94a3b8">books</text>
+    <g fill="#1e293b" stroke="#93c5fd" stroke-width="2">
+      <rect x="530" y="62" width="80" height="34" rx="4"/><rect x="610" y="62" width="80" height="34" rx="4"/><rect x="690" y="62" width="80" height="34" rx="4"/>
+    </g>
+    <g fill="#93c5fd"><circle cx="570" cy="79" r="5"/><circle cx="650" cy="79" r="5"/><circle cx="730" cy="79" r="5"/></g>
+    <path d="M570 84 V130" stroke="#93c5fd" stroke-width="2"/>
+    <path d="M570 140 l-6 -12 h12 z" fill="#93c5fd"/>
+    <rect x="490" y="140" width="200" height="86" rx="6" fill="#1e293b" stroke="#86efac" stroke-width="2"/>
+    <text x="506" y="164" font-weight="700" fill="#86efac">Book</text>
+    <text x="506" y="186">"BK-311" · "Rayuela"</text>
+    <text x="506" y="208">"Cortázar"</text>
+    <text x="490" y="254" font-size="13" fill="#86efac">Una posición, un libro entero: ordenar</text>
+    <text x="490" y="276" font-size="13" fill="#86efac">mueve la flecha y el libro viaja con ella</text>
+  </g>
+</svg>

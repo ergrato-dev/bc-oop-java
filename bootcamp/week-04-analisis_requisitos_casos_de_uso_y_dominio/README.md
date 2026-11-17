@@ -128,6 +128,6 @@ El primero debe terminar en `BUILD SUCCESS` con al menos 111 tests y `Failures: 
 
 | Anterior | Actual | Siguiente |
 | -------- | ------ | --------- |
-| [Semana 03](../week-03-tests_junit_assertj_y_depuracion/README.md) | **Semana 04** | Semana 05 |
+| [Semana 03](../week-03-tests_junit_assertj_y_depuracion/README.md) | **Semana 04** | [Semana 05](../week-05-clases_y_objetos/README.md) |
 
 ← [Volver al inicio del bootcamp](../../README.md)

@@ -21,7 +21,7 @@ Las semanas se publican por bloques al estándar de [`CLAUDE.md`](../CLAUDE.md):
 
 | Semana | Tema | Estado |
 |:--:|---|:--:|
-| 05 | Clases y objetos | ⏳ |
+| [05](week-05-clases_y_objetos/README.md) | [Clases y objetos](week-05-clases_y_objetos/README.md) | ✅ |
 | 06 | Encapsulación, constructores y composición | ⏳ |
 | 07 | Herencia | ⏳ |
 | 08 | Polimorfismo | ⏳ |
