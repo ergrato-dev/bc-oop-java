@@ -8,7 +8,7 @@ Reglas duras:
 - Java 25 LTS (Temurin) y Maven con Maven Wrapper (`./mvnw`). PostgreSQL siempre, nunca MySQL. Docker solo donde haga falta un servicio.
 - Versiones completas pinadas, nunca `latest`; verificar tag y CVEs antes de fijar (`docs/stack-versions.md`, con fecha y fuente).
 - Carpeta de semana: `week-NN-slug_snake_case/{README.md,rubrica-evaluacion.md,0-assets,1-teoria,2-practicas,3-proyecto,4-recursos,5-glosario}`.
-- Prácticas: `2-practicas/ejercicio-NN-slug/{README.md,starter/}`. Sin `solution/`. Son guiadas y **no se entregan**: un `Main.java` (archivo único) comentado por pasos (`// PASO N`); el aprendiz descomenta, ejecuta (`java Main.java`) y compara con la salida esperada del README.
+- Prácticas: `2-practicas/ejercicio-NN-slug/{README.md,starter/}`. Sin `solution/`. Son guiadas y **no se entregan**: por defecto un `Main.java` (archivo único; proyecto Maven solo si el ejercicio trata de Maven o de tests) comentado por pasos (`// PASO N`); el aprendiz descomenta, ejecuta (`java Main.java`) y compara con la salida esperada del README.
 - Único entregable semanal: el proyecto en el dominio asignado, en el repo `oop-java-<nombre>-<apellido>` del aprendiz, rama `week-NN` → PR a `main`. Starter Maven (`pom.xml` + wrapper) con JUnit 5 y AssertJ; `./mvnw test` arranca en rojo y termina en verde.
 - Solución del proyecto: en `ergrato-dev/bc-instructor`, `bc-oop-java/week-NN-slug/3-proyecto/`, nunca en este repo.
 - Dominios: el catálogo vive en `ergrato-dev/bc-dominios` (`catalogos/bc-oop-java.md`). Aquí no hay `docs/dominios.md`; los textos dicen que el dominio lo asigna el instructor. Ejemplos del material: Biblioteca (`Book`), reservado.

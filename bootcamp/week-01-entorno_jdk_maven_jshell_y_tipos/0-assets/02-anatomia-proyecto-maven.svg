@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 340" role="img" aria-labelledby="t d">
+  <title id="t">Anatomía de un proyecto Maven</title>
+  <desc id="d">A la izquierda, el árbol del proyecto: pom.xml con coordenadas, versión de Java y dependencias; mvnw y .mvn/wrapper con la versión fijada de Maven; src/main/java con el programa y src/test/java con los tests; target/ generado y fuera de Git. A la derecha, el ciclo de vida: validate, compile, test, package, cada fase incluye las anteriores; si test falla, package no se ejecuta.</desc>
+  <defs><marker id="a2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#94a3b8"/></marker></defs>
+  <rect width="820" height="340" rx="12" fill="#0f172a"/>
+  <g font-family="Segoe UI, Ubuntu, Helvetica, Arial, sans-serif" font-size="13" fill="#e2e8f0">
+    <text x="30" y="36" font-size="15" font-weight="700">gestion/</text>
+    <rect x="40" y="50" width="380" height="40" rx="6" fill="#1e293b" stroke="#facc15"/>
+    <text x="54" y="75" font-weight="700">pom.xml</text><text x="140" y="75" fill="#cbd5e1">coordenadas, Java 25, dependencias</text>
+    <rect x="40" y="98" width="380" height="40" rx="6" fill="#1e293b" stroke="#a78bfa"/>
+    <text x="54" y="123" font-weight="700">mvnw · .mvn/wrapper/</text><text x="210" y="123" fill="#cbd5e1">fija Maven 3.10.0</text>
+    <rect x="40" y="146" width="380" height="40" rx="6" fill="#1e293b" stroke="#60a5fa"/>
+    <text x="54" y="171" font-weight="700">src/main/java/gestion/</text><text x="230" y="171" fill="#cbd5e1">el programa</text>
+    <rect x="40" y="194" width="380" height="40" rx="6" fill="#1e293b" stroke="#4ade80"/>
+    <text x="54" y="219" font-weight="700">src/test/java/gestion/</text><text x="230" y="219" fill="#cbd5e1">los tests</text>
+    <rect x="40" y="242" width="380" height="40" rx="6" fill="#1e293b" stroke="#64748b" stroke-dasharray="5 4"/>
+    <text x="54" y="267" font-weight="700" fill="#94a3b8">target/</text><text x="140" y="267" fill="#94a3b8">lo genera Maven · no va a Git</text>
+    <text x="30" y="316" fill="#94a3b8">Va a Git todo menos target/</text>
+    <text x="500" y="36" font-size="15" font-weight="700">Ciclo de vida</text>
+    <rect x="500" y="50" width="150" height="40" rx="6" fill="#1e293b" stroke="#64748b"/><text x="575" y="75" text-anchor="middle">validate</text>
+    <rect x="500" y="110" width="150" height="40" rx="6" fill="#422006" stroke="#facc15"/><text x="575" y="135" text-anchor="middle" font-weight="700">compile</text>
+    <rect x="500" y="170" width="150" height="40" rx="6" fill="#052e16" stroke="#4ade80"/><text x="575" y="195" text-anchor="middle" font-weight="700">test</text>
+    <rect x="500" y="230" width="150" height="40" rx="6" fill="#1e293b" stroke="#a78bfa"/><text x="575" y="255" text-anchor="middle" font-weight="700">package</text>
+    <path d="M575 90V106M575 150V166M575 210V226" stroke="#94a3b8" stroke-width="2" marker-end="url(#a2)"/>
+    <text x="665" y="135" fill="#cbd5e1">target/classes</text>
+    <text x="665" y="195" fill="#cbd5e1">si falla, se para</text>
+    <text x="665" y="255" fill="#cbd5e1">target/*.jar</text>
+    <text x="500" y="300" fill="#94a3b8">./mvnw package ejecuta las cuatro, en orden</text>
+  </g>
+</svg>

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 300" role="img" aria-labelledby="t d">
+  <title id="t">De Main.java a la ejecución en la JVM</title>
+  <desc id="d">El compilador javac lee Main.java; si hay un error de escritura o de tipos se detiene con un error de compilación y no se ejecuta nada. Si no, genera el bytecode Main.class, que la JVM carga y ejecuta; las excepciones como NumberFormatException aparecen durante la ejecución. El comando java Main.java hace las dos fases seguidas, compilando en memoria.</desc>
+  <defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#94a3b8"/></marker></defs>
+  <rect width="820" height="300" rx="12" fill="#0f172a"/>
+  <g font-family="Segoe UI, Ubuntu, Helvetica, Arial, sans-serif" font-size="14" fill="#e2e8f0">
+    <rect x="20" y="70" width="150" height="90" rx="8" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
+    <text x="95" y="102" text-anchor="middle" font-weight="700">Main.java</text>
+    <text x="95" y="126" text-anchor="middle" font-size="12">código fuente</text>
+    <text x="95" y="144" text-anchor="middle" font-size="12">(texto)</text>
+    <rect x="220" y="70" width="160" height="90" rx="8" fill="#422006" stroke="#facc15" stroke-width="2"/>
+    <text x="300" y="104" text-anchor="middle" font-weight="700">javac</text>
+    <text x="300" y="128" text-anchor="middle" font-size="12">revisa todo el archivo</text>
+    <text x="300" y="144" text-anchor="middle" font-size="12">y compila</text>
+    <rect x="430" y="70" width="160" height="90" rx="8" fill="#1e293b" stroke="#a78bfa" stroke-width="2"/>
+    <text x="510" y="104" text-anchor="middle" font-weight="700">Main.class</text>
+    <text x="510" y="128" text-anchor="middle" font-size="12">bytecode, igual en</text>
+    <text x="510" y="144" text-anchor="middle" font-size="12">cualquier sistema</text>
+    <rect x="640" y="70" width="160" height="90" rx="8" fill="#052e16" stroke="#4ade80" stroke-width="2"/>
+    <text x="720" y="104" text-anchor="middle" font-weight="700">JVM</text>
+    <text x="720" y="128" text-anchor="middle" font-size="12">carga y ejecuta</text>
+    <text x="720" y="144" text-anchor="middle" font-size="12">línea a línea</text>
+    <path d="M170 115H216" stroke="#94a3b8" stroke-width="2" marker-end="url(#a)"/>
+    <path d="M380 115H426" stroke="#94a3b8" stroke-width="2" marker-end="url(#a)"/>
+    <path d="M590 115H636" stroke="#94a3b8" stroke-width="2" marker-end="url(#a)"/>
+    <path d="M300 160V214" stroke="#f87171" stroke-width="2" stroke-dasharray="5 4" marker-end="url(#a)"/>
+    <rect x="200" y="218" width="200" height="54" rx="8" fill="#450a0a" stroke="#f87171"/>
+    <text x="300" y="241" text-anchor="middle" font-weight="700" fill="#fca5a5">error de compilación</text>
+    <text x="300" y="260" text-anchor="middle" font-size="12" fill="#fca5a5">no se ejecuta nada</text>
+    <path d="M720 160V214" stroke="#f87171" stroke-width="2" stroke-dasharray="5 4" marker-end="url(#a)"/>
+    <rect x="610" y="218" width="200" height="54" rx="8" fill="#450a0a" stroke="#f87171"/>
+    <text x="710" y="241" text-anchor="middle" font-weight="700" fill="#fca5a5">excepción</text>
+    <text x="710" y="260" text-anchor="middle" font-size="12" fill="#fca5a5">lo anterior ya se ejecutó</text>
+    <path d="M220 40H800" stroke="#38bdf8" stroke-width="2" marker-end="url(#a)"/>
+    <text x="230" y="30" font-size="13" fill="#38bdf8">java Main.java: compila en memoria y ejecuta, en un solo comando</text>
+  </g>
+</svg>

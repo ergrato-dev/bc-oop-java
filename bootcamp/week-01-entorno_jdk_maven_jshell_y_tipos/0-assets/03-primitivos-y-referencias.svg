@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 300" role="img" aria-labelledby="t d">
+  <title id="t">Variables primitivas y variables de referencia</title>
+  <desc id="d">A la izquierda, variables primitivas: copies de tipo int guarda el valor 3 directamente y price de tipo double guarda 12.5. A la derecha, una variable de referencia: title de tipo String guarda una flecha hacia un objeto String con el texto Cien años de soledad. Dos variables String pueden apuntar a objetos distintos con el mismo texto: == compara las flechas, equals compara el contenido.</desc>
+  <defs><marker id="a3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#94a3b8"/></marker></defs>
+  <rect width="820" height="300" rx="12" fill="#0f172a"/>
+  <g font-family="Segoe UI, Ubuntu, Helvetica, Arial, sans-serif" font-size="14" fill="#e2e8f0">
+    <text x="30" y="40" font-size="15" font-weight="700">Primitivos: la variable guarda el valor</text>
+    <text x="40" y="84" fill="#94a3b8">int copies</text>
+    <rect x="150" y="62" width="110" height="34" rx="6" fill="#052e16" stroke="#4ade80"/><text x="205" y="84" text-anchor="middle" font-weight="700">3</text>
+    <text x="40" y="134" fill="#94a3b8">double price</text>
+    <rect x="150" y="112" width="110" height="34" rx="6" fill="#052e16" stroke="#4ade80"/><text x="205" y="134" text-anchor="middle" font-weight="700">12.5</text>
+    <text x="40" y="184" fill="#94a3b8">boolean free</text>
+    <rect x="150" y="162" width="110" height="34" rx="6" fill="#052e16" stroke="#4ade80"/><text x="205" y="184" text-anchor="middle" font-weight="700">true</text>
+    <text x="30" y="240" font-size="12" fill="#94a3b8">byte · short · int · long · float · double · char · boolean</text>
+    <text x="30" y="260" font-size="12" fill="#94a3b8">== compara el valor</text>
+    <path d="M410 30V270" stroke="#334155" stroke-width="1.5"/>
+    <text x="440" y="40" font-size="15" font-weight="700">Referencias: la variable apunta a un objeto</text>
+    <text x="440" y="84" fill="#94a3b8">String a</text>
+    <rect x="520" y="62" width="44" height="34" rx="6" fill="#1e293b" stroke="#60a5fa"/><circle cx="542" cy="79" r="5" fill="#60a5fa"/>
+    <text x="440" y="164" fill="#94a3b8">String b</text>
+    <rect x="520" y="142" width="44" height="34" rx="6" fill="#1e293b" stroke="#60a5fa"/><circle cx="542" cy="159" r="5" fill="#60a5fa"/>
+    <path d="M547 79H624" stroke="#94a3b8" stroke-width="2" marker-end="url(#a3)"/>
+    <path d="M547 159H624" stroke="#94a3b8" stroke-width="2" marker-end="url(#a3)"/>
+    <rect x="628" y="58" width="170" height="42" rx="8" fill="#1e293b" stroke="#a78bfa"/><text x="713" y="84" text-anchor="middle">"BK-042"</text>
+    <rect x="628" y="138" width="170" height="42" rx="8" fill="#1e293b" stroke="#a78bfa"/><text x="713" y="164" text-anchor="middle">"BK-042"</text>
+    <text x="440" y="222" font-size="13">a == b  es <tspan fill="#f87171" font-weight="700">false</tspan>: dos objetos distintos</text>
+    <text x="440" y="248" font-size="13">a.equals(b)  es <tspan fill="#4ade80" font-weight="700">true</tspan>: mismo contenido</text>
+  </g>
+</svg>

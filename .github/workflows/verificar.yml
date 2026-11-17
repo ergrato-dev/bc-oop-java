@@ -21,5 +21,18 @@ jobs:
       - name: shellcheck de scripts/
         run: shellcheck -S warning scripts/*.sh
 
-      # Los tests de los starters de cada semana se añaden aquí cuando exista
-      # la primera semana publicada.
+      # Los starters de proyecto arrancan en rojo a propósito: aquí solo se
+      # comprueba que compilan (código y tests) con la imagen fijada.
+      - name: Los starters compilan con Java 25
+        run: |
+          set -euo pipefail
+          img=maven:3.10.0-eclipse-temurin-25-noble
+          for d in bootcamp/week-*/3-proyecto/starter bootcamp/week-*/2-practicas/*/starter; do
+            echo "::group::$d"
+            if [ -f "$d/pom.xml" ]; then
+              docker run --rm -v "$PWD/$d":/w -w /w "$img" ./mvnw -q -B test-compile
+            else
+              docker run --rm -v "$PWD/$d":/w -w /w "$img" sh -c 'javac -d /tmp/out *.java'
+            fi
+            echo "::endgroup::"
+          done

@@ -12,7 +12,7 @@ Las semanas se publican por bloques al estándar de [`CLAUDE.md`](../CLAUDE.md):
 
 | Semana | Tema | Estado |
 |:--:|---|:--:|
-| 01 | Entorno: JDK 25, Maven Wrapper, JShell y tipos | ⏳ |
+| [01](week-01-entorno_jdk_maven_jshell_y_tipos/README.md) | [Entorno: JDK 25, Maven Wrapper, JShell y tipos](week-01-entorno_jdk_maven_jshell_y_tipos/README.md) | ✅ |
 | 02 | Control de flujo, métodos, `String` y arrays | ⏳ |
 | 03 | Tests con JUnit y AssertJ; depuración | ⏳ |
 | 04 | Análisis: requisitos, casos de uso y objetos del dominio | ⏳ |
