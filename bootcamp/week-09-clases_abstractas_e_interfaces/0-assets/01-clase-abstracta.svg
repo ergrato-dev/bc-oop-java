@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 420" role="img" aria-labelledby="t d">
+  <title id="t">Una clase abstracta y sus hijas</title>
+  <desc id="d">LibraryItem es una clase abstracta: tiene código, título, constructor, un método abstracto loanDays sin cuerpo y un método final card que lo usa. No se pueden crear objetos de LibraryItem. Sus tres hijas, Book, Magazine y Dvd, sí se crean, y cada una escribe su loanDays: 14, 7 y 3 días. Escribir new LibraryItem da el error cannot be instantiated; new Book funciona.</desc>
+  <rect width="820" height="420" rx="12" fill="#0f172a"/>
+  <g font-family="Segoe UI, Ubuntu, Helvetica, Arial, sans-serif" font-size="14" fill="#e2e8f0">
+    <rect x="250" y="30" width="320" height="150" rx="8" fill="#1e293b" stroke="#fde68a" stroke-width="2" stroke-dasharray="8 6"/>
+    <text x="410" y="56" text-anchor="middle" font-size="12" fill="#fde68a">abstract · no se crea</text>
+    <text x="410" y="78" text-anchor="middle" font-size="16" font-weight="700" font-style="italic">LibraryItem</text>
+    <line x1="266" y1="90" x2="554" y2="90" stroke="#334155" stroke-width="2"/>
+    <text x="280" y="112" fill="#94a3b8">code, title · constructor que valida</text>
+    <text x="280" y="136" fill="#fde68a" font-style="italic">abstract int loanDays(); · sin cuerpo</text>
+    <text x="280" y="160">final String card() · usa loanDays()</text>
+    <path d="M410 180 V214" stroke="#e2e8f0" stroke-width="2" fill="none"/>
+    <path d="M410 182 l-8 14 h16 z" fill="#0f172a" stroke="#e2e8f0" stroke-width="2"/>
+    <path d="M150 214 H670" stroke="#e2e8f0" stroke-width="2" fill="none"/>
+    <path d="M150 214 V240 M410 214 V240 M670 214 V240" stroke="#e2e8f0" stroke-width="2" fill="none"/>
+    <rect x="60" y="240" width="180" height="76" rx="8" fill="#1e293b" stroke="#86efac" stroke-width="2"/>
+    <text x="150" y="266" text-anchor="middle" font-weight="700">Book</text>
+    <text x="150" y="290" text-anchor="middle" font-size="13" fill="#86efac">loanDays() → 14</text>
+    <rect x="320" y="240" width="180" height="76" rx="8" fill="#1e293b" stroke="#86efac" stroke-width="2"/>
+    <text x="410" y="266" text-anchor="middle" font-weight="700">Magazine</text>
+    <text x="410" y="290" text-anchor="middle" font-size="13" fill="#86efac">loanDays() → 7</text>
+    <rect x="580" y="240" width="180" height="76" rx="8" fill="#1e293b" stroke="#86efac" stroke-width="2"/>
+    <text x="670" y="266" text-anchor="middle" font-weight="700">Dvd</text>
+    <text x="670" y="290" text-anchor="middle" font-size="13" fill="#86efac">loanDays() → 3</text>
+    <text x="150" y="306" text-anchor="middle" font-size="11" fill="#94a3b8">se crea</text>
+    <text x="410" y="306" text-anchor="middle" font-size="11" fill="#94a3b8">se crea</text>
+    <text x="670" y="306" text-anchor="middle" font-size="11" fill="#94a3b8">se crea</text>
+    <rect x="60" y="346" width="340" height="48" rx="8" fill="#1e293b" stroke="#fca5a5" stroke-width="2"/>
+    <text x="230" y="368" text-anchor="middle" fill="#fca5a5">new LibraryItem(...)</text>
+    <text x="230" y="386" text-anchor="middle" font-size="12" fill="#94a3b8">error: cannot be instantiated</text>
+    <rect x="420" y="346" width="340" height="48" rx="8" fill="#1e293b" stroke="#86efac" stroke-width="2"/>
+    <text x="590" y="368" text-anchor="middle" fill="#86efac">LibraryItem item = new Book(...)</text>
+    <text x="590" y="386" text-anchor="middle" font-size="12" fill="#94a3b8">la variable sí puede ser abstracta</text>
+  </g>
+</svg>

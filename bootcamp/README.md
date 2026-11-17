@@ -25,7 +25,7 @@ Las semanas se publican por bloques al estándar de [`CLAUDE.md`](../CLAUDE.md):
 | [06](week-06-encapsulacion_constructores_y_composicion/README.md) | [Encapsulación, constructores y composición](week-06-encapsulacion_constructores_y_composicion/README.md) | ✅ |
 | [07](week-07-herencia/README.md) | [Herencia](week-07-herencia/README.md) | ✅ |
 | [08](week-08-polimorfismo/README.md) | [Polimorfismo](week-08-polimorfismo/README.md) | ✅ |
-| 09 | Clases abstractas e interfaces | ⏳ |
+| [09](week-09-clases_abstractas_e_interfaces/README.md) | [Clases abstractas e interfaces](week-09-clases_abstractas_e_interfaces/README.md) | ✅ |
 | 10 | Records, enums, `sealed` y pattern matching | ⏳ |
 | 11 | El contrato de `Object`: `equals`, `hashCode`, `toString` y `Comparable` | ⏳ |
 

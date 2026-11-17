@@ -88,4 +88,4 @@ Se evalúa **cómo** construiste el proyecto, con evidencia del repositorio y un
 
 | Anterior | Actual | Siguiente |
 | -------- | ------ | --------- |
-| [Glosario](5-glosario/README.md) | **Rúbrica de evaluación** | Semana 09 |
+| [Glosario](5-glosario/README.md) | **Rúbrica de evaluación** | [Semana 09](../week-09-clases_abstractas_e_interfaces/README.md) |

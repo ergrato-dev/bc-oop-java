@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 400" role="img" aria-labelledby="t d">
+  <title id="t">Clase abstracta o interfaz</title>
+  <desc id="d">La pregunta que decide es qué comparten las clases. Si comparten datos y forman una familia, es un, clase abstracta: atributos, constructor y métodos con cuerpo, pero una clase solo puede heredar de una; ejemplo LibraryItem. Si solo comparten una capacidad, puede, interfaz: sin atributos ni constructor, métodos default y static, y una clase puede implementar varias; ejemplos Loanable y Criterion.</desc>
+  <rect width="820" height="400" rx="12" fill="#0f172a"/>
+  <g font-family="Segoe UI, Ubuntu, Helvetica, Arial, sans-serif" font-size="14" fill="#e2e8f0">
+    <rect x="270" y="30" width="280" height="50" rx="25" fill="#1e293b" stroke="#e2e8f0" stroke-width="2"/>
+    <text x="410" y="61" text-anchor="middle" font-size="16" font-weight="700">¿Qué comparten las clases?</text>
+    <path d="M340 82 L215 128" stroke="#fde68a" stroke-width="2" fill="none"/>
+    <path d="M205 132 l13 -10 l4 12 z" fill="#fde68a"/>
+    <path d="M480 82 L605 128" stroke="#93c5fd" stroke-width="2" fill="none"/>
+    <path d="M615 132 l-17 2 l4 -12 z" fill="#93c5fd"/>
+    <text x="215" y="104" text-anchor="end" font-size="13" fill="#fde68a">datos y una familia: «es un»</text>
+    <text x="605" y="104" font-size="13" fill="#93c5fd">solo una capacidad: «puede»</text>
+    <rect x="50" y="140" width="330" height="200" rx="8" fill="#1e293b" stroke="#fde68a" stroke-width="2"/>
+    <text x="215" y="170" text-anchor="middle" font-size="16" font-weight="700" fill="#fde68a">Clase abstracta</text>
+    <text x="72" y="202">Atributos y constructor</text>
+    <text x="72" y="228">Métodos con y sin cuerpo</text>
+    <text x="72" y="254">Cualquier visibilidad</text>
+    <text x="72" y="280">Solo una por clase: extends</text>
+    <text x="72" y="318" fill="#94a3b8">LibraryItem: code, title, loanDays()</text>
+    <rect x="440" y="140" width="330" height="200" rx="8" fill="#1e293b" stroke="#93c5fd" stroke-width="2"/>
+    <text x="605" y="170" text-anchor="middle" font-size="16" font-weight="700" fill="#93c5fd">Interfaz</text>
+    <text x="462" y="202">Sin atributos ni constructor</text>
+    <text x="462" y="228">Sin cuerpo, salvo default y static</text>
+    <text x="462" y="254">Todo lo que promete es public</text>
+    <text x="462" y="280">Varias por clase: implements A, B</text>
+    <text x="462" y="318" fill="#94a3b8">Loanable, Searchable, Criterion</text>
+    <text x="410" y="374" text-anchor="middle" font-size="13" fill="#94a3b8">Si dudas, empieza por una interfaz: es el compromiso más pequeño</text>
+  </g>
+</svg>

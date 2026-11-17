@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 420" role="img" aria-labelledby="t d">
+  <title id="t">Una interfaz, dos familias</title>
+  <desc id="d">Dos jerarquías sin relación: Book hereda de LibraryItem y Laptop hereda directamente de Object. Las dos clases implementan la interfaz Loanable, con code y loanDays. Por eso un array Loanable puede guardar un libro y un portátil, y un bucle llama a loanDays en los dos: 14 días el libro, 2 el portátil.</desc>
+  <rect width="820" height="420" rx="12" fill="#0f172a"/>
+  <g font-family="Segoe UI, Ubuntu, Helvetica, Arial, sans-serif" font-size="14" fill="#e2e8f0">
+    <rect x="70" y="40" width="200" height="50" rx="8" fill="#1e293b" stroke="#334155" stroke-width="2"/>
+    <text x="170" y="70" text-anchor="middle" font-weight="700" font-style="italic">LibraryItem</text>
+    <rect x="550" y="40" width="200" height="50" rx="8" fill="#1e293b" stroke="#334155" stroke-width="2"/>
+    <text x="650" y="70" text-anchor="middle" font-weight="700" fill="#94a3b8">Object</text>
+    <path d="M170 92 V150 M650 92 V150" stroke="#e2e8f0" stroke-width="2" fill="none"/>
+    <path d="M170 92 l-8 14 h16 z M650 92 l-8 14 h16 z" fill="#0f172a" stroke="#e2e8f0" stroke-width="2"/>
+    <text x="182" y="128" font-size="12" fill="#94a3b8">extends</text>
+    <text x="662" y="128" font-size="12" fill="#94a3b8">extends</text>
+    <rect x="70" y="150" width="200" height="64" rx="8" fill="#1e293b" stroke="#86efac" stroke-width="2"/>
+    <text x="170" y="176" text-anchor="middle" font-weight="700">Book</text>
+    <text x="170" y="198" text-anchor="middle" font-size="13" fill="#86efac">loanDays() → 14</text>
+    <rect x="550" y="150" width="200" height="64" rx="8" fill="#1e293b" stroke="#86efac" stroke-width="2"/>
+    <text x="650" y="176" text-anchor="middle" font-weight="700">Laptop</text>
+    <text x="650" y="198" text-anchor="middle" font-size="13" fill="#86efac">loanDays() → 2</text>
+    <text x="410" y="120" text-anchor="middle" font-size="12" fill="#94a3b8">ningún padre en común</text>
+    <text x="410" y="138" text-anchor="middle" font-size="12" fill="#94a3b8">salvo Object</text>
+    <rect x="300" y="256" width="220" height="74" rx="8" fill="#1e293b" stroke="#93c5fd" stroke-width="2" stroke-dasharray="8 6"/>
+    <text x="410" y="278" text-anchor="middle" font-size="12" fill="#93c5fd">interface</text>
+    <text x="410" y="298" text-anchor="middle" font-size="16" font-weight="700">Loanable</text>
+    <text x="410" y="318" text-anchor="middle" font-size="13" fill="#94a3b8">code() · loanDays()</text>
+    <path d="M170 216 V292 H286" stroke="#93c5fd" stroke-width="2" stroke-dasharray="6 5" fill="none"/>
+    <path d="M298 292 l-14 -8 v16 z" fill="#0f172a" stroke="#93c5fd" stroke-width="2"/>
+    <path d="M650 216 V292 H534" stroke="#93c5fd" stroke-width="2" stroke-dasharray="6 5" fill="none"/>
+    <path d="M522 292 l14 -8 v16 z" fill="#0f172a" stroke="#93c5fd" stroke-width="2"/>
+    <text x="182" y="250" font-size="12" fill="#93c5fd">implements</text>
+    <text x="662" y="250" font-size="12" fill="#93c5fd">implements</text>
+    <rect x="160" y="352" width="500" height="44" rx="8" fill="#1e293b" stroke="#334155" stroke-width="2"/>
+    <text x="410" y="380" text-anchor="middle">Loanable[] desk = { libro, portátil }</text>
+  </g>
+</svg>

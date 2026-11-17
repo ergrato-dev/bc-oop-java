@@ -127,6 +127,6 @@ El primero debe terminar en `BUILD SUCCESS` con al menos 215 tests y `Failures: 
 
 | Anterior | Actual | Siguiente |
 | -------- | ------ | --------- |
-| [Semana 07](../week-07-herencia/README.md) | **Semana 08** | Semana 09 |
+| [Semana 07](../week-07-herencia/README.md) | **Semana 08** | [Semana 09](../week-09-clases_abstractas_e_interfaces/README.md) |
 
 ← [Volver al inicio del bootcamp](../../README.md)
