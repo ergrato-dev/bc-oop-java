@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 420" role="img" aria-labelledby="t d">
+  <title id="t">Un enum con datos</title>
+  <desc id="d">El enum Format declara tres constantes: PAPER con 21 días, EBOOK con 7 y AUDIO con 14. Cada constante es un objeto único, con su posición: 0, 1 y 2. Debajo, tres llamadas: values devuelve las tres constantes en orden; valueOf de EBOOK devuelve la constante EBOOK; valueOf de ebook en minúsculas lanza IllegalArgumentException.</desc>
+  <rect width="820" height="420" rx="12" fill="#0f172a"/>
+  <g font-family="Segoe UI, Ubuntu, Helvetica, Arial, sans-serif" font-size="14" fill="#e2e8f0">
+    <rect x="290" y="30" width="240" height="50" rx="8" fill="#1e293b" stroke="#86efac" stroke-width="2"/>
+    <text x="410" y="61" text-anchor="middle" font-weight="700" fill="#86efac">enum Format</text>
+    <path d="M410 82 V104 M150 104 H670 M150 104 V124 M410 104 V124 M670 104 V124" stroke="#94a3b8" stroke-width="2" fill="none"/>
+    <rect x="50" y="124" width="200" height="90" rx="8" fill="#1e293b" stroke="#334155" stroke-width="2"/>
+    <text x="150" y="152" text-anchor="middle" font-weight="700">PAPER</text>
+    <text x="150" y="176" text-anchor="middle">days: 21</text>
+    <text x="150" y="200" text-anchor="middle" font-size="12" fill="#94a3b8">ordinal 0</text>
+    <rect x="310" y="124" width="200" height="90" rx="8" fill="#1e293b" stroke="#334155" stroke-width="2"/>
+    <text x="410" y="152" text-anchor="middle" font-weight="700">EBOOK</text>
+    <text x="410" y="176" text-anchor="middle">days: 7</text>
+    <text x="410" y="200" text-anchor="middle" font-size="12" fill="#94a3b8">ordinal 1</text>
+    <rect x="570" y="124" width="200" height="90" rx="8" fill="#1e293b" stroke="#334155" stroke-width="2"/>
+    <text x="670" y="152" text-anchor="middle" font-weight="700">AUDIO</text>
+    <text x="670" y="176" text-anchor="middle">days: 14</text>
+    <text x="670" y="200" text-anchor="middle" font-size="12" fill="#94a3b8">ordinal 2</text>
+    <text x="410" y="240" text-anchor="middle" font-size="13" fill="#94a3b8">Tres objetos, cada uno una sola vez: nadie puede crear un cuarto</text>
+    <rect x="50" y="262" width="720" height="40" rx="8" fill="#1e293b" stroke="#93c5fd" stroke-width="2"/>
+    <text x="70" y="287" fill="#93c5fd">Format.values()</text>
+    <text x="360" y="287">[PAPER, EBOOK, AUDIO], en orden</text>
+    <rect x="50" y="310" width="720" height="40" rx="8" fill="#1e293b" stroke="#93c5fd" stroke-width="2"/>
+    <text x="70" y="335" fill="#93c5fd">Format.valueOf("EBOOK")</text>
+    <text x="360" y="335">EBOOK, la misma constante: se compara con ==</text>
+    <rect x="50" y="358" width="720" height="40" rx="8" fill="#1e293b" stroke="#fca5a5" stroke-width="2"/>
+    <text x="70" y="383" fill="#fca5a5">Format.valueOf("ebook")</text>
+    <text x="360" y="383">IllegalArgumentException: el nombre es exacto</text>
+  </g>
+</svg>

@@ -88,4 +88,4 @@ Se evalúa **cómo** construiste el proyecto, con evidencia del repositorio y un
 
 | Anterior | Actual | Siguiente |
 | -------- | ------ | --------- |
-| [Glosario](5-glosario/README.md) | **Rúbrica de evaluación** | Semana 10 |
+| [Glosario](5-glosario/README.md) | **Rúbrica de evaluación** | [Semana 10](../week-10-records_enums_sealed_y_pattern_matching/README.md) |

@@ -126,6 +126,6 @@ El primero debe terminar en `BUILD SUCCESS` con al menos 235 tests y `Failures: 
 
 | Anterior | Actual | Siguiente |
 | -------- | ------ | --------- |
-| [Semana 08](../week-08-polimorfismo/README.md) | **Semana 09** | Semana 10 |
+| [Semana 08](../week-08-polimorfismo/README.md) | **Semana 09** | [Semana 10](../week-10-records_enums_sealed_y_pattern_matching/README.md) |
 
 ← [Volver al inicio del bootcamp](../../README.md)

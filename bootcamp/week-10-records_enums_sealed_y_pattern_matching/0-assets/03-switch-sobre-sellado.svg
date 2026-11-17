@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 460" role="img" aria-labelledby="t d">
+  <title id="t">Un switch sobre un tipo sellado</title>
+  <desc id="d">Arriba, la interfaz sellada Outcome permite solo dos records, Taken y Rejected. A la derecha, un switch sobre un Outcome con un case para Taken y otro para Rejected compila sin default, porque el compilador sabe que no hay más casos. Abajo, si se añade un tercer record, Maybe, a permits, el mismo switch deja de compilar con el error the switch expression does not cover all possible input values, hasta que se añade su case.</desc>
+  <rect width="820" height="460" rx="12" fill="#0f172a"/>
+  <g font-family="Segoe UI, Ubuntu, Helvetica, Arial, sans-serif" font-size="14" fill="#e2e8f0">
+    <rect x="40" y="30" width="330" height="50" rx="8" fill="#1e293b" stroke="#86efac" stroke-width="2"/>
+    <text x="205" y="53" text-anchor="middle" font-weight="700" fill="#86efac">sealed interface Outcome</text>
+    <text x="205" y="71" text-anchor="middle" font-size="12" fill="#94a3b8">permits Taken, Rejected</text>
+    <path d="M120 106 V140 M290 106 V140" stroke="#e2e8f0" stroke-width="2" stroke-dasharray="6 4" fill="none"/>
+    <path d="M120 82 l-8 14 h16 z M290 82 l-8 14 h16 z" fill="#0f172a" stroke="#e2e8f0" stroke-width="2"/>
+    <path d="M120 96 V106 M290 96 V106" stroke="#e2e8f0" stroke-width="2" stroke-dasharray="6 4"/>
+    <rect x="40" y="140" width="160" height="56" rx="8" fill="#1e293b" stroke="#334155" stroke-width="2"/>
+    <text x="120" y="164" text-anchor="middle" font-weight="700">Taken</text>
+    <text x="120" y="184" text-anchor="middle" font-size="12" fill="#94a3b8">code, left</text>
+    <rect x="210" y="140" width="160" height="56" rx="8" fill="#1e293b" stroke="#334155" stroke-width="2"/>
+    <text x="290" y="164" text-anchor="middle" font-weight="700">Rejected</text>
+    <text x="290" y="184" text-anchor="middle" font-size="12" fill="#94a3b8">code, reason</text>
+    <rect x="430" y="30" width="350" height="166" rx="8" fill="#1e293b" stroke="#86efac" stroke-width="2"/>
+    <text x="450" y="60" font-weight="700">switch (outcome)</text>
+    <text x="470" y="90">case Taken(code, left) → ...</text>
+    <text x="470" y="116">case Rejected(_, reason) → ...</text>
+    <text x="450" y="152" fill="#86efac" font-weight="700">Compila sin default</text>
+    <text x="450" y="176" font-size="12" fill="#94a3b8">El compilador sabe que no hay más casos</text>
+    <path d="M40 232 H780" stroke="#334155" stroke-width="2" stroke-dasharray="4 6"/>
+    <text x="40" y="262" font-size="13" fill="#94a3b8">Mañana añades un tercer resultado a permits</text>
+    <rect x="40" y="280" width="330" height="56" rx="8" fill="#1e293b" stroke="#fde68a" stroke-width="2"/>
+    <text x="205" y="304" text-anchor="middle" font-weight="700" fill="#fde68a">record Maybe</text>
+    <text x="205" y="324" text-anchor="middle" font-size="12" fill="#94a3b8">permits Taken, Rejected, Maybe</text>
+    <path d="M375 308 H420" stroke="#e2e8f0" stroke-width="2" fill="none"/>
+    <path d="M425 308 l-12 -7 v14 z" fill="#e2e8f0"/>
+    <rect x="430" y="262" width="350" height="166" rx="8" fill="#1e293b" stroke="#fca5a5" stroke-width="2"/>
+    <text x="450" y="292" font-weight="700">El mismo switch</text>
+    <text x="450" y="322" fill="#fca5a5" font-weight="700">No compila</text>
+    <text x="450" y="348" font-size="13">the switch expression does not cover</text>
+    <text x="450" y="368" font-size="13">all possible input values</text>
+    <text x="450" y="404" font-size="12" fill="#94a3b8">Hasta que añadas case Maybe(...)</text>
+  </g>
+</svg>

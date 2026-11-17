@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 440" role="img" aria-labelledby="t d">
+  <title id="t">Un record y lo que Java escribe</title>
+  <desc id="d">A la izquierda, la declaración record Loan con tres componentes: code, member y days. A la derecha, lo que Java escribe por ti: tres atributos private final, el constructor con los tres parámetros, un método de acceso por componente con su mismo nombre, equals y hashCode que comparan los componentes y un toString que los muestra. Debajo, lo que no escribe: métodos para cambiar los componentes ni getters con get delante.</desc>
+  <rect width="820" height="440" rx="12" fill="#0f172a"/>
+  <g font-family="Segoe UI, Ubuntu, Helvetica, Arial, sans-serif" font-size="14" fill="#e2e8f0">
+    <text x="40" y="44" font-size="13" fill="#94a3b8">Tú escribes</text>
+    <rect x="40" y="58" width="300" height="120" rx="8" fill="#1e293b" stroke="#86efac" stroke-width="2"/>
+    <text x="60" y="92" font-weight="700" fill="#86efac">record Loan(</text>
+    <text x="84" y="116">String code,</text>
+    <text x="84" y="138">String member,</text>
+    <text x="84" y="160">int days) {}</text>
+    <path d="M345 118 H420" stroke="#e2e8f0" stroke-width="2" fill="none"/>
+    <path d="M420 118 l-12 -7 v14 z" fill="#e2e8f0"/>
+    <text x="440" y="44" font-size="13" fill="#94a3b8">Java escribe por ti</text>
+    <rect x="440" y="58" width="340" height="44" rx="8" fill="#1e293b" stroke="#334155" stroke-width="2"/>
+    <text x="456" y="85">3 atributos private final</text>
+    <rect x="440" y="110" width="340" height="44" rx="8" fill="#1e293b" stroke="#334155" stroke-width="2"/>
+    <text x="456" y="137">Constructor Loan(code, member, days)</text>
+    <rect x="440" y="162" width="340" height="44" rx="8" fill="#1e293b" stroke="#334155" stroke-width="2"/>
+    <text x="456" y="189">code()   member()   days()</text>
+    <rect x="440" y="214" width="340" height="44" rx="8" fill="#1e293b" stroke="#334155" stroke-width="2"/>
+    <text x="456" y="241">equals y hashCode: comparan los datos</text>
+    <rect x="440" y="266" width="340" height="44" rx="8" fill="#1e293b" stroke="#334155" stroke-width="2"/>
+    <text x="456" y="293">toString: Loan[code=BK-042, ...]</text>
+    <text x="40" y="226" font-size="13" fill="#94a3b8">Ejemplo</text>
+    <rect x="40" y="240" width="300" height="70" rx="8" fill="#1e293b" stroke="#93c5fd" stroke-width="2"/>
+    <text x="56" y="268" fill="#93c5fd">new Loan("BK-042", "Ana", 14)</text>
+    <text x="56" y="292" font-size="13" fill="#94a3b8">.code() da "BK-042", .days() da 14</text>
+    <rect x="40" y="346" width="740" height="62" rx="8" fill="#1e293b" stroke="#fca5a5" stroke-width="2"/>
+    <text x="60" y="372" font-weight="700" fill="#fca5a5">No escribe</text>
+    <text x="60" y="394">Métodos que cambien un componente (setDays) ni getters con get delante (getCode)</text>
+  </g>
+</svg>
