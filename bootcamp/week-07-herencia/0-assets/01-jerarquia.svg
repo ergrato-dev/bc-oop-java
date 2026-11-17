@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 470" role="img" aria-labelledby="t d">
+  <title id="t">Jerarquía de herencia</title>
+  <desc id="d">Tres clases apiladas. Arriba, Object, con toString, equals y getClass. En medio, Book, que hereda de Object y declara los atributos privados code, title y copies, y los métodos getCode, lend y describe. Abajo, RareBook, que hereda de Book y declara solo el atributo privado room y los métodos getRoom y label. A la derecha, un objeto RareBook tiene dentro code, title, copies y room: los tres primeros heredados de Book, que solo Book puede tocar.</desc>
+  <rect width="820" height="470" rx="12" fill="#0f172a"/>
+  <g font-family="Segoe UI, Ubuntu, Helvetica, Arial, sans-serif" font-size="14" fill="#e2e8f0">
+    <text x="30" y="40" font-size="16" font-weight="700">Las clases</text>
+
+    <rect x="30" y="56" width="300" height="84" rx="8" fill="#1e293b" stroke="#94a3b8" stroke-width="2"/>
+    <text x="180" y="80" text-anchor="middle" font-weight="700">Object</text>
+    <path d="M30 90 H330" stroke="#94a3b8" stroke-width="1"/>
+    <text x="46" y="112" font-size="13" fill="#94a3b8">toString() · equals() · getClass()</text>
+    <text x="46" y="130" font-size="12" fill="#94a3b8">la raíz: toda clase hereda de ella</text>
+
+    <path d="M180 210 V152" stroke="#e2e8f0" stroke-width="2"/>
+    <path d="M180 140 l-9 14 h18 z" fill="#0f172a" stroke="#e2e8f0" stroke-width="2"/>
+    <text x="194" y="186" font-size="12" fill="#94a3b8">extends (sin escribirlo)</text>
+
+    <rect x="30" y="210" width="300" height="116" rx="8" fill="#1e293b" stroke="#fde68a" stroke-width="3"/>
+    <text x="180" y="234" text-anchor="middle" font-weight="700">Book</text>
+    <path d="M30 244 H330" stroke="#fde68a" stroke-width="1"/>
+    <text x="46" y="266" font-size="13" fill="#93c5fd">private code · title · copies</text>
+    <path d="M30 278 H330" stroke="#fde68a" stroke-width="1"/>
+    <text x="46" y="300" font-size="13" fill="#86efac">getCode() · lend() · describe()</text>
+    <text x="46" y="317" font-size="12" fill="#94a3b8">las reglas de los ejemplares, aquí</text>
+
+    <path d="M180 384 V338" stroke="#e2e8f0" stroke-width="2"/>
+    <path d="M180 326 l-9 14 h18 z" fill="#0f172a" stroke="#e2e8f0" stroke-width="2"/>
+    <text x="194" y="364" font-size="12" fill="#e2e8f0">extends Book</text>
+
+    <rect x="30" y="384" width="300" height="70" rx="8" fill="#1e293b" stroke="#86efac" stroke-width="3"/>
+    <text x="180" y="406" text-anchor="middle" font-weight="700">RareBook</text>
+    <text x="46" y="428" font-size="13" fill="#93c5fd">private room</text>
+    <text x="46" y="446" font-size="13" fill="#86efac">getRoom() · label()</text>
+
+    <text x="440" y="40" font-size="16" font-weight="700">Un objeto RareBook</text>
+    <rect x="440" y="56" width="350" height="240" rx="12" fill="#1e293b" stroke="#86efac" stroke-width="3"/>
+    <rect x="460" y="76" width="310" height="120" rx="6" fill="#0f172a" stroke="#fde68a" stroke-width="2"/>
+    <text x="476" y="98" font-size="12" fill="#fde68a">la parte de Book</text>
+    <text x="476" y="124" font-size="13" fill="#93c5fd">code = "BK-001"</text>
+    <text x="476" y="148" font-size="13" fill="#93c5fd">title = "Crónica de Núremberg"</text>
+    <text x="476" y="172" font-size="13" fill="#93c5fd">copies = 1</text>
+    <rect x="460" y="210" width="310" height="66" rx="6" fill="#0f172a" stroke="#86efac" stroke-width="2"/>
+    <text x="476" y="232" font-size="12" fill="#86efac">la parte de RareBook</text>
+    <text x="476" y="258" font-size="13" fill="#93c5fd">room = "Sala de fondo antiguo"</text>
+
+    <text x="440" y="330" font-size="13">Lo tiene todo: los métodos de las tres clases</text>
+    <text x="440" y="350" font-size="13">y los cuatro atributos.</text>
+    <text x="440" y="384" font-size="13" fill="#fca5a5">Pero el código de RareBook no toca code,</text>
+    <text x="440" y="404" font-size="13" fill="#fca5a5">title ni copies: son private en Book.</text>
+    <text x="440" y="428" font-size="13" fill="#94a3b8">Los usa con getCode(), lend(), getCopies().</text>
+  </g>
+</svg>

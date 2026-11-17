@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 400" role="img" aria-labelledby="t d">
+  <title id="t">Es un o tiene un</title>
+  <desc id="d">Dos formas de escribir un préstamo. A la izquierda, herencia: Loan extends Book. Loan hereda todo lo de Book, también restock y lend, así que un préstamo puede reponerse y acabar con 6 ejemplares, y cabe en cualquier sitio donde se espera un libro. Es un error: un préstamo no es un libro. A la derecha, composición: BookLoan tiene un atributo privado book que apunta a un objeto Book, y un socio. Solo ofrece describe, y delega en el libro el préstamo del ejemplar. Es la buena: un préstamo tiene un libro.</desc>
+  <rect width="820" height="400" rx="12" fill="#0f172a"/>
+  <g font-family="Segoe UI, Ubuntu, Helvetica, Arial, sans-serif" font-size="14" fill="#e2e8f0">
+    <text x="30" y="40" font-size="16" font-weight="700" fill="#fca5a5">Herencia: un préstamo «es un» libro</text>
+    <rect x="80" y="62" width="240" height="76" rx="8" fill="#1e293b" stroke="#fde68a" stroke-width="2"/>
+    <text x="200" y="86" text-anchor="middle" font-weight="700">Book</text>
+    <text x="96" y="110" font-size="13" fill="#86efac">lend() · restock(n) · describe()</text>
+    <text x="96" y="128" font-size="12" fill="#94a3b8">code · title · copies</text>
+    <path d="M200 206 V150" stroke="#e2e8f0" stroke-width="2"/>
+    <path d="M200 138 l-9 14 h18 z" fill="#0f172a" stroke="#e2e8f0" stroke-width="2"/>
+    <rect x="80" y="206" width="240" height="56" rx="8" fill="#1e293b" stroke="#fca5a5" stroke-width="3"/>
+    <text x="200" y="230" text-anchor="middle" font-weight="700">Loan extends Book</text>
+    <text x="96" y="250" font-size="13" fill="#93c5fd">private member</text>
+    <text x="30" y="296" font-size="13">Hereda todo, también lo que no tiene sentido:</text>
+    <text x="30" y="318" font-size="13" fill="#fca5a5">loan.restock(5) → un préstamo con 6 ejemplares</text>
+    <text x="30" y="340" font-size="13">Y cabe en Inventory, en Book.total(...)</text>
+    <text x="30" y="360" font-size="13">y en todo lo que espera un libro.</text>
+
+    <path d="M410 30 V380" stroke="#334155" stroke-width="2"/>
+
+    <text x="440" y="40" font-size="16" font-weight="700" fill="#86efac">Composición: un préstamo «tiene un» libro</text>
+    <rect x="440" y="62" width="200" height="100" rx="8" fill="#1e293b" stroke="#86efac" stroke-width="3"/>
+    <text x="540" y="86" text-anchor="middle" font-weight="700">BookLoan</text>
+    <text x="456" y="110" font-size="13" fill="#93c5fd">private final Book book</text>
+    <text x="456" y="130" font-size="13" fill="#93c5fd">private final String member</text>
+    <text x="456" y="152" font-size="13" fill="#86efac">describe()</text>
+    <circle cx="630" cy="106" r="4" fill="#e2e8f0"/>
+    <path d="M630 106 H690 V196" stroke="#e2e8f0" stroke-width="2" fill="none"/>
+    <path d="M690 204 l-5 -9 h10 z" fill="#e2e8f0"/>
+    <rect x="600" y="206" width="190" height="56" rx="8" fill="#1e293b" stroke="#fde68a" stroke-width="2"/>
+    <text x="695" y="230" text-anchor="middle" font-weight="700">un Book</text>
+    <text x="616" y="250" font-size="12" fill="#94a3b8">Ficciones · ejemplares: 1</text>
+    <text x="440" y="296" font-size="13">Solo ofrece lo que tiene sentido en un préstamo.</text>
+    <text x="440" y="318" font-size="13">Delega en el libro lo que es del libro:</text>
+    <text x="440" y="340" font-size="13" fill="#86efac">el constructor llama a book.lend()</text>
+    <text x="440" y="360" font-size="13">No se puede reponer ni meter en un Inventory.</text>
+  </g>
+</svg>
