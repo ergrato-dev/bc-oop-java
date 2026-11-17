@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 300" role="img" aria-labelledby="t d">
+  <title id="t">Un array en memoria</title>
+  <desc id="d">La variable stock guarda una flecha hacia un array de tres enteros: 4 en la posición 0, 0 en la 1 y 7 en la 2. length es 3 y la última posición es 2. Debajo, el array paralelo codes con BK-042, BK-107 y BK-311 en las mismas posiciones: la posición 1 de los dos describe el mismo registro. Pedir la posición 3 lanza ArrayIndexOutOfBoundsException.</desc>
+  <defs><marker id="a4" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#94a3b8"/></marker></defs>
+  <rect width="820" height="300" rx="12" fill="#0f172a"/>
+  <g font-family="Segoe UI, Ubuntu, Helvetica, Arial, sans-serif" font-size="14" fill="#e2e8f0">
+    <text x="30" y="40" font-size="15" font-weight="700">Posiciones de 0 a length - 1</text>
+    <text x="30" y="104" fill="#94a3b8">int[] stock</text>
+    <rect x="130" y="82" width="44" height="34" rx="6" fill="#1e293b" stroke="#60a5fa"/><circle cx="152" cy="99" r="5" fill="#60a5fa"/>
+    <path d="M157 99H246" stroke="#94a3b8" stroke-width="2" marker-end="url(#a4)"/>
+    <rect x="250" y="80" width="110" height="40" rx="4" fill="#052e16" stroke="#4ade80"/><text x="305" y="106" text-anchor="middle" font-weight="700">4</text>
+    <rect x="360" y="80" width="110" height="40" rx="4" fill="#052e16" stroke="#4ade80"/><text x="415" y="106" text-anchor="middle" font-weight="700">0</text>
+    <rect x="470" y="80" width="110" height="40" rx="4" fill="#052e16" stroke="#4ade80"/><text x="525" y="106" text-anchor="middle" font-weight="700">7</text>
+    <rect x="580" y="80" width="110" height="40" rx="4" fill="none" stroke="#f87171" stroke-dasharray="5 4"/><text x="635" y="106" text-anchor="middle" font-size="12" fill="#f87171">[3] no existe</text>
+    <text x="305" y="72" text-anchor="middle" font-size="12" fill="#94a3b8">[0]</text><text x="415" y="72" text-anchor="middle" font-size="12" fill="#94a3b8">[1]</text><text x="525" y="72" text-anchor="middle" font-size="12" fill="#94a3b8">[2]</text>
+    <text x="30" y="194" fill="#94a3b8">String[] codes</text>
+    <rect x="250" y="172" width="110" height="40" rx="4" fill="#1e293b" stroke="#a78bfa"/><text x="305" y="197" text-anchor="middle">"BK-042"</text>
+    <rect x="360" y="172" width="110" height="40" rx="4" fill="#1e293b" stroke="#fbbf24" stroke-width="2"/><text x="415" y="197" text-anchor="middle">"BK-107"</text>
+    <rect x="470" y="172" width="110" height="40" rx="4" fill="#1e293b" stroke="#a78bfa"/><text x="525" y="197" text-anchor="middle">"BK-311"</text>
+    <path d="M415 120V168" stroke="#fbbf24" stroke-width="2" stroke-dasharray="4 4"/>
+    <text x="30" y="254" font-size="13">stock.length es <tspan font-weight="700">3</tspan>; la última posición es <tspan font-weight="700">2</tspan>. Arrays paralelos: la posición 1 de los dos es el mismo registro.</text>
+    <text x="30" y="276" font-size="13" fill="#f87171">stock[3]: ArrayIndexOutOfBoundsException</text>
+  </g>
+</svg>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 300" role="img" aria-labelledby="t d">
+  <title id="t">Una cadena if / else if / else</title>
+  <desc id="d">Con copies igual a 3, la primera condición copies == 0 es falsa y se pasa a la siguiente; la segunda, copies menor que 5, es verdadera, se ejecuta su bloque, Quedan pocas, y el else ya no se evalúa. Solo se ejecuta el primer bloque cuya condición es verdadera.</desc>
+  <defs><marker id="a1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#94a3b8"/></marker></defs>
+  <rect width="820" height="300" rx="12" fill="#0f172a"/>
+  <g font-family="Segoe UI, Ubuntu, Helvetica, Arial, sans-serif" font-size="14" fill="#e2e8f0">
+    <text x="30" y="40" font-size="15" font-weight="700">copies = 3: gana el primer bloque cuya condición es true</text>
+    <rect x="30" y="70" width="190" height="44" rx="8" fill="#1e293b" stroke="#60a5fa"/><text x="125" y="97" text-anchor="middle">copies == 0 ?</text>
+    <rect x="300" y="70" width="190" height="44" rx="8" fill="#1e293b" stroke="#60a5fa"/><text x="395" y="97" text-anchor="middle">copies &lt; 5 ?</text>
+    <rect x="570" y="70" width="210" height="44" rx="8" fill="#1e293b" stroke="#334155"/><text x="675" y="97" text-anchor="middle" fill="#64748b">else</text>
+    <path d="M220 92H296" stroke="#94a3b8" stroke-width="2" marker-end="url(#a1)"/><text x="258" y="84" text-anchor="middle" font-size="12" fill="#f87171">false</text>
+    <path d="M490 92H566" stroke="#334155" stroke-width="2" stroke-dasharray="5 4" marker-end="url(#a1)"/><text x="528" y="84" text-anchor="middle" font-size="12" fill="#64748b">no se mira</text>
+    <rect x="30" y="180" width="190" height="44" rx="8" fill="#1e293b" stroke="#334155"/><text x="125" y="207" text-anchor="middle" fill="#64748b">"Agotado"</text>
+    <rect x="300" y="180" width="190" height="44" rx="8" fill="#052e16" stroke="#4ade80"/><text x="395" y="207" text-anchor="middle" font-weight="700">"Quedan pocas"</text>
+    <rect x="570" y="180" width="210" height="44" rx="8" fill="#1e293b" stroke="#334155"/><text x="675" y="207" text-anchor="middle" fill="#64748b">"Hay de sobra"</text>
+    <path d="M395 114V176" stroke="#4ade80" stroke-width="2" marker-end="url(#a1)"/><text x="405" y="150" font-size="12" fill="#4ade80">true</text>
+    <text x="30" y="268" font-size="13" fill="#94a3b8">De la condición más estrecha a la más ancha: con copies &lt; 5 primero, 0 nunca llega a "Agotado".</text>
+  </g>
+</svg>

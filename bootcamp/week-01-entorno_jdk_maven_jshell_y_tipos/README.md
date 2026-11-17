@@ -131,6 +131,6 @@ El primero debe terminar en `BUILD SUCCESS` con `Failures: 0, Errors: 0`; el seg
 
 | Anterior | Actual | Siguiente |
 | -------- | ------ | --------- |
-| [Índice de semanas](../README.md) | **Semana 01** | Semana 02 |
+| [Índice de semanas](../README.md) | **Semana 01** | [Semana 02](../week-02-control_metodos_strings_y_arrays/README.md) |
 
 ← [Volver al inicio del bootcamp](../../README.md)

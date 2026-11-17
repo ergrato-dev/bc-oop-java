@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 300" role="img" aria-labelledby="t d">
+  <title id="t">Las partes de un bucle for</title>
+  <desc id="d">El bucle for (int i = 0; i &lt; codes.length; i++) tiene tres partes. El inicio, int i = 0, se ejecuta una vez. La condición, i menor que codes.length, se comprueba antes de cada vuelta: si es verdadera se ejecuta el cuerpo, si es falsa el bucle termina. El paso, i++, se ejecuta al final de cada vuelta y vuelve a la condición.</desc>
+  <defs><marker id="a2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#94a3b8"/></marker></defs>
+  <rect width="820" height="300" rx="12" fill="#0f172a"/>
+  <g font-family="Segoe UI, Ubuntu, Helvetica, Arial, sans-serif" font-size="14" fill="#e2e8f0">
+    <text x="30" y="40" font-size="15" font-weight="700">for (int i = 0; i &lt; codes.length; i++) { cuerpo }</text>
+    <rect x="30" y="120" width="150" height="48" rx="8" fill="#1e293b" stroke="#a78bfa"/><text x="105" y="142" text-anchor="middle" font-weight="700">int i = 0</text><text x="105" y="160" text-anchor="middle" font-size="12" fill="#94a3b8">inicio: una vez</text>
+    <rect x="250" y="120" width="200" height="48" rx="8" fill="#1e293b" stroke="#60a5fa"/><text x="350" y="142" text-anchor="middle" font-weight="700">i &lt; codes.length ?</text><text x="350" y="160" text-anchor="middle" font-size="12" fill="#94a3b8">condición: antes de cada vuelta</text>
+    <rect x="530" y="120" width="150" height="48" rx="8" fill="#052e16" stroke="#4ade80"/><text x="605" y="149" text-anchor="middle" font-weight="700">cuerpo</text>
+    <rect x="530" y="220" width="150" height="48" rx="8" fill="#1e293b" stroke="#fbbf24"/><text x="605" y="242" text-anchor="middle" font-weight="700">i++</text><text x="605" y="260" text-anchor="middle" font-size="12" fill="#94a3b8">paso: al final</text>
+    <rect x="250" y="62" width="200" height="34" rx="8" fill="#1e293b" stroke="#f87171"/><text x="350" y="84" text-anchor="middle">fin del bucle</text>
+    <path d="M180 144H246" stroke="#94a3b8" stroke-width="2" marker-end="url(#a2)"/>
+    <path d="M450 144H526" stroke="#4ade80" stroke-width="2" marker-end="url(#a2)"/><text x="488" y="136" text-anchor="middle" font-size="12" fill="#4ade80">true</text>
+    <path d="M350 120V100" stroke="#f87171" stroke-width="2" marker-end="url(#a2)"/><text x="360" y="114" font-size="12" fill="#f87171">false</text>
+    <path d="M605 168V216" stroke="#94a3b8" stroke-width="2" marker-end="url(#a2)"/>
+    <path d="M530 244H350V172" stroke="#94a3b8" stroke-width="2" fill="none" marker-end="url(#a2)"/>
+    <text x="700" y="149" font-size="12" fill="#94a3b8">i = 0, 1, 2</text>
+  </g>
+</svg>

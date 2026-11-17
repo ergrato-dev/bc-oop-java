@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 300" role="img" aria-labelledby="t d">
+  <title id="t">Lo que recibe un método: una copia del valor</title>
+  <desc id="d">Al llamar a tryToChange(copies, stock), el parámetro n recibe una copia del número 5: ponerlo a 0 no cambia copies. El parámetro values recibe una copia de la flecha de stock: las dos flechas apuntan al mismo array, así que values[0] = 0 cambia también stock[0].</desc>
+  <defs><marker id="a3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#94a3b8"/></marker></defs>
+  <rect width="820" height="300" rx="12" fill="#0f172a"/>
+  <g font-family="Segoe UI, Ubuntu, Helvetica, Arial, sans-serif" font-size="14" fill="#e2e8f0">
+    <text x="30" y="40" font-size="15" font-weight="700">main</text>
+    <text x="300" y="40" font-size="15" font-weight="700">tryToChange(n, values)</text>
+    <text x="30" y="84" fill="#94a3b8">copies</text>
+    <rect x="100" y="62" width="80" height="34" rx="6" fill="#052e16" stroke="#4ade80"/><text x="140" y="84" text-anchor="middle" font-weight="700">5</text>
+    <text x="300" y="84" fill="#94a3b8">n</text>
+    <rect x="330" y="62" width="80" height="34" rx="6" fill="#052e16" stroke="#4ade80"/><text x="370" y="84" text-anchor="middle" font-weight="700">5 → 0</text>
+    <path d="M180 79H326" stroke="#94a3b8" stroke-width="2" stroke-dasharray="5 4" marker-end="url(#a3)"/><text x="253" y="71" text-anchor="middle" font-size="12" fill="#94a3b8">copia del número</text>
+    <text x="30" y="164" fill="#94a3b8">stock</text>
+    <rect x="100" y="142" width="44" height="34" rx="6" fill="#1e293b" stroke="#60a5fa"/><circle cx="122" cy="159" r="5" fill="#60a5fa"/>
+    <text x="300" y="164" fill="#94a3b8">values</text>
+    <rect x="360" y="142" width="44" height="34" rx="6" fill="#1e293b" stroke="#60a5fa"/><circle cx="382" cy="159" r="5" fill="#60a5fa"/>
+    <path d="M127 159C200 250 560 250 625 182" stroke="#94a3b8" stroke-width="2" fill="none" marker-end="url(#a3)"/>
+    <path d="M387 159H586" stroke="#94a3b8" stroke-width="2" marker-end="url(#a3)"/>
+    <rect x="590" y="140" width="80" height="38" rx="6" fill="#1e293b" stroke="#a78bfa"/><text x="630" y="164" text-anchor="middle" font-weight="700">5 → 0</text>
+    <rect x="670" y="140" width="80" height="38" rx="6" fill="#1e293b" stroke="#a78bfa"/><text x="710" y="164" text-anchor="middle" font-weight="700">2</text>
+    <text x="670" y="200" text-anchor="middle" font-size="12" fill="#94a3b8">un solo array</text>
+    <text x="30" y="270" font-size="13">Al volver: copies sigue en <tspan fill="#4ade80" font-weight="700">5</tspan>; stock[0] es <tspan fill="#f87171" font-weight="700">0</tspan>.</text>
+  </g>
+</svg>
