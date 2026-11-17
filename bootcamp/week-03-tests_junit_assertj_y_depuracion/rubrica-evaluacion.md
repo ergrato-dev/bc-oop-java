@@ -88,4 +88,4 @@ Se evalúa **cómo** construiste el proyecto, con evidencia del repositorio y un
 
 | Anterior | Actual | Siguiente |
 | -------- | ------ | --------- |
-| [Glosario](5-glosario/README.md) | **Rúbrica de evaluación** | Semana 04 |
+| [Glosario](5-glosario/README.md) | **Rúbrica de evaluación** | [Semana 04](../week-04-analisis_requisitos_casos_de_uso_y_dominio/README.md) |

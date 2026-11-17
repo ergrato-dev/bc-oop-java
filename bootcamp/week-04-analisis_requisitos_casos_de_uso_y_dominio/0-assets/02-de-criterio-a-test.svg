@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 300" role="img" aria-labelledby="t d">
+  <title id="t">De un criterio de aceptación a un test</title>
+  <desc id="d">A la izquierda, el criterio CA-01 en tres líneas: dado un catálogo con Rayuela, Ficciones y El túnel; cuando busco el; entonces obtengo Rayuela y El túnel. A la derecha, el test con sus tres partes: el array de títulos es el Dado y el Arrange, la llamada a Catalog.search es el Cuando y el Act, y containsExactly 0 y 2 es el Entonces y el Assert. El identificador CA-01 pasa al DisplayName del test.</desc>
+  <rect width="820" height="300" rx="12" fill="#0f172a"/>
+  <g font-family="Segoe UI, Ubuntu, Helvetica, Arial, sans-serif" font-size="14" fill="#e2e8f0">
+    <text x="30" y="38" font-size="15" font-weight="700">Cada parte del criterio es una parte del test</text>
+    <text x="30" y="72" font-size="13" fill="#94a3b8">Criterio de aceptación</text>
+    <text x="430" y="72" font-size="13" fill="#94a3b8">Test (@DisplayName("CA-01 ..."))</text>
+    <g stroke-width="2">
+      <rect x="30" y="85" width="360" height="54" rx="8" fill="#1e3a5f" stroke="#60a5fa"/>
+      <rect x="30" y="152" width="360" height="54" rx="8" fill="#422006" stroke="#fbbf24"/>
+      <rect x="30" y="219" width="360" height="54" rx="8" fill="#14532d" stroke="#4ade80"/>
+      <rect x="430" y="85" width="360" height="54" rx="8" fill="#1e3a5f" stroke="#60a5fa"/>
+      <rect x="430" y="152" width="360" height="54" rx="8" fill="#422006" stroke="#fbbf24"/>
+      <rect x="430" y="219" width="360" height="54" rx="8" fill="#14532d" stroke="#4ade80"/>
+    </g>
+    <text x="46" y="108" font-weight="700" fill="#93c5fd">Dado</text><text x="46" y="128" font-size="13">"Rayuela", "Ficciones", "El túnel"</text>
+    <text x="46" y="175" font-weight="700" fill="#fde68a">Cuando</text><text x="46" y="195" font-size="13">busco "el"</text>
+    <text x="46" y="242" font-weight="700" fill="#bbf7d0">Entonces</text><text x="46" y="262" font-size="13">obtengo Rayuela y El túnel, en ese orden</text>
+    <text x="446" y="108" font-weight="700" fill="#93c5fd">Arrange</text><text x="446" y="128" font-size="13">titles = {"Rayuela", "Ficciones", "El túnel"}</text>
+    <text x="446" y="175" font-weight="700" fill="#fde68a">Act</text><text x="446" y="195" font-size="13">found = Catalog.search(titles, "el")</text>
+    <text x="446" y="242" font-weight="700" fill="#bbf7d0">Assert</text><text x="446" y="262" font-size="13">assertThat(found).containsExactly(0, 2)</text>
+    <g stroke="#94a3b8" stroke-width="2"><path d="M392 112 H426 M392 179 H426 M392 246 H426"/></g>
+    <g fill="#94a3b8"><path d="M426 107 L426 117 L432 112 Z M426 174 L426 184 L432 179 Z M426 241 L426 251 L432 246 Z"/></g>
+  </g>
+</svg>

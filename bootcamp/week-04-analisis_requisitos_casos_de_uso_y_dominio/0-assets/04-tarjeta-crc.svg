@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 300" role="img" aria-labelledby="t d">
+  <title id="t">Una tarjeta CRC</title>
+  <desc id="d">La tarjeta CRC de Loan. Arriba, el nombre de la clase. A la izquierda, las responsabilidades: sabe qué libro, qué socio y desde qué día; calcula su fecha de devolución; calcula sus días de retraso; crea la multa si hay retraso. A la derecha, los colaboradores: Book, Member y Fine. A un lado, la correspondencia con Java de la semana 05: lo que sabe son atributos, lo que hace son métodos y los colaboradores son atributos o parámetros de otra clase.</desc>
+  <rect width="820" height="300" rx="12" fill="#0f172a"/>
+  <g font-family="Segoe UI, Ubuntu, Helvetica, Arial, sans-serif" font-size="14" fill="#e2e8f0">
+    <rect x="30" y="30" width="500" height="240" rx="6" fill="#1e293b" stroke="#e2e8f0" stroke-width="2"/>
+    <path d="M30 76 H530 M370 76 V270" stroke="#e2e8f0" stroke-width="2"/>
+    <text x="46" y="60" font-size="18" font-weight="700">Loan</text>
+    <text x="386" y="60" font-size="12" fill="#94a3b8">Clase</text>
+    <text x="46" y="100" font-size="12" fill="#94a3b8">Responsabilidades</text>
+    <text x="386" y="100" font-size="12" fill="#94a3b8">Colaboradores</text>
+    <text x="46" y="130" fill="#93c5fd">Sabe qué libro, qué socio</text><text x="46" y="150" fill="#93c5fd">y desde qué día</text>
+    <text x="46" y="182" fill="#fde68a">Calcula su fecha de devolución</text>
+    <text x="46" y="208" fill="#fde68a">Calcula sus días de retraso</text>
+    <text x="46" y="234" fill="#fde68a">Crea la multa si hay retraso</text>
+    <text x="386" y="130">Book</text><text x="386" y="156">Member</text><text x="386" y="182">Fine</text>
+    <text x="560" y="60" font-size="15" font-weight="700">En la semana 05</text>
+    <circle cx="566" cy="96" r="6" fill="#93c5fd"/><text x="580" y="101">sabe: atributos</text>
+    <circle cx="566" cy="128" r="6" fill="#fde68a"/><text x="580" y="133">hace: métodos</text>
+    <circle cx="566" cy="160" r="6" fill="#e2e8f0"/><text x="580" y="165">colaboradores: atributos</text>
+    <text x="580" y="185">o parámetros de otra clase</text>
+    <text x="560" y="230" font-size="13" fill="#94a3b8">Si no cabe en la tarjeta,</text>
+    <text x="560" y="250" font-size="13" fill="#94a3b8">la clase hace demasiado.</text>
+  </g>
+</svg>

@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 360" role="img" aria-labelledby="t d">
+  <title id="t">Un caso de uso: flujo principal y alternativos</title>
+  <desc id="d">El caso de uso CU-01 Prestar un libro. El actor bibliotecario arranca el flujo principal de cuatro pasos: indicar el socio, indicar el código, comprobar que queda un ejemplar y registrar el préstamo, que termina en la postcondición. Del paso 1 sale el alternativo 1a, socio con multa o con 3 préstamos, que termina sin préstamo. Del paso 2 sale el 2a, código inexistente, que vuelve al paso 2. Del paso 3 sale el 3a, sin ejemplares, que termina sin préstamo.</desc>
+  <rect width="820" height="360" rx="12" fill="#0f172a"/>
+  <g font-family="Segoe UI, Ubuntu, Helvetica, Arial, sans-serif" font-size="14" fill="#e2e8f0">
+    <text x="30" y="38" font-size="15" font-weight="700">CU-01 Prestar un libro</text>
+    <circle cx="60" cy="110" r="14" fill="none" stroke="#e2e8f0" stroke-width="2"/>
+    <path d="M60 124 V160 M40 138 H80 M60 160 L44 186 M60 160 L76 186" stroke="#e2e8f0" stroke-width="2" fill="none"/>
+    <text x="60" y="210" text-anchor="middle" font-size="13">Bibliotecario</text>
+    <g stroke="#60a5fa" fill="#1e3a5f">
+      <rect x="120" y="85" width="140" height="56" rx="8"/><rect x="290" y="85" width="140" height="56" rx="8"/>
+      <rect x="460" y="85" width="140" height="56" rx="8"/><rect x="630" y="85" width="160" height="56" rx="8"/>
+    </g>
+    <g text-anchor="middle" font-size="13">
+      <text x="190" y="108">1. Indica</text><text x="190" y="126">el socio</text>
+      <text x="360" y="108">2. Indica</text><text x="360" y="126">el código</text>
+      <text x="530" y="108">3. Comprueba que</text><text x="530" y="126">queda un ejemplar</text>
+      <text x="710" y="108">4. Registra el</text><text x="710" y="126">préstamo (14 días)</text>
+    </g>
+    <g stroke="#94a3b8" stroke-width="2"><path d="M86 113 H118 M262 113 H288 M432 113 H458 M602 113 H628"/></g>
+    <g fill="#94a3b8"><path d="M118 108 L118 118 L124 113 Z M288 108 L288 118 L294 113 Z M458 108 L458 118 L464 113 Z M628 108 L628 118 L634 113 Z"/></g>
+    <rect x="630" y="170" width="160" height="44" rx="8" fill="#14532d" stroke="#4ade80"/>
+    <text x="710" y="190" text-anchor="middle" font-size="13" fill="#bbf7d0">Postcondición:</text>
+    <text x="710" y="206" text-anchor="middle" font-size="13" fill="#bbf7d0">préstamo registrado</text>
+    <path d="M710 141 V168" stroke="#4ade80" stroke-width="2"/>
+    <g stroke="#fbbf24" fill="#422006">
+      <rect x="110" y="250" width="170" height="70" rx="8"/><rect x="290" y="250" width="150" height="70" rx="8"/><rect x="460" y="250" width="150" height="70" rx="8"/>
+    </g>
+    <g stroke="#fbbf24" stroke-width="2" stroke-dasharray="6 4" fill="none"><path d="M190 141 V248 M360 141 V248 M530 141 V248"/></g>
+    <g text-anchor="middle" font-size="13" fill="#fde68a">
+      <text x="195" y="272">1a. Multa pendiente</text><text x="195" y="290">o 3 préstamos</text><text x="195" y="308" fill="#fca5a5">termina sin préstamo</text>
+      <text x="365" y="272">2a. No existe</text><text x="365" y="290">ese código</text><text x="365" y="308" fill="#93c5fd">vuelve al paso 2</text>
+      <text x="535" y="272">3a. No quedan</text><text x="535" y="290">ejemplares</text><text x="535" y="308" fill="#fca5a5">termina sin préstamo</text>
+    </g>
+    <text x="630" y="270" font-size="13" fill="#94a3b8">azul: flujo principal</text>
+    <text x="630" y="292" font-size="13" fill="#94a3b8">ámbar: alternativos,</text>
+    <text x="630" y="310" font-size="13" fill="#94a3b8">cada uno dice cómo acaba</text>
+  </g>
+</svg>

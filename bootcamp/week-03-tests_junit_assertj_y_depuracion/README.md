@@ -128,6 +128,6 @@ El primero debe terminar en `BUILD SUCCESS` con al menos 78 tests y `Failures: 0
 
 | Anterior | Actual | Siguiente |
 | -------- | ------ | --------- |
-| [Semana 02](../week-02-control_metodos_strings_y_arrays/README.md) | **Semana 03** | Semana 04 |
+| [Semana 02](../week-02-control_metodos_strings_y_arrays/README.md) | **Semana 03** | [Semana 04](../week-04-analisis_requisitos_casos_de_uso_y_dominio/README.md) |
 
 ← [Volver al inicio del bootcamp](../../README.md)

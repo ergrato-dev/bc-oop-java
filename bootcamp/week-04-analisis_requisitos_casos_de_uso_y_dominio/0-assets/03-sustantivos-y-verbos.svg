@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 330" role="img" aria-labelledby="t d">
+  <title id="t">Sustantivos y verbos del enunciado</title>
+  <desc id="d">Tres columnas. Sustantivos subrayados del enunciado: biblioteca, libro, socio, código, título, autor, ejemplar, día, multa, máximo, bibliotecario. Al filtrarlos: biblioteca es el sistema; código, título, autor y ejemplares son atributos de libro; 14 días y el máximo son reglas de negocio; bibliotecario es un actor. Quedan los objetos del dominio Book, Member, Loan y Fine; Loan sale del verbo presta. Los verbos presta, devuelve, paga y busca se convierten en operaciones de esos objetos o del catálogo.</desc>
+  <rect width="820" height="330" rx="12" fill="#0f172a"/>
+  <g font-family="Segoe UI, Ubuntu, Helvetica, Arial, sans-serif" font-size="13" fill="#e2e8f0">
+    <text x="30" y="38" font-size="15" font-weight="700">Del enunciado a los objetos del dominio</text>
+    <rect x="30" y="60" width="230" height="250" rx="8" fill="#1e293b" stroke="#94a3b8"/>
+    <text x="46" y="84" font-weight="700" fill="#cbd5e1">Sustantivos</text>
+    <text x="46" y="110">biblioteca</text><text x="46" y="132">libro · socio · multa</text><text x="46" y="154">código · título · autor</text>
+    <text x="46" y="176">ejemplar</text><text x="46" y="198">14 días · máximo de 6 USD</text><text x="46" y="220">bibliotecario</text>
+    <text x="46" y="256" font-weight="700" fill="#cbd5e1">Verbos</text>
+    <text x="46" y="280">presta · devuelve · paga · busca</text>
+    <rect x="290" y="60" width="230" height="250" rx="8" fill="#422006" stroke="#fbbf24"/>
+    <text x="306" y="84" font-weight="700" fill="#fde68a">Filtrar</text>
+    <text x="306" y="110">el sistema entero: fuera</text><text x="306" y="132">objetos: se quedan</text><text x="306" y="154">datos simples: atributos</text>
+    <text x="306" y="176">  de libro</text><text x="306" y="198">valores: reglas de negocio</text><text x="306" y="220">actor: fuera del modelo</text>
+    <text x="306" y="256" font-weight="700" fill="#fde68a">Repartir</text>
+    <text x="306" y="280">cada verbo, a quien tiene los datos</text>
+    <rect x="550" y="60" width="240" height="250" rx="8" fill="#14532d" stroke="#4ade80"/>
+    <text x="566" y="84" font-weight="700" fill="#bbf7d0">Objetos del dominio</text>
+    <text x="566" y="112" font-weight="700">Book</text><text x="616" y="112" fill="#bbf7d0">code, title, author, copies</text>
+    <text x="566" y="140" font-weight="700">Member</text><text x="630" y="140" fill="#bbf7d0">id, name, activeLoans</text>
+    <text x="566" y="168" font-weight="700">Loan</text><text x="610" y="168" fill="#bbf7d0">sale del verbo "presta"</text>
+    <text x="566" y="196" font-weight="700">Fine</text><text x="606" y="196" fill="#bbf7d0">amount, paid</text>
+    <text x="566" y="256" font-weight="700" fill="#bbf7d0">Operaciones</text>
+    <text x="566" y="280" fill="#bbf7d0">lend · overdueDays · pay · search</text>
+    <g stroke="#94a3b8" stroke-width="2"><path d="M262 185 H286 M522 185 H546"/></g>
+    <g fill="#94a3b8"><path d="M286 180 L286 190 L292 185 Z M546 180 L546 190 L552 185 Z"/></g>
+  </g>
+</svg>

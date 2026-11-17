@@ -15,7 +15,7 @@ Las semanas se publican por bloques al estándar de [`CLAUDE.md`](../CLAUDE.md):
 | [01](week-01-entorno_jdk_maven_jshell_y_tipos/README.md) | [Entorno: JDK 25, Maven Wrapper, JShell y tipos](week-01-entorno_jdk_maven_jshell_y_tipos/README.md) | ✅ |
 | [02](week-02-control_metodos_strings_y_arrays/README.md) | [Control de flujo, métodos, `String` y arrays](week-02-control_metodos_strings_y_arrays/README.md) | ✅ |
 | [03](week-03-tests_junit_assertj_y_depuracion/README.md) | [Tests con JUnit y AssertJ; depuración](week-03-tests_junit_assertj_y_depuracion/README.md) | ✅ |
-| 04 | Análisis: requisitos, casos de uso y objetos del dominio | ⏳ |
+| [04](week-04-analisis_requisitos_casos_de_uso_y_dominio/README.md) | [Análisis: requisitos, casos de uso y objetos del dominio](week-04-analisis_requisitos_casos_de_uso_y_dominio/README.md) | ✅ |
 
 ### Fase 2 — Programación orientada a objetos (S05-11, 98 h)
 
