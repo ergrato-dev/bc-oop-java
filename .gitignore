@@ -1,118 +1,22 @@
-# Java
+# Java y Maven
 *.class
 *.jar
-*.war
-*.ear
-*.log
-*.iml
-
-# Package Files
-*.jar
-*.war
-*.nar
-*.ear
-*.zip
-*.tar.gz
-*.rar
-
-# Compiled class files
 target/
-out/
-build/
-bin/
+.mvn/wrapper/maven-wrapper.jar
+hs_err_pid*
 
-# IDE - IntelliJ IDEA
+# Editores
 .idea/
-*.iws
-*.ipr
 *.iml
-# Excepciones: mantener algunas configuraciones útiles
-!.idea/.gitignore
-!.idea/misc.xml
-!.idea/encodings.xml
-!.idea/codeStyles/
-
-# IDE - Eclipse
+.vscode/*
+!.vscode/settings.json
 .classpath
 .project
 .settings/
 
-# IDE - VS Code
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-
-# MacOS
+# Sistema
 .DS_Store
-.AppleDouble
-.LSOverride
-
-# Windows
 Thumbs.db
-ehthumbs.db
-Desktop.ini
-
-# Linux
 *~
-.directory
-
-# Logs
-*.log
-logs/
-*.log.*
-
-# Temporary files
-*.tmp
-*.temp
 *.swp
-*.swo
-*~
-
-# Auto-commit logs (keep in repo for tracking)
-# .github/scripts/auto-commit.log
-
-# Node modules (if using any JS tools)
-node_modules/
-
-# Maven
-target/
-pom.xml.tag
-pom.xml.releaseBackup
-pom.xml.versionsBackup
-pom.xml.next
-release.properties
-dependency-reduced-pom.xml
-buildNumber.properties
-.mvn/timing.properties
-.mvn/wrapper/maven-wrapper.jar
-
-# Gradle
-.gradle/
-build/
-!gradle-wrapper.jar
-
-# BlueJ files
-*.ctxt
-
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# Virtual machine crash logs
-hs_err_pid*
-replay_pid*
-
-# Asignación de dominios por estudiante (protección de identidad)
-# Estas carpetas contienen información personal de los aprendices
-# y se comparten por medios privados/seguros
-# Archivos de estudiantes (privacidad)
-bootcamp/semana-*/4. asignación_dominios/fichas/*.zip
-bootcamp/semana-*/4. asignación_dominios/fichas/*/
-
-# Sistema de evaluación automatizada (contiene credenciales y datos sensibles)
-docs/evaluacion/
-!docs/evaluacion/README.md
-!docs/evaluacion/requirements.txt
-!docs/evaluacion/.env.example
-docs/fichas/
+.env

@@ -1,105 +1,30 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300">
-  <!-- Background gradient -->
-  <defs>
-    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
-      <stop offset="50%" style="stop-color:#3b82f6;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#60a5fa;stop-opacity:1" />
-    </linearGradient>
-    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#f97316;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#fb923c;stop-opacity:1" />
-    </linearGradient>
-    
-    <!-- Shadow filter -->
-    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
-      <feOffset dx="2" dy="2" result="offsetblur"/>
-      <feComponentTransfer>
-        <feFuncA type="linear" slope="0.3"/>
-      </feComponentTransfer>
-      <feMerge>
-        <feMergeNode/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-  </defs>
-  
-  <!-- Background rectangle -->
-  <rect width="1200" height="300" fill="url(#grad1)"/>
-  
-  <!-- Pattern decoration -->
-  <circle cx="100" cy="50" r="40" fill="white" opacity="0.1"/>
-  <circle cx="1100" cy="250" r="60" fill="white" opacity="0.1"/>
-  <circle cx="1050" cy="80" r="30" fill="white" opacity="0.1"/>
-  <circle cx="150" cy="280" r="35" fill="white" opacity="0.1"/>
-  
-  <!-- Code brackets decoration -->
-  <text x="50" y="150" font-family="'Courier New', monospace" font-size="120" fill="white" opacity="0.15" font-weight="bold">{</text>
-  <text x="1120" y="200" font-family="'Courier New', monospace" font-size="120" fill="white" opacity="0.15" font-weight="bold">}</text>
-  
-  <!-- Java cup icon (simplified) -->
-  <g transform="translate(200, 80)">
-    <path d="M 0 40 Q -5 30 0 20 L 10 20 Q 15 30 10 40 Z" fill="url(#grad2)" filter="url(#shadow)"/>
-    <ellipse cx="5" cy="20" rx="6" ry="3" fill="#fb923c"/>
-    <rect x="-2" y="35" width="14" height="3" rx="1" fill="#c2410c"/>
-    <path d="M -8 43 Q -8 48 5 48 Q 18 48 18 43" fill="none" stroke="#c2410c" stroke-width="2"/>
-  </g>
-  
-  <!-- Main title -->
-  <text x="600" y="110" font-family="'Arial', 'Helvetica', sans-serif" font-size="52" font-weight="bold" fill="white" text-anchor="middle" filter="url(#shadow)">
-    Bootcamp POO Java
-  </text>
-  
-  <!-- Subtitle -->
-  <text x="600" y="155" font-family="'Arial', 'Helvetica', sans-serif" font-size="24" fill="white" text-anchor="middle" opacity="0.95">
-    Diseño y Programación Orientada a Objetos
-  </text>
-  
-  <!-- Info badges -->
-  <g transform="translate(300, 190)">
-    <!-- Duration badge -->
-    <rect x="0" y="0" width="180" height="35" rx="17.5" fill="white" opacity="0.2"/>
-    <rect x="2" y="2" width="176" height="31" rx="15.5" fill="white" opacity="0.9"/>
-    <text x="90" y="23" font-family="Arial, sans-serif" font-size="16" font-weight="600" fill="#1e3a8a" text-anchor="middle">
-      ⏱️ 10 Semanas
-    </text>
-  </g>
-  
-  <g transform="translate(510, 190)">
-    <!-- Hours badge -->
-    <rect x="0" y="0" width="180" height="35" rx="17.5" fill="white" opacity="0.2"/>
-    <rect x="2" y="2" width="176" height="31" rx="15.5" fill="white" opacity="0.9"/>
-    <text x="90" y="23" font-family="Arial, sans-serif" font-size="16" font-weight="600" fill="#1e3a8a" text-anchor="middle">
-      📚 40 Horas
-    </text>
-  </g>
-  
-  <g transform="translate(720, 190)">
-    <!-- SENA badge -->
-    <rect x="0" y="0" width="180" height="35" rx="17.5" fill="white" opacity="0.2"/>
-    <rect x="2" y="2" width="176" height="31" rx="15.5" fill="#39b54a" opacity="0.95"/>
-    <text x="90" y="23" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="white" text-anchor="middle">
-      🎓 SENA
-    </text>
-  </g>
-  
-  <!-- Bottom decoration line -->
-  <rect x="400" y="250" width="400" height="3" rx="1.5" fill="white" opacity="0.3"/>
-  
-  <!-- Small icons at bottom -->
-  <g transform="translate(350, 260)">
-    <circle cx="0" cy="0" r="8" fill="white" opacity="0.8"/>
-    <text x="0" y="5" font-family="Arial, sans-serif" font-size="12" fill="#1e3a8a" text-anchor="middle" font-weight="bold">☕</text>
-  </g>
-  
-  <g transform="translate(600, 260)">
-    <circle cx="0" cy="0" r="8" fill="white" opacity="0.8"/>
-    <text x="0" y="5" font-family="Arial, sans-serif" font-size="12" fill="#1e3a8a" text-anchor="middle" font-weight="bold">💻</text>
-  </g>
-  
-  <g transform="translate(850, 260)">
-    <circle cx="0" cy="0" r="8" fill="white" opacity="0.8"/>
-    <text x="0" y="5" font-family="Arial, sans-serif" font-size="12" fill="#1e3a8a" text-anchor="middle" font-weight="bold">🚀</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="200" viewBox="0 0 800 200" role="img" aria-labelledby="htitle hdesc">
+  <title id="htitle">Bootcamp POO con Java</title>
+  <desc id="hdesc">Banner: a la izquierda una taza de café junto a una clase Book; en el centro el título POO con Java, el lema análisis, diseño y programación orientada a objetos, y chips de 24 semanas, 336 horas, Java 25 y Maven; a la derecha el recorrido de Book.java por ./mvnw test hasta los tests en verde.</desc>
+  <defs><marker id="ha" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#94a3b8"/></marker></defs>
+  <rect width="800" height="200" rx="14" fill="#0f172a"/>
+  <g font-family="Inter, Roboto, Segoe UI, Ubuntu, Helvetica, Arial, sans-serif" fill="#e2e8f0">
+    <path d="M40 80h60v52a22 22 0 0 1-22 22h-16a22 22 0 0 1-22-22z" fill="#f89820"/>
+    <path d="M100 92h8a12 12 0 0 1 0 24h-8" fill="none" stroke="#f89820" stroke-width="6"/>
+    <path d="M58 70c-6-10 6-14 0-24M74 70c-6-10 6-14 0-24" fill="none" stroke="#94a3b8" stroke-width="3" stroke-linecap="round"/>
+    <rect x="130" y="60" width="110" height="96" rx="6" fill="#1e293b" stroke="#5382a1" stroke-width="2"/>
+    <text x="185" y="80" text-anchor="middle" font-size="14" font-weight="700">Book</text>
+    <path d="M130 88H240M130 122H240" stroke="#5382a1" stroke-width="1.5"/>
+    <text x="140" y="104" font-size="11">- isbn: String</text>
+    <text x="140" y="117" font-size="11">- title: String</text>
+    <text x="140" y="140" font-size="11">+ lend(): void</text>
+    <text x="400" y="78" text-anchor="middle" font-size="34" font-weight="800">POO con Java</text>
+    <text x="400" y="104" text-anchor="middle" font-size="14" fill="#94a3b8">Análisis, diseño y programación orientada a objetos</text>
+    <g font-size="12" font-weight="700" text-anchor="middle">
+      <rect x="282" y="122" width="56" height="26" rx="13" fill="#1e3a5f"/><text x="310" y="139">24 sem</text>
+      <rect x="346" y="122" width="56" height="26" rx="13" fill="#1e3a5f"/><text x="374" y="139">336 h</text>
+      <rect x="410" y="122" width="64" height="26" rx="13" fill="#7c2d12"/><text x="442" y="139">Java 25</text>
+      <rect x="482" y="122" width="56" height="26" rx="13" fill="#3b0764"/><text x="510" y="139">Maven</text>
+    </g>
+    <rect x="580" y="62" width="88" height="30" rx="6" fill="#1e293b" stroke="#60a5fa"/><text x="624" y="82" text-anchor="middle" font-size="12">Book.java</text>
+    <path d="M624 92V110" stroke="#94a3b8" stroke-width="2" marker-end="url(#ha)"/>
+    <rect x="580" y="114" width="88" height="30" rx="6" fill="#1e293b" stroke="#facc15"/><text x="624" y="134" text-anchor="middle" font-size="12">./mvnw test</text>
+    <path d="M668 129H690" stroke="#94a3b8" stroke-width="2" marker-end="url(#ha)"/>
+    <rect x="694" y="114" width="80" height="30" rx="6" fill="#052e16" stroke="#4ade80"/><text x="734" y="134" text-anchor="middle" font-size="12" fill="#4ade80">✓ verde</text>
   </g>
 </svg>

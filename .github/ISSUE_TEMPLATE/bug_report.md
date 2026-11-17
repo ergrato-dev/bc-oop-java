@@ -13,7 +13,7 @@ Una descripción clara y concisa del problema.
 ## 📍 Ubicación
 
 **Semana:** (ej: Semana 3)  
-**Archivo:** (ej: `bootcamp/semana-03/2-practica/ejercicio-01/Main.java`)  
+**Archivo:** (ej: `bootcamp/week-05-clases_y_objetos/3-proyecto/starter/src/main/java/...`)  
 **Líneas:** (si aplica)
 
 ## 🔄 Pasos para Reproducir
@@ -38,7 +38,7 @@ Si aplica, añade capturas de pantalla para ayudar a explicar el problema.
 
 - **OS:** [ej: Windows 11, Ubuntu 22.04, macOS 14]
 - **Java Version:** [ej: JDK 17]
-- **IDE:** [ej: IntelliJ IDEA 2024.1, VS Code, Eclipse]
+- **IDE:** [ej: VS Code 1.106, IntelliJ IDEA 2026.2]
 
 ## 📝 Contexto Adicional
 

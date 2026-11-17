@@ -1,0 +1,25 @@
+name: Verificar contenido
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+# Principio de mínimo privilegio: solo lectura
+permissions:
+  contents: read
+
+jobs:
+  verificar:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Estructura, enlaces, navegación, tuteo, uv/pnpm, imágenes y puertos
+        run: ./scripts/verificar-enlaces.sh
+
+      - name: shellcheck de scripts/
+        run: shellcheck -S warning scripts/*.sh
+
+      # Los tests de los starters de cada semana se añaden aquí cuando exista
+      # la primera semana publicada.
